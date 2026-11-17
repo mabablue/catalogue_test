@@ -1,0 +1,68 @@
+name: IAdopt-Catalogue - GitHub Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  schedule:
+    # every night: pick up new, retracted and superseded variable nanopublications
+    - cron: '17 3 * * *'
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Export nanopublications
+        run: |
+          python3 -m venv "$RUNNER_TEMP/venv"
+          "$RUNNER_TEMP/venv/bin/pip" install --quiet rdflib
+          "$RUNNER_TEMP/venv/bin/python" scripts/export_nanopubs.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Nanopublications
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Update variables from the nanopub network"
+            git push || echo "::warning::Could not push the updated files; they are still part of this build."
+          fi
+
+      - name: Build catalogue
+        uses: docker://sirkos/iadopt-catalogue:dev
+
+      - name: Upload Artifacts
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: "build/"
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5
