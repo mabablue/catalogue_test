@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAVOJPjCFx5kq6F_GDBiv0ZvjS7QUDkrvPvOzOWxcDX6k/> .
+
+<https://w3id.org/iadopt/variable/FractureToughness> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Fracture toughness",
+        "fracture toughness of material" ;
+    dcterms:description "the measure of a material’s resistance to crack growth." ;
+    rdfs:seeAlso <https://www.sciencedirect.com/topics/engineering/impact-toughness#:~:text=1.10.,the%20surface%20of%20the%20specimen.> ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:FractureToughness .
+

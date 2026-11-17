@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAcY7RaD-1Q7aDCyrnZj-8S1TQq5J2tVf3JWc_IpdMPMU/> .
+
+<https://w3id.org/iadopt/variable/SoftwareComponentInputs> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Software Component Inputs" ;
+    dcterms:description "The data, parameters, files, or artifacts consumed by a software component to perform its function." ;
+    iop:hasObjectOfInterest sub:softwarecomponent ;
+    iop:hasProperty sub:inputs .
+

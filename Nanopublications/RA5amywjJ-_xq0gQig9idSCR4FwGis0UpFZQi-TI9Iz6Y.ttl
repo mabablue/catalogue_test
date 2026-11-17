@@ -1,0 +1,12 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA5amywjJ-_xq0gQig9idSCR4FwGis0UpFZQi-TI9Iz6Y#> .
+
+sub:Chlorophyll-a a iop:Variable ;
+    rdfs:label "Concentration of Chlorophyll-a in the water column" ;
+    dcterms:description "Chlorophyll-a in the water" ;
+    iop:hasMatrix sub:water ;
+    iop:hasObjectOfInterest sub:Chlorophyll-a ;
+    iop:hasProperty sub:concentration .
+

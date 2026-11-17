@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA8LTc1a_ksmQccVrgyN2HjXtGUyk_jZyagnm_ujO04hQ/> .
+
+<https://w3id.org/iadopt/variable/ElectronegativityActiveMetals> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Electronegativity of active metals" ;
+    dcterms:description "The power of an atom within an electropositive chemical element characterised by ductility, malleability, luster, and conductance of heat and electricity to attract electrons to itself that is exerting influence or producing an effect" ;
+    iop:hasObjectOfInterest sub:Metal ;
+    iop:hasProperty sub:Electronegativity .
+

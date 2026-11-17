@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAlSK40OjR207zH4ghT4xuz8EyvqyCfnNvHuvyn213q3M/> .
+
+<https://w3id.org/iadopt/variable/EnergyReserves> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Energy reserves (lipids, glycogen)",
+        "energy reserves in exposed invertebrate organism" ;
+    dcterms:description "stored energy available for metabolism." ;
+    iop:hasObjectOfInterest sub:invertebrateOrganism ;
+    iop:hasProperty sub:EnergyReserves .
+

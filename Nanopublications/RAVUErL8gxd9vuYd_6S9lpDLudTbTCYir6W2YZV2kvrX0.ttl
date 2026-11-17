@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAVUErL8gxd9vuYd_6S9lpDLudTbTCYir6W2YZV2kvrX0/> .
+
+<https://w3id.org/iadopt/variable/EnergyBandGapExperimental> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Energy band gap (experimental, e.g., Tauc plots)" ;
+    dcterms:description "A descriptor that has been experimentally calculated and describes the energy range in a solid where no electron states can exist. In graphs of the electron band structure of solids, the band gap generally refers to the energy difference (in electron volts) between the top of the valence band and the bottom of the conduction band in insulators and semiconductors" ;
+    iop:hasObjectOfInterest sub:Material ;
+    iop:hasProperty <http://semanticscience.org/resource/CHEMINF_000487> .
+

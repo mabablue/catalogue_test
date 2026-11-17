@@ -1,0 +1,11 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RABTWdVGxIk-La2BNdcG-SiRz80OdcAh0HskYkXzHmNdw/> .
+
+<https://w3id.org/iadopt/variable/AgPVP> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Polyvinylpyrrolidone (PVP)-coated Silver nanoparticle" ;
+    iop:hasObjectOfInterest sub:AgNP ;
+    iop:hasProperty <http://purl.obolibrary.org/obo/CHEBI_82780> .
+

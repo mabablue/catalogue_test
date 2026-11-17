@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAwY3OR_jOyspxfkWcvJ6FKSzB_X_X1ZvK9yL9FUeBNNg#> .
+
+sub:variable17 a iop:Variable ;
+    rdfs:label "DHA content/ C22:6 n-3 content",
+        "Docosahexaenoic acid content per dry weight" ;
+    dcterms:description "The amount of docosahexaenoic acid relative to dry weight in an individual." ;
+    iop:hasContextObject <http://vocabs.lter-europe.net/EnvThes/26> ;
+    iop:hasMatrix <https://agroportal.lirmm.fr/ontologies/INRAETHES/c_15852> ;
+    iop:hasObjectOfInterest <http://purl.bioontology.org/ontology/NDFRT/N0000148111> ;
+    iop:hasProperty <http://presence-ontology.org/ontology/Content> .
+

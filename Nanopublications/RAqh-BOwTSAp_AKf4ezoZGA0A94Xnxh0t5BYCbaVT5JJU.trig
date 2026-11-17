@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAqh-BOwTSAp_AKf4ezoZGA0A94Xnxh0t5BYCbaVT5JJU> .
+@prefix sub: <https://w3id.org/np/RAqh-BOwTSAp_AKf4ezoZGA0A94Xnxh0t5BYCbaVT5JJU#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <http://vocabs.lter-europe.net/elter_cl/10587> a <https://w3id.org/iadopt/ont/Constraint>;
+    <https://w3id.org/iadopt/ont/constrains> <http://vocabs.lter-europe.net/EnvThes/26> .
+  
+  sub:variable19 a <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "The amount of carbon consumed by an organism at non-limiting concentration of food relative to the individual dry weight measured at 15°C. It is expressed as μg C mg DW−1 h−1";
+    rdfs:label "Mass specific-ingestion Carbon rate at 15 °C", "Weight specific-ingestion Carbon rate at 15 °C";
+    <https://w3id.org/iadopt/ont/hasConstraint> <http://vocabs.lter-europe.net/elter_cl/10587>;
+    <https://w3id.org/iadopt/ont/hasMatrix> <https://kos.lifewatch.eu/thesauri/zooplanktontraits/c_19>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> <http://vocabs.lter-europe.net/EnvThes/26>;
+    <https://w3id.org/iadopt/ont/hasProperty> <http://purl.jp/bio/4/id/201006092496714600> .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0002-2749-8588 .
+}
+
+sub:pubinfo {
+  orcid:0000-0002-2749-8588 foaf:name "Andrea Tarallo" .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCRZRMbIr0zLFMkUzF5SH/Ja/PamzEk3VY+ccOA55/d8fWhBwzZRnwPoMgJENZeqHDRAayS8oBCWK3P0Ql9SKOwRLIRrioQp0IOBidpDZIedYAMCg/taE4tAtgxvjQBpk+yN8FdkjIgJdOBpdggC5V4oIH77TzuI09dfEv091p7uQIDAQAB";
+    npx:hasSignature "jk8AH9/xIt7B6wdUqibwzsNbHSCeKaBZe2j3n5fVIKb9nYDVB4+ybR9jYwZkLX52r0fKYCKnOttcw466fdWQ35M8jZ5wCaeYja5qWHYjCDTJ6MUGbiX8kEiGe8SVbYikHL44xEpxMdR7IAiIvlOxnMP7e3gCkiXrJGRfay65D3E=";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0000-0002-2749-8588 .
+  
+  this: dct:created "2024-09-24T10:45:57.757Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-2749-8588;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces sub:variable19;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate ns1:RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM,
+      ns1:RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAGUWnXKhfKYwmMoDK-LVXlEnnGdAuzFZKR9FZsXHJsxQ> .
+}
+

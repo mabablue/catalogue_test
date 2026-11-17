@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAQ7nPRfUirT6f2DVj66m--iCyBTaIFOnV1dZXGBYfu2E/> .
+
+<https://w3id.org/iadopt/variable/OxidationRate> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Oxidation rate",
+        "oxidation rate of material" ;
+    dcterms:description "the rate at which a material is chemically oxidized under specified conditions." ;
+    rdfs:seeAlso <http://purl.jp/bio/4/id/200906032594012289> ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:OxidationRate .
+

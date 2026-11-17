@@ -1,0 +1,66 @@
+@prefix this: <https://w3id.org/np/RAnyBSXQpv2z950M2WMfgjHLLvGveD-gyU7xkfT5vXHOQ> .
+@prefix sub: <https://w3id.org/np/RAnyBSXQpv2z950M2WMfgjHLLvGveD-gyU7xkfT5vXHOQ#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/CH2_1> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "Density (particle per cm3) of electrons measured in the Solar Wind.";
+    rdfs:label "Electron density in the solar wind";
+    <https://w3id.org/iadopt/ont/hasConstraint> sub:volume;
+    <https://w3id.org/iadopt/ont/hasMatrix> sub:solarWind;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:electron;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:number;
+    <https://w3id.org/iadopt/pattern/usesConstraint> sub:quantitiyType;
+    <https://w3id.org/iadopt/pattern/usesMatrix> sub:medium;
+    <https://w3id.org/iadopt/pattern/usesObjectOfInterest> sub:countableEntity;
+    <https://w3id.org/iadopt/pattern/usesProperty> sub:number .
+  
+  sub:quantitiyType a <https://w3id.org/iadopt/pattern/Constraint>;
+    <https://w3id.org/iadopt/pattern/perUnit> sub:volume .
+  
+  sub:volume a <https://w3id.org/iadopt/ont/Constraint>;
+    <https://w3id.org/iadopt/ont/constrains> sub:number .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0003-2195-3997 .
+}
+
+sub:pubinfo {
+  orcid:0000-0003-2195-3997 foaf:name "Barbara Magagna" .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCFntPrMZqvg2kVhCNArNnEn37ddXGwZ/0r4C8CS4lDry7C7YkYgng9yb0UMZQUHiTVkR/5A4m/xjE+Vy+AnwcWUeB75SfGZjE5ylI6VeHjTHi9+2hh2PHYIWnkhU4WHl3COEnxSSa/VouvPzZ2BIWLH6fTrq7NNL3RF5hGegGG0QIDAQAB";
+    npx:hasSignature "YAB9CmnQos1RuSVhyuae7SwA3XrjZVcINZmKje174ZuYtC5eoFyA6XfgdcysAYR3ikOnq+sXDCm62OhYBQQg1QsbWO2V7f/ZUQoySwal6TV3++pzkt4HILdfB4CHgsLmCWbatu9+yIsy+sqm+g1JjnzMZSUOPX5WstuhY5TaOFM=";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0000-0003-2195-3997 .
+  
+  this: dct:created "2025-04-10T22:33:23.631Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0003-2195-3997;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/CH2_1>;
+    npx:supersedes <https://w3id.org/np/RApuIgpjpSFPlpAwcmhmJSUck8r9hph4GNUZDkXFdh9Y4>;
+    npx:wasCreatedAt <https://nanodash.petapico.org/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAoTD7udB2KtUuOuAe74tJi1t3VzK0DyWS7rYVAq1GRvw>, <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RA1gN_MtWOr3vdDv0vLUuiVo8_3PAoL-43rh2LEu9pTn4> .
+}
+

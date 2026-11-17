@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA2gN54bA0ISR3qJiYYYQNHLz482UeV0P58SVxSDMban0/> .
+
+<https://w3id.org/iadopt/variable/Duration> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Duration" ;
+    dcterms:description "A temporal measurement of the time between two specified points" ;
+    rdfs:seeAlso <http://www.ebi.ac.uk/efo/EFO_0000433> ;
+    iop:hasObjectOfInterest sub:Duration ;
+    iop:hasProperty <http://www.ebi.ac.uk/efo/EFO_0000433> .
+

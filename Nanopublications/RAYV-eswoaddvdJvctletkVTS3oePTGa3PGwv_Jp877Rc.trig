@@ -1,0 +1,50 @@
+@prefix this: <https://w3id.org/np/RAYV-eswoaddvdJvctletkVTS3oePTGa3PGwv_Jp877Rc> .
+@prefix sub: <https://w3id.org/np/RAYV-eswoaddvdJvctletkVTS3oePTGa3PGwv_Jp877Rc#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  sub:Variable10 a <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "Peak acceleration measured on the earth surface when facing seismic events, like earthquakes.";
+    rdfs:label "Peak ground acceleration";
+    <https://w3id.org/iadopt/ont/hasContextObject> <https://terra-vocabulary.org/ncl/FAIR-Incubator/earthfeaturetype/c_07d7a262>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> <https://terra-vocabulary.org/ncl/FAIR-Incubator/earthfeaturetype/c_46fa2569>;
+    <https://w3id.org/iadopt/ont/hasProperty> <https://terra-vocabulary.org/ncl/FAIR-Incubator/earthsciencevariables/c_22a3ecfb> .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0003-4072-0662 .
+}
+
+sub:pubinfo {
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrr9kxvJWjkFKKsApxLVXi5Uhdq7kUiPu2yt6Wibh9TWWklUQCEn6XnSe2XPAhgLeMKhslxGxfyTQD1ZWpOj5aw4umUzOp+7i4gwpUnaDvIsa9GPoW1eTZLl1Q9LMUTwOzSYlESTsSLug8UULvaK5ZhvmRlp3oFcfoMS6WolzkbQIDAQAB";
+    npx:hasSignature "kKPEayUbEjQ5ZkdrsdqDxsqU+H4QvWuqRMxqGUbtHTarkNKl7/t/TxNIpuXu0/DWcwnzA1CFJIMya9kkmkXXEAr23/xNQGPHkIw/sJ7FyBd757V9OzXCx4RdjfWRYxAkjGULiAAr8t+gqF3P6XilUvzu4jwETgNv6w3FQQ3mqFo=";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0000-0003-4072-0662 .
+  
+  this: dct:created "2024-09-20T13:26:09.750Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0003-4072-0662;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces sub:Variable10;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate ns1:RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM,
+      ns1:RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAGUWnXKhfKYwmMoDK-LVXlEnnGdAuzFZKR9FZsXHJsxQ> .
+}
+

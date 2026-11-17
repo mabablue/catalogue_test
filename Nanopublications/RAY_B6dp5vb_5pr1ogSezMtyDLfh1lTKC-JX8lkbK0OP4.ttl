@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAY_B6dp5vb_5pr1ogSezMtyDLfh1lTKC-JX8lkbK0OP4/> .
+
+<https://w3id.org/iadopt/variable/D08> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "The average ratio of the potential energy between core and shell atoms in eV" ;
+    dcterms:description "D8: The average ratio of the potential energy between core and shell nanoparticle atoms in eV" ;
+    iop:hasObjectOfInterest sub:NPCoreShellAtomRatio ;
+    iop:hasProperty sub:D8 .
+

@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAz96HKdgY9tCNrcEIkjU66K6IQeDffE1R9qdnK5dK-ZU/> .
+
+<https://w3id.org/iadopt/variable/SwimmingBehaviourImpairment> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Swimming behaviour impairment",
+        "swimming behaviour impairment in exposed invertebrate organism" ;
+    dcterms:description "the disruption of normal swimming ability due to neurotoxic effects." ;
+    iop:hasObjectOfInterest sub:invertebrateOrganism ;
+    iop:hasProperty sub:SwimmingBehaviourImpairment .
+

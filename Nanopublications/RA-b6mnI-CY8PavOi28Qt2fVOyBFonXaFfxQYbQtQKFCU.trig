@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/np/RA-b6mnI-CY8PavOi28Qt2fVOyBFonXaFfxQYbQtQKFCU> .
+@prefix sub: <https://w3id.org/np/RA-b6mnI-CY8PavOi28Qt2fVOyBFonXaFfxQYbQtQKFCU#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  sub:variable12 a <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "The geographical/spatial distribution of terrestrial EUNIS habitats within contiguous spatial units (grid cells) across the EU over time.";
+    rdfs:label "Probablity of occurence of EUNIS habitat";
+    <https://w3id.org/iadopt/ont/hasContextObject> <http://vocabs.lter-europe.net/elter_cl/10597>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> <http://purl.obolibrary.org/obo/PATO_0000057>;
+    <https://w3id.org/iadopt/ont/hasProperty> <http://vocabs.lter-europe.net/EnvThes/10144> .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0002-6968-8275 .
+}
+
+sub:pubinfo {
+  orcid:0000-0002-6968-8275 foaf:name "Juliana Menger" .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCBQzntCZEN/IvJWax2KJZZspRl0D64U49o14q76ioHJaRRd2dRDRCoDq+CypGFmg5XfiEyxO00sfP+6jEZ02G+2bcsAuB8jYHzmlIncAI5CSnsNppbIUEOArOXqV5K0ojvpbfOpAfTtHmcCzwjkbEKYJ7PZoULU/5vI2L7+zZYDQIDAQAB";
+    npx:hasSignature "XRZq66ImD+SEcEEXrvsORIuqF5O/5uJXk7GHei7vwcvNBMEJmd81CI506Rl8TbkBonLP1ea+gUFqBkERH+f+484DdUIPjWd9XkCt0+rV8KqhCrodKZfwxPPO3+Sc2OWRjUysZJeipPTToSrIWuHYQv0RQP5Q7AUSvtKN0A3JrA4=";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0000-0002-6968-8275 .
+  
+  this: dct:created "2024-10-17T20:11:29.140Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-6968-8275;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces sub:variable12;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate ns1:RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM,
+      ns1:RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAGUWnXKhfKYwmMoDK-LVXlEnnGdAuzFZKR9FZsXHJsxQ> .
+}
+

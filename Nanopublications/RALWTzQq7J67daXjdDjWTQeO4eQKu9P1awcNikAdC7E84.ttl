@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RALWTzQq7J67daXjdDjWTQeO4eQKu9P1awcNikAdC7E84/> .
+
+<https://w3id.org/iadopt/variable/FreezingPoint> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Freezing point",
+        "freezing point of substance" ;
+    dcterms:description "A descriptor that indicates the temperature at which a chemical substance undergoes a state transition from gas or liquid to solid, under standard conditions." ;
+    rdfs:seeAlso <http://semanticscience.org/resource/CHEMINF_000432> ;
+    iop:hasObjectOfInterest sub:substance ;
+    iop:hasProperty sub:FreezingPoint .
+

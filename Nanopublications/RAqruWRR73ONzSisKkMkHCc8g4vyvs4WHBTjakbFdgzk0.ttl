@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAqruWRR73ONzSisKkMkHCc8g4vyvs4WHBTjakbFdgzk0/> .
+
+<https://w3id.org/iadopt/variable/AutoIgnitionTemperature> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Auto-ignition temperature",
+        "auto-ignition temperature of substance" ;
+    dcterms:description "the lowest temperature at which a material will ignite and sustain combustion in the absence of a spark or flame." ;
+    rdfs:seeAlso <https://www.sciencedirect.com/topics/chemistry/autoignition-temperature#:~:text=Autoignition%20temperature%20is%20defined%20as,of%20a%20spark%20or%20flame.&text=How%20useful%20is%20this%20definition?> ;
+    iop:hasObjectOfInterest sub:substance ;
+    iop:hasProperty sub:AutoIgnitionTemperature .
+

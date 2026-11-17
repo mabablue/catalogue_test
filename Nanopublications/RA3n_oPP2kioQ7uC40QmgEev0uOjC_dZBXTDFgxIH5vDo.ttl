@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA3n_oPP2kioQ7uC40QmgEev0uOjC_dZBXTDFgxIH5vDo/> .
+
+<https://w3id.org/iadopt/variable/Anchorage-independentgrowth> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Anchorage-independent growth",
+        "anchorage-independent growth of cells" ;
+    dcterms:description "the ability of cells to proliferate without attachment to a solid surface, indicating cellular transformation." ;
+    rdfs:seeAlso <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C21224> ;
+    iop:hasObjectOfInterest sub:cell ;
+    iop:hasProperty sub:anchorage-independentgrowth .
+

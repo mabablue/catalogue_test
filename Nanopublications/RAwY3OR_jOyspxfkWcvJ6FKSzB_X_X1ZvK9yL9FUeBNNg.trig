@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RAwY3OR_jOyspxfkWcvJ6FKSzB_X_X1ZvK9yL9FUeBNNg> .
+@prefix sub: <https://w3id.org/np/RAwY3OR_jOyspxfkWcvJ6FKSzB_X_X1ZvK9yL9FUeBNNg#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  sub:variable17 a <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "The amount of docosahexaenoic acid relative to dry weight in an individual.";
+    rdfs:label "DHA content/ C22:6 n-3 content", "Docosahexaenoic acid content per dry weight";
+    <https://w3id.org/iadopt/ont/hasContextObject> <http://vocabs.lter-europe.net/EnvThes/26>;
+    <https://w3id.org/iadopt/ont/hasMatrix> <https://agroportal.lirmm.fr/ontologies/INRAETHES/c_15852>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> <http://purl.bioontology.org/ontology/NDFRT/N0000148111>;
+    <https://w3id.org/iadopt/ont/hasProperty> <http://presence-ontology.org/ontology/Content> .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0002-2749-8588 .
+}
+
+sub:pubinfo {
+  orcid:0000-0002-2749-8588 foaf:name "Andrea Tarallo" .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCRZRMbIr0zLFMkUzF5SH/Ja/PamzEk3VY+ccOA55/d8fWhBwzZRnwPoMgJENZeqHDRAayS8oBCWK3P0Ql9SKOwRLIRrioQp0IOBidpDZIedYAMCg/taE4tAtgxvjQBpk+yN8FdkjIgJdOBpdggC5V4oIH77TzuI09dfEv091p7uQIDAQAB";
+    npx:hasSignature "BKg83KSYM9PrBj/ZLEFWZD248n3rzTNNDRAolyelyVAdkh3YPXJnqNnP84kVUPU8gw4hlPs9ksQ5nBF1kBexhVDh+o3JApeDhi4KMGFJ99UN70KEvtdTt8B9mliG/3IRC+au+gPLSwyNT9xEg+TfMXAXC04mmd4ckkpv6ogrXJw=";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0000-0002-2749-8588 .
+  
+  this: dct:created "2024-09-20T13:51:24.839Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-2749-8588;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces sub:variable17;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate ns1:RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM,
+      ns1:RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAGUWnXKhfKYwmMoDK-LVXlEnnGdAuzFZKR9FZsXHJsxQ> .
+}
+

@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAjHCQeBbxJDgjmU1s7MZ3F68CJr3nZKdyHkapq8Xaays/> .
+
+<https://w3id.org/iadopt/variable/sizeTEM> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Size TEM" ;
+    dcterms:description "The size of a nanomaterial as measured by Transmission Electron Microscopy (TEM)" ;
+    rdfs:seeAlso <http://purl.enanomapper.org/onto/ENM_8000295> ;
+    iop:hasObjectOfInterest sub:Size ;
+    iop:hasProperty <http://purl.enanomapper.org/onto/ENM_8000295> .
+

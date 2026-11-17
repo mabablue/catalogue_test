@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAmaG3sRmR4YE_PT91IbboIG1gKsPwl2MBg9xc1tf7nCg/> .
+
+<https://w3id.org/iadopt/variable/Hydrophobicity> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Hydrophobicity",
+        "hydrophobicity of material" ;
+    dcterms:description "The inherent characteristic of a molecule or substance to be immiscible in water." ;
+    rdfs:seeAlso <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C63813> ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:hydrophobicity .
+

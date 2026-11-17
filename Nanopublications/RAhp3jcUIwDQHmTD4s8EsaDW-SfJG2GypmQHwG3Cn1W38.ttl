@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAhp3jcUIwDQHmTD4s8EsaDW-SfJG2GypmQHwG3Cn1W38/> .
+
+<https://w3id.org/iadopt/variable/ThyroidHormones> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Thyroid hormones",
+        "thyroid hormones in blood of exposed animal" ;
+    dcterms:description "Natural hormones secreted by the THYROID GLAND, such as THYROXINE, and their synthetic analogs." ;
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/MESH/D013963> ;
+    iop:hasObjectOfInterest sub:testanimal ;
+    iop:hasProperty sub:thyroidhormonelevel .
+

@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RADe7ZszLaMwaE62TywwivlKfGE6LhApMX4capvaodfyQ/> .
+
+<https://w3id.org/iadopt/variable/Urea/BUN> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Urea/BUN",
+        "urea/BUN concentration in blood" ;
+    dcterms:description "the concentration of urea or blood urea nitrogen in blood, used as an indicator of kidney function and protein metabolism." ;
+    iop:hasObjectOfInterest sub:testanimal ;
+    iop:hasProperty <https://w3id.org/np/RADe7ZszLaMwaE62TywwivlKfGE6LhApMX4capvaodfyQ/urea/bloodUreaNitrogen> .
+

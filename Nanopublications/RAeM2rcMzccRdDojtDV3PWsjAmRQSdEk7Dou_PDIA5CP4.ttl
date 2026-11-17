@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAeM2rcMzccRdDojtDV3PWsjAmRQSdEk7Dou_PDIA5CP4/> .
+
+<https://w3id.org/iadopt/variable/SurfaceTension> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Surface tension",
+        "surface tension of substance" ;
+    dcterms:description "The force acting on the surface of a liquid, tending to minimize the area of the surface." ;
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/MESH/D013500> ;
+    iop:hasObjectOfInterest sub:substance ;
+    iop:hasProperty sub:surfaceTension .
+

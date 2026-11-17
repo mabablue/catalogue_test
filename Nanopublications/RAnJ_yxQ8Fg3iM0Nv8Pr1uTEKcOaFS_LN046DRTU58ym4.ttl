@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAnJ_yxQ8Fg3iM0Nv8Pr1uTEKcOaFS_LN046DRTU58ym4/> .
+
+<https://w3id.org/iadopt/variable/ParticleInternalisation> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Particle internalisation",
+        "particle internalisation in exposed invertebrate organism" ;
+    dcterms:description "the uptake of nanoparticles into organism tissues or cells." ;
+    iop:hasObjectOfInterest sub:invertebrateOrganism ;
+    iop:hasProperty sub:ParticleInternalisation .
+

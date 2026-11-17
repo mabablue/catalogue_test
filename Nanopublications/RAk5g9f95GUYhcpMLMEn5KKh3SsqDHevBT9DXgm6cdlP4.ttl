@@ -1,0 +1,16 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAk5g9f95GUYhcpMLMEn5KKh3SsqDHevBT9DXgm6cdlP4#> .
+
+sub:variable12 a iop:Variable ;
+    rdfs:label "Probablity of occurence of habitat" ;
+    dcterms:description "Part of terrestrial Ecosystem distribution of terrestrial EUNIS Habitats EBV, probability of occurence of EUNIS habitats within contiguous spatial units (grid cells of 100x100 m) across the EU over 1 year time" ;
+    rdfs:seeAlso <https://github.com/EuropaBON/EBV-Descriptions/wiki/Terrestrial-Ecosystem-distribution-of-terrestrial-EUNIS-Habitats> ;
+    iop:hasConstraint <https://agroportal.lirmm.fr/ontologies/ADW/Terrestrial> ;
+    iop:hasObjectOfInterest <http://vocabs.lter-europe.net/EnvThes/21894> ;
+    iop:hasProperty <http://vocabs.lter-europe.net/EnvThes/10144> .
+
+<https://agroportal.lirmm.fr/ontologies/ADW/Terrestrial> a iop:Constraint ;
+    iop:constrains <http://vocabs.lter-europe.net/EnvThes/21894> .
+

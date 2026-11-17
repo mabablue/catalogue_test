@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA7cwLii68YY7EN15sKBAx-xs2CjKSByHYzNeIxFdwa2s/> .
+
+<https://w3id.org/iadopt/variable/pHOfAqueousSolution> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "pH of aqueous solution",
+        "pH of aqueous solution of substance" ;
+    dcterms:description "the negative logarithm of the hydrogen ion activity that represents the acidity or alkalinity of an aqueous solution." ;
+    rdfs:seeAlso <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45997> ;
+    iop:hasObjectOfInterest sub:substance ;
+    iop:hasProperty sub:pH .
+

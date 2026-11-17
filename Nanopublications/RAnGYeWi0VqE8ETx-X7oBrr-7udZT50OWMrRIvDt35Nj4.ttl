@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAnGYeWi0VqE8ETx-X7oBrr-7udZT50OWMrRIvDt35Nj4/> .
+
+<https://w3id.org/iadopt/variable/ConductionBand> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Conduction band",
+        "conduction band of material" ;
+    dcterms:description "the lowest range of vacant electronic states." ;
+    rdfs:seeAlso <http://purl.enanomapper.org/onto/ENM_8000100> ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:ConductionBandEnergy .
+

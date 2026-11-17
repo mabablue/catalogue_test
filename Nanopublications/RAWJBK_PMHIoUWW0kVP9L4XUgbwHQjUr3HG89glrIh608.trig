@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RAWJBK_PMHIoUWW0kVP9L4XUgbwHQjUr3HG89glrIh608> .
+@prefix sub: <https://w3id.org/np/RAWJBK_PMHIoUWW0kVP9L4XUgbwHQjUr3HG89glrIh608/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/Coercivity> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "the magnitude of the reverse magnetic field required to reduce the magnetisation of a previously saturated magnetic material to zero.";
+    rdfs:label "Coercivity", "coercivity of material";
+    rdfs:seeAlso <https://www.sciencedirect.com/topics/engineering/coercivity#:~:text=Coercivity%20is%20defined%20as%20the,)%2C%20when%20magnetization%20is%20zero.&text=How%20useful%20is%20this%20definition?>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:Materials;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:Coercivity .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-01-28T12:27:18.173Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/Coercivity>;
+    npx:supersedes <https://w3id.org/np/RAkh8SmLPEa3Rr-Mn3-EawSeVi_pVJmc1sLxtWBj2mswY>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAoTD7udB2KtUuOuAe74tJi1t3VzK0DyWS7rYVAq1GRvw>, <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "ISrg+P3gcuGLYtneTrtc+K8I8teALlovy+irj687Z+kTSEFL9j4k1QbImEgndgNhQv/pixa3/SONCYue5sBl/Eo5rORPu2nNBt2ADa9OEDckwwYPgD/aeam3CDjljcdI9/TZEHI1lnGXMtbfxkEzZMID19Bt1QKo1Hy/mWFqOTwc4j8/b3IC7LG/r0DwhElwsJPQC9S9+etYnalVox9r05Z8aAxwA8crAe8MNGVpM6UscBYHDIn7hdUafRSlFKjjLzfIdBNUrv9pIMXOHJPA/pURF8ycC1i3ldK4YrOGpQB8+X9zWkHwBMEWPLzuis+QflVEFOaHR99FSdA1q25N+g==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

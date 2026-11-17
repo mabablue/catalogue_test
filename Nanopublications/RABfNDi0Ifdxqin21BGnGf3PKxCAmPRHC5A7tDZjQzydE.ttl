@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RABfNDi0Ifdxqin21BGnGf3PKxCAmPRHC5A7tDZjQzydE/> .
+
+<https://w3id.org/iadopt/variable/HatchingSuccess> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Hatching success",
+        "hatching success in exposed invertebrate organism embryo" ;
+    dcterms:description "the proportion of eggs that successfully hatch into viable offspring." ;
+    rdfs:seeAlso <http://purl.jp/bio/4/id/201106025968943950> ;
+    iop:hasObjectOfInterest sub:invertebrateorganismembryo ;
+    iop:hasProperty sub:HatchingSuccess .
+

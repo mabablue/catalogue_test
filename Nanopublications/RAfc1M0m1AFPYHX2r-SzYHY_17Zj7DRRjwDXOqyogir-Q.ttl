@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAfc1M0m1AFPYHX2r-SzYHY_17Zj7DRRjwDXOqyogir-Q/> .
+
+<https://w3id.org/iadopt/variable/FOBscore> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "FOB score",
+        "FOB score in exposed animal" ;
+    dcterms:description "is a behavioral and neurological assessment score used to detect neurotoxicity." ;
+    iop:hasObjectOfInterest sub:testanimal ;
+    iop:hasProperty sub:FunctionalObservationalBatteryScore .
+

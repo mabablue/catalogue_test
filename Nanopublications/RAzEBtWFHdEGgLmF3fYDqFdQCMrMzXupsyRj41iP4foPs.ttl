@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAzEBtWFHdEGgLmF3fYDqFdQCMrMzXupsyRj41iP4foPs/> .
+
+<https://w3id.org/iadopt/variable/BALtotalCells> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "BAL total cells",
+        "BAL total cells from exposed animal" ;
+    dcterms:description "refer to the count and types of immune cells found in fluid washed from the lungs" ;
+    rdfs:seeAlso <http://www.purl.org/decide/LiveStockHealthOnto/LHO#BAL> ;
+    iop:hasObjectOfInterest sub:testanimal ;
+    iop:hasProperty sub:totalCellCountInBAL .
+

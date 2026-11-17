@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAmuFg5ps367LAK6VPZGKKbXKD3xPVKf_Sj0yZsm34XRc/> .
+
+<https://w3id.org/iadopt/variable/RootLength> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Root length",
+        "root length of plant" ;
+    dcterms:description "A root morphology trait which is the length of a root." ;
+    rdfs:seeAlso <http://purl.obolibrary.org/obo/TO_0000227> ;
+    iop:hasObjectOfInterest sub:Plant ;
+    iop:hasProperty sub:RootLength .
+

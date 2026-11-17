@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAWY4vy78SiCJj5npE25u1quGBRdlGnKJvn393FyXx748/> .
+
+<https://w3id.org/iadopt/variable/CoefficientOfThermalExpansion> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Coefficient of thermal expansion" ;
+    dcterms:description "the fractional change in a material’s dimension per unit change in temperature." ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:CoefficientOfThermalExpansion .
+

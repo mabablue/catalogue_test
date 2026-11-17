@@ -1,0 +1,12 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAIvkTiXu211-ZpHy9GTSzye2vreWZx3P8bKl5KZirJVo#> .
+
+sub:PCB118 a iop:Variable ;
+    rdfs:label "Mass concentration of PCB118 in air (active sampler HiVol, TSP, in ng per m3)" ;
+    dcterms:description "PCB118 in air" ;
+    iop:hasMatrix sub:air ;
+    iop:hasObjectOfInterest sub:PCB118 ;
+    iop:hasProperty sub:concentration .
+

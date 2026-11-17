@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAlMcxWum7DAJzRKI7kFYCfoqh603qWhI2JGT5kvRd2f4/> .
+
+<https://w3id.org/iadopt/variable/MetalloidNo> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Number of metalloid atoms" ;
+    dcterms:description "The amount of atoms from elements with properties between a metal and a non-metal" ;
+    iop:hasObjectOfInterest sub:Metalloid ;
+    iop:hasProperty sub:MetalloidNumber .
+

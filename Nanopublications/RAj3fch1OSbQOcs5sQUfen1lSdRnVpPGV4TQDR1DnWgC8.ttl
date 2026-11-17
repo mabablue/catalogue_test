@@ -1,0 +1,42 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fdof: <https://w3id.org/fdof/ontology#> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAj3fch1OSbQOcs5sQUfen1lSdRnVpPGV4TQDR1DnWgC8/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.obolibrary.org/obo/CHEBI_24866> a iop:Entity ;
+    rdfs:label "salt" .
+
+<http://purl.obolibrary.org/obo/ENVO_01001581> a iop:Entity ;
+    rdfs:label "sea surface layer" .
+
+<http://qudt.org/vocab/quantitykind/MassFraction> a iop:Property ;
+    rdfs:label "mass fraction" .
+
+<http://vocab.nerc.ac.uk/collection/S18/current/S1800021/> a iop:Entity ;
+    rdfs:label "water" .
+
+<https://w3id.org/iadopt/variable/20260618T141103-50> a fdof:FAIRDigitalObject,
+        iop:Variable ;
+    rdfs:label "Salinity of sea surface water" ;
+    dcterms:conformsTo <https://w3id.org/np/RA5MTl9GFH-QuuBHYEA2hOtxOMOV4-jrhtdx5lOy9CAQE> ;
+    dcterms:created "2026-06-18T14:11:19+00:00"^^xsd:dateTime ;
+    dcterms:creator orcid:0009-0006-1978-4302 ;
+    dcterms:identifier <https://w3id.org/iadopt/variable/20260618T141103-50> ;
+    pav:createdWith "LLM-assisted I-ADOPT variable generation" ;
+    rdfs:comment "Salt in water (g/kg) or PSU" ;
+    prov:wasAttributedTo orcid:0009-0006-1978-4302 ;
+    iop:hasMatrix <http://purl.obolibrary.org/obo/ENVO_01001581> ;
+    iop:hasObjectOfInterest sub:_n9f6c79a3818d43f49a57bc871e383044b1 ;
+    iop:hasProperty <http://qudt.org/vocab/quantitykind/MassFraction> .
+
+sub:_n9f6c79a3818d43f49a57bc871e383044b1 a iop:AsymmetricSystem,
+        iop:Entity ;
+    rdfs:label "salt water" ;
+    iop:hasDenominator <http://vocab.nerc.ac.uk/collection/S18/current/S1800021/> ;
+    iop:hasNumerator <http://purl.obolibrary.org/obo/CHEBI_24866> .
+

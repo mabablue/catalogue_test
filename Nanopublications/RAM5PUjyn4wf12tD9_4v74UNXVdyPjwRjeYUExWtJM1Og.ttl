@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAM5PUjyn4wf12tD9_4v74UNXVdyPjwRjeYUExWtJM1Og/> .
+
+<https://w3id.org/iadopt/variable/NF-κBactivation> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "NF-κB activation",
+        "NF-κB activation level in cells" ;
+    dcterms:description "NF-kappaB activation is a subtype of transcription factor activation: A process that changes the activity of the NF-kappaB to be higher." ;
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/HOIP/HOIP_0002782> ;
+    iop:hasObjectOfInterest sub:cell ;
+    iop:hasProperty sub:NF-κBactivation .
+

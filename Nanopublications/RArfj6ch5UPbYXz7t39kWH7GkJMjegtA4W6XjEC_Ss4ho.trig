@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RArfj6ch5UPbYXz7t39kWH7GkJMjegtA4W6XjEC_Ss4ho> .
+@prefix sub: <https://w3id.org/np/RArfj6ch5UPbYXz7t39kWH7GkJMjegtA4W6XjEC_Ss4ho/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/SpermCount/motility> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "the number of sperm cells and their ability to move, used to assess male reproductive function.";
+    rdfs:label "Sperm count/motility", "sperm count/motility in exposed animal";
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/MESH/D013081>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:testanimal;
+    <https://w3id.org/iadopt/ont/hasProperty> <https://w3id.org/np/RArfj6ch5UPbYXz7t39kWH7GkJMjegtA4W6XjEC_Ss4ho/spermcount/motility> .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-02-13T14:05:27.935Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/SpermCount/motility>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "ktuq4YGAyN0xJz7LWIwLOfxQD85mD1WU4/vfBVKyNAVClQtgnzfAC9NATn3PFtJSkSg+tdWmgqzWCjFgpAX86mP2OsV6FkMN1YgIKfdVryFrYZTLMb8Rj8NWzKKpdAurDAPhrhz3oNPFQCplcF4s1Q3muUqss5mV+ccMgpyACXf5RSWer3zNC+Agz/21ZKHetd/zpQwoGsmrWCadjRU9jwaS8pY5cd7kcPWILgvuRBlDcqb4DOxmRXd2KnFnw2/NbsGQx2flMvdIBSlRKYXZ7h6QuwjxwnzA8Y9TGdkBPpaVxlTMn0YJVLkIy37Zo978r7+uPzEwclm8kP7ZD4tZug==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

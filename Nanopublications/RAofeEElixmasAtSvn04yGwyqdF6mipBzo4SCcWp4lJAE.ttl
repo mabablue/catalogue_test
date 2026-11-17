@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAofeEElixmasAtSvn04yGwyqdF6mipBzo4SCcWp4lJAE/> .
+
+<https://w3id.org/iadopt/variable/DataImputation> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Data imputation" ;
+    dcterms:description "Data imputation is a data transformation process whereby missing data is replaced with an estimated value for the missing element. The substituted values are intended to create a data record that does not fail edits. Various methods may be used to produce these substituted values. In this case describing theproperty of solids which is the total surface area of a material per unit of mass, solid or bulk volume, or cross-sectional area" ;
+    iop:hasObjectOfInterest sub:Data ;
+    iop:hasProperty <http://semanticscience.org/resource/CHEMINF_000515> .
+

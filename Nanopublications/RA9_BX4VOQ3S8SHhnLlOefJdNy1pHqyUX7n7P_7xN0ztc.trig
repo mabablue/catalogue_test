@@ -1,0 +1,48 @@
+@prefix this: <https://w3id.org/np/RA9_BX4VOQ3S8SHhnLlOefJdNy1pHqyUX7n7P_7xN0ztc> .
+@prefix sub: <https://w3id.org/np/RA9_BX4VOQ3S8SHhnLlOefJdNy1pHqyUX7n7P_7xN0ztc#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  sub:BETSSACNMs a <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "The specific surface area of carbon-based nanomaterials for antibacterial applications measured by BET in m2Xcm3.";
+    rdfs:label "BET specific surface area of carbon-based nanomaterials for antibacterial applications";
+    rdfs:seeAlso <https://www.sciencedirect.com/topics/engineering/specific-surface-area>;
+    <https://w3id.org/iadopt/ont/hasConstraint> "Antibacterial applications", "Measured by BET";
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> "Carbon-based nanomaterials";
+    <https://w3id.org/iadopt/ont/hasProperty> "Specific surface area" .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0002-1297-3104 .
+}
+
+sub:pubinfo {
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCmuNEj4ElDZJ16VEbGLAt860vRLkkabjqt+pGDygqoGhpc8HLMY+brE+YUb23iDU7Y0ItXlnf7jtd4TL4s2gcSagJ/9Kh5nlrFHDmt3Qah7GxjEvnojLxGzkWHtNCgwsQ8xdvWjMXtnXSxLE5D/T3eXWWj180rTrgy2CSsQC6iEQIDAQAB";
+    npx:hasSignature "HmCBXdesmnsI85ORddEonT1fB/XhTOE2+Hnb1bIMEEXutUBFDxvk0gC7EfqKEYKi1J5r1G0nsuWrLXpE9IRmJcPGFL7rjo/u6F3BxeY2qk4Kv8Q0GfvN+UyYeQuZS8bbk7ZwgetVhhdhoa7dmGbhiXrAxfPkhEzyOA6mS0mzKUs=";
+    npx:hasSignatureTarget this: .
+  
+  this: dct:created "2023-10-17T09:54:40.845Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1297-3104;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces sub:BETSSACNMs;
+    nt:wasCreatedFromProvenanceTemplate <http://purl.org/np/RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM>;
+    nt:wasCreatedFromPubinfoTemplate <http://purl.org/np/RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM>,
+      <http://purl.org/np/RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90>;
+    nt:wasCreatedFromTemplate <http://purl.org/np/RAq8tqgrQdfy52v_mneS8EIMZAKkL2UgyVKVUVwiXMVrU> .
+}
+

@@ -1,0 +1,23 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RARtUwcfRc0V24XhDfDOBtTYMb5mgFGLsuSc211NUgwPw#> .
+
+sub:numbNights3StarHotel a iop:Variable ;
+    rdfs:label "Number of nights in a 3-star hotel near the sea shore",
+        "Number of overnight stays in a 3-star hotel near the sea shore" ;
+    dcterms:description "The number of nights corresponds to the total number of nights spent by guests in an establishment. Two people staying three nights in a hotel count as six nights and six people staying one night only." ;
+    rdfs:seeAlso <https://www.insee.fr/en/metadonnees/definition/c1257#:~:text=10%2F11%2F2020-,Definition,people%20staying%20one%20night%20only.> ;
+    iop:hasConstraint <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48927>,
+        sub:3 ;
+    iop:hasContextObject <http://purl.obolibrary.org/obo/ENVO_00000486> ;
+    iop:hasMatrix <https://taxonomie.cbs.nl/vocab/id/1256> ;
+    iop:hasObjectOfInterest <http://www.icn.ch/icnp#Night> ;
+    iop:hasProperty <http://vocab.nerc.ac.uk/collection/P21/current/MS7073/> .
+
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48927> a iop:Constraint ;
+    iop:constrains <http://purl.obolibrary.org/obo/ENVO_00000486> .
+
+sub:3 a iop:Constraint ;
+    iop:constrains <https://taxonomie.cbs.nl/vocab/id/1256> .
+

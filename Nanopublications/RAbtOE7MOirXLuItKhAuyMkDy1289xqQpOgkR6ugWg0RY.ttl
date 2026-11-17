@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAbtOE7MOirXLuItKhAuyMkDy1289xqQpOgkR6ugWg0RY/> .
+
+<https://w3id.org/iadopt/variable/GSH/GSSGratio> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "GSH/GSSG ratio",
+        "GSH/GSSG ratio in cells" ;
+    dcterms:description "the ratio of reduced glutathione (GSH) to oxidized glutathione (GSSG) in cells, used as an indicator of cellular redox status." ;
+    iop:hasObjectOfInterest sub:cell ;
+    iop:hasProperty <https://w3id.org/np/RAbtOE7MOirXLuItKhAuyMkDy1289xqQpOgkR6ugWg0RY/GSH/GSSGratio> .
+

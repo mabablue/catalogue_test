@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAZlYOJbrjEH4JzGI5dDe3ko6dAP_aw7z9WTds8qkL-ng/> .
+
+<https://w3id.org/iadopt/variable/AgglomerationState> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Agglomeration state",
+        "agglomeration state of material" ;
+    dcterms:description "the extent to which particles are clustered together into agglomerates." ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:AgglomerationState .
+

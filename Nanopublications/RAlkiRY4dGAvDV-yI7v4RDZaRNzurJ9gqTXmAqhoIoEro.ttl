@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAlkiRY4dGAvDV-yI7v4RDZaRNzurJ9gqTXmAqhoIoEro/> .
+
+<https://w3id.org/iadopt/variable/SimulationDegradationSoil/Sediment> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Simulation degradation soil/sediment",
+        "degradation rate of substance in soil/sediment" ;
+    dcterms:description "the experimental assessment of the degradation or transformation of a substance under controlled laboratory conditions that mimic natural soil or sediment environments." ;
+    iop:hasObjectOfInterest sub:substance ;
+    iop:hasProperty sub:DegradationRate .
+

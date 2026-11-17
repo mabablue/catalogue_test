@@ -1,0 +1,11 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAAPRYbUUjEWGV1KKqAfjkfdHffVv0IjgWEY6OkI_-bxc/> .
+
+<https://w3id.org/iadopt/variable/SizeDistributionSEM> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Nanomaterial size distribution measured with SEM" ;
+    iop:hasObjectOfInterest sub:Nanomaterial ;
+    iop:hasProperty sub:SizeDistribution .
+

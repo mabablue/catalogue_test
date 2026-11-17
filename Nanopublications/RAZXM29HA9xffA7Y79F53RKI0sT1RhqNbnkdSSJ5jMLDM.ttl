@@ -1,0 +1,12 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAZXM29HA9xffA7Y79F53RKI0sT1RhqNbnkdSSJ5jMLDM/> .
+
+<https://w3id.org/iadopt/variable/AgNPCitrateUVBPretreated> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Citrate-coated Silver nanoparticle pretreated with  Ultraviolet B Radiation",
+        "Citric acid-coated Silver nanoparticle pretreated with  Ultraviolet B Radiation" ;
+    iop:hasObjectOfInterest sub:AgNP ;
+    iop:hasProperty sub:AgNPCitrateUVBPretreated .
+

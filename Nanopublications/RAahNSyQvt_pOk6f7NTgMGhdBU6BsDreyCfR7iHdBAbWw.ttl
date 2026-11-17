@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAahNSyQvt_pOk6f7NTgMGhdBU6BsDreyCfR7iHdBAbWw/> .
+
+<https://w3id.org/iadopt/variable/ZeaMays> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Zea mays" ;
+    dcterms:description "Zea species that are thought to be ancestors and probable progenitors to corn. A plant species of the family POACEAE. It is a tall grass grown for its EDIBLE GRAIN, corn, used as food and animal FODDER." ;
+    iop:hasObjectOfInterest sub:Plants ;
+    iop:hasProperty <http://purl.bioontology.org/ontology/MESH/D003313> .
+

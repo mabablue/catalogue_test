@@ -1,0 +1,47 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fdof: <https://w3id.org/fdof/ontology#> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA82u_b09iJ40hQpyNHR1atuLegViMFfbrUcQA2oGqPJ4/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.obolibrary.org/obo/ENVO_01001581> a iop:Entity ;
+    rdfs:label "sea surface layer" .
+
+<http://qudt.org/vocab/quantitykind/MassConcentration> a iop:Property ;
+    rdfs:label "mass concentration" .
+
+<http://vocab.nerc.ac.uk/collection/S18/current/S1800021/> a iop:Entity ;
+    rdfs:label "water" .
+
+<https://w3id.org/iadopt/variable/20260618T141421-30> a fdof:FAIRDigitalObject,
+        iop:Variable ;
+    rdfs:label "Dissolved oxygen in sea water" ;
+    dcterms:conformsTo <https://w3id.org/np/RA5MTl9GFH-QuuBHYEA2hOtxOMOV4-jrhtdx5lOy9CAQE> ;
+    dcterms:created "2026-06-18T14:14:21+00:00"^^xsd:dateTime ;
+    dcterms:creator orcid:0009-0006-1978-4302 ;
+    dcterms:identifier <https://w3id.org/iadopt/variable/20260618T141421-30> ;
+    pav:createdWith "LLM-assisted I-ADOPT variable generation" ;
+    rdfs:comment "Dissolved oxygen concentration in the water column in mg.m-3" ;
+    prov:wasAttributedTo orcid:0009-0006-1978-4302 ;
+    iop:hasConstraint sub:_n71e890abcf0b4c7ea66519c7f3a9b1d0b2 ;
+    iop:hasMatrix <http://purl.obolibrary.org/obo/ENVO_01001581> ;
+    iop:hasObjectOfInterest sub:_n71e890abcf0b4c7ea66519c7f3a9b1d0b1 ;
+    iop:hasProperty <http://qudt.org/vocab/quantitykind/MassConcentration> .
+
+sub:_n71e890abcf0b4c7ea66519c7f3a9b1d0b1 a iop:AsymmetricSystem,
+        iop:Entity ;
+    rdfs:label "oxygen water" ;
+    iop:hasDenominator <http://vocab.nerc.ac.uk/collection/S18/current/S1800021/> ;
+    iop:hasNumerator <http://vocab.nerc.ac.uk/collection/S27/current/CS002779/> .
+
+sub:_n71e890abcf0b4c7ea66519c7f3a9b1d0b2 a iop:Constraint ;
+    rdfs:label "state: dissolved" ;
+    iop:constrains <http://vocab.nerc.ac.uk/collection/S27/current/CS002779/> .
+
+<http://vocab.nerc.ac.uk/collection/S27/current/CS002779/> a iop:Entity ;
+    rdfs:label "oxygen" .
+

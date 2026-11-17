@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAR94FfMuPA6HE6sbwwvmSburBscUGb_fxHpMVDgO4D30/> .
+
+<https://w3id.org/iadopt/variable/CYPinduction> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "CYP induction",
+        "CYP induction level in cells" ;
+    dcterms:description "the increased expression or activity of cytochrome P450 enzymes in response to exposure to a substance." ;
+    iop:hasObjectOfInterest sub:cell ;
+    iop:hasProperty sub:CYPinduction .
+

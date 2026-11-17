@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAHhXSesfc1olopiu4xfZsN1_iUtcSzYdUQxeuCWdOtcw/> .
+
+<https://w3id.org/iadopt/variable/AUC> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "AUC",
+        "area under curve (AUC) of test substance" ;
+    dcterms:description "It is the area under the drug concentration-time curve (AUC) following a single dose or at steady state, and is expressed as weight*time/volume." ;
+    rdfs:seeAlso <http://www.bioassayontology.org/bao#BAO_0002120> ;
+    iop:hasObjectOfInterest sub:testanimal ;
+    iop:hasProperty sub:areaundercurve .
+

@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAOd-oKN-YtRR6KH3mDBR3bEwKmsGu6wgNI2uNcJqfR9o/> .
+
+<https://w3id.org/iadopt/variable/LungFunctionParameters> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Lung function parameters",
+        "lung function parameters in exposed animal" ;
+    dcterms:description "measurements of respiratory mechanics and airflow used to assess pulmonary function and respiratory health." ;
+    iop:hasObjectOfInterest sub:testanimal ;
+    iop:hasProperty sub:lungfunction .
+

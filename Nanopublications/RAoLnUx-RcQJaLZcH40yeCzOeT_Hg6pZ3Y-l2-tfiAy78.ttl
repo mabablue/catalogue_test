@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAoLnUx-RcQJaLZcH40yeCzOeT_Hg6pZ3Y-l2-tfiAy78/> .
+
+<https://w3id.org/iadopt/variable/SurfaceCoatingDensity> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Surface coating density",
+        "surface coating density of material" ;
+    dcterms:description "the amount of coating material per unit surface area of a coated surface." ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:SurfaceCoatingDensity .
+

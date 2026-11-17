@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAfKuyvZ-rD4-9pHqdDwZrXCqMlul3dePUBlSUWukhWOU/> .
+
+<https://w3id.org/iadopt/variable/Creatinine> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Creatinine",
+        "creatinine concentration in blood" ;
+    dcterms:description "A waste product produced by dietary protein digestion and breakdown product of creatine phosphate in muscle." ;
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/MESH/D003404> ;
+    iop:hasObjectOfInterest sub:testanimal ;
+    iop:hasProperty sub:creatinineLevel .
+

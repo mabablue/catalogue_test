@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA6elfvHGFf5LiLSYm7yFIh5Ow-BtsHpLShcdh5uH-tvo/> .
+
+<https://w3id.org/iadopt/variable/LightIntensity> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Light intensity" ;
+    dcterms:description "The degree or magnitude of strength or energy of a physical parameter referring to electromagnetic radiation that is visible to the human eye. Light intensity and wavelength can significantly affect biological processes such as photosynthesis" ;
+    iop:hasObjectOfInterest sub:Light ;
+    iop:hasProperty <http://purl.bioontology.org/ontology/SNOMEDCT/450501000124104> .
+

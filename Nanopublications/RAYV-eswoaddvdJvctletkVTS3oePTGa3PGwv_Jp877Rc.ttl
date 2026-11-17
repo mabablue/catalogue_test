@@ -1,0 +1,12 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAYV-eswoaddvdJvctletkVTS3oePTGa3PGwv_Jp877Rc#> .
+
+sub:Variable10 a iop:Variable ;
+    rdfs:label "Peak ground acceleration" ;
+    dcterms:description "Peak acceleration measured on the earth surface when facing seismic events, like earthquakes." ;
+    iop:hasContextObject <https://terra-vocabulary.org/ncl/FAIR-Incubator/earthfeaturetype/c_07d7a262> ;
+    iop:hasObjectOfInterest <https://terra-vocabulary.org/ncl/FAIR-Incubator/earthfeaturetype/c_46fa2569> ;
+    iop:hasProperty <https://terra-vocabulary.org/ncl/FAIR-Incubator/earthsciencevariables/c_22a3ecfb> .
+

@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RAx82-a8c8t0CwsYKW_o0bgrtHKAPBiWt93KdOiDUQYfw> .
+@prefix sub: <https://w3id.org/np/RAx82-a8c8t0CwsYKW_o0bgrtHKAPBiWt93KdOiDUQYfw/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/PhaseComposition> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "the qualitative and/or quantitative description of the distinct physical or crystallographic phases present in a material and their relative proportions.";
+    rdfs:label "Phase composition", "phase composition of material";
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:Materials;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:PhaseComposition .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-01-27T10:22:12.344Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/PhaseComposition>;
+    npx:supersedes <https://w3id.org/np/RAuVLJGOonHsERhp8iprJoBrSWSyKM_M52rBz5Hd8qPgE>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAoTD7udB2KtUuOuAe74tJi1t3VzK0DyWS7rYVAq1GRvw>, <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "wOwSD87piFY6WpgE5yVwbB26KPkrgrFtlCP0xpVOkWWwX+WqZ6Ze9bvjprRYYJYBZtr7oyMU9S8eCO5KVVYXKbnZ9Zdy6H5rcx2dvyUJudjZwTrmD13If1IyYn/ty3cBljvdDNt4buEm+oVAc6bjHZCLprs845ITZEr1oRkHkCrj6KwS43Dy+/er42GMLLs/yIzaMN/GbdwBNhIrFwyefhVrAtJuZRDf2SVwT5qXWaigvPyob6r6DLH5NM08GGaIrDbBC4erfUK5IPhpmYKKIO6Nm873lysdiJWzvNp+kQB1mQA28Rm2PP8fDjsbWDFVXN+ivVn0faAstvEOrMb2wg==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

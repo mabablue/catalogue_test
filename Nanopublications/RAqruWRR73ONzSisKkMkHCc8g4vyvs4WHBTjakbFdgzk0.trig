@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RAqruWRR73ONzSisKkMkHCc8g4vyvs4WHBTjakbFdgzk0> .
+@prefix sub: <https://w3id.org/np/RAqruWRR73ONzSisKkMkHCc8g4vyvs4WHBTjakbFdgzk0/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/AutoIgnitionTemperature> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "the lowest temperature at which a material will ignite and sustain combustion in the absence of a spark or flame.";
+    rdfs:label "Auto-ignition temperature", "auto-ignition temperature of substance";
+    rdfs:seeAlso <https://www.sciencedirect.com/topics/chemistry/autoignition-temperature#:~:text=Autoignition%20temperature%20is%20defined%20as,of%20a%20spark%20or%20flame.&text=How%20useful%20is%20this%20definition?>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:substance;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:AutoIgnitionTemperature .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-01-26T09:50:13.376Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/AutoIgnitionTemperature>;
+    npx:supersedes <https://w3id.org/np/RAKmAzguYbT2hPNhiXeTuuhw8cQpk7Sj35ovS-c9a5_AI>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAoTD7udB2KtUuOuAe74tJi1t3VzK0DyWS7rYVAq1GRvw>, <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "FVim7ILL3JtqJpBmmY5SKgfPPNMYxnM4gGtmUwhJVdCyTC1KOuLADi6zeP2ySrD4KmCodKevYm06gFt75rewQId+5B+mH4S7xtnlHoPhV58H11ihTIGBGx4urYBW0lRFGr+7vRCSsCv6rrzHDfSpLuedSwLEb90qK4mHREg+wCmvcZ1W+gJZWPPXLwlAPehnNJo1HK37AYVcCdj9ue0h3ovRd6F9++nvxTbGlhAT8lgmrdYvaj4C4nG2plKTF4gse7DipvTOcxtMDMDgnRl6pX3zuUIhhiP/4Ckchy2SXjrACZrBPhrCAjX+B984nUBS/GpQZwpcdZC6QIQ/+s7NcA==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

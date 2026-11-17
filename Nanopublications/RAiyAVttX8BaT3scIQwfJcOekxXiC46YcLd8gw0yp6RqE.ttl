@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAiyAVttX8BaT3scIQwfJcOekxXiC46YcLd8gw0yp6RqE/> .
+
+<https://w3id.org/iadopt/variable/DataSourceScore> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Data source score" ;
+    dcterms:description "A number or range of numeric values measuring performance, function, quality, or ability describing where something is available or from where it originates" ;
+    iop:hasObjectOfInterest sub:DataSource ;
+    iop:hasProperty sub:Score .
+

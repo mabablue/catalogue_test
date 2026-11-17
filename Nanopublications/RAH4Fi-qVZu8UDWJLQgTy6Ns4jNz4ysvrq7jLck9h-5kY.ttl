@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAH4Fi-qVZu8UDWJLQgTy6Ns4jNz4ysvrq7jLck9h-5kY/> .
+
+<https://w3id.org/iadopt/variable/ThermalConductivity> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Thermal conductivity",
+        "thermal conductivity of substance" ;
+    dcterms:description "The heat flow across a surface per unit area per unit time, divided by the negative of the rate of change of temperature with distance in a direction perpendicular to the surface." ;
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/MESH/D013814> ;
+    iop:hasObjectOfInterest sub:substance ;
+    iop:hasProperty sub:ThermalConductivity .
+

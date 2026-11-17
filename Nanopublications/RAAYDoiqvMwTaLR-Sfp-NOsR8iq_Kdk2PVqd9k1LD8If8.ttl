@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAAYDoiqvMwTaLR-Sfp-NOsR8iq_Kdk2PVqd9k1LD8If8/> .
+
+<https://w3id.org/iadopt/variable/AvenaSativa> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Avena sativa" ;
+    dcterms:description "The whole plant of the vascular plant Avena sativa (cultivated common oat)." ;
+    iop:hasObjectOfInterest sub:Plants ;
+    iop:hasProperty <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C73963> .
+

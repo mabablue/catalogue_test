@@ -1,0 +1,52 @@
+@prefix this: <https://w3id.org/np/RAjgPD5K7vZcjmS6LALvJQm934AZ7v75EcrZCAGePUVwE> .
+@prefix sub: <https://w3id.org/np/RAjgPD5K7vZcjmS6LALvJQm934AZ7v75EcrZCAGePUVwE#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <http://vocab.nerc.ac.uk/collection/P07/current/QJR38PP6/> a <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "Identification of height-range above valley floor influenced by boundary layer air/free troposphere.",
+      "atmosphere_layer_thickness_expressed_as_geopotential_height_difference is the difference of geopotential height between two atmospheric levels. \"Layer\" means any layer with upper and lower boundaries that have constant values in some vertical coordinate. There must be a vertical coordinate variable indicating the extent of the layer(s). If the layers are model layers, the vertical coordinate can be \"model_level_number\", but it is recommended to specify a physical coordinate (in a scalar or auxiliary coordinate variable) as well. \"Thickness\" means the vertical extent of a layer. Geopotential is the sum of the specific gravitational potential energy relative to the geoid and the specific centripetal potential energy. Geopotential height is the geopotential divided by the standard acceleration due to gravity. It is numerically similar to the altitude (or geometric height) and not to the quantity with standard name \"height\", which is relative to the surface.";
+    rdfs:label "Atmospheric boundary layer Heights", "atmosphere_layer_thickness_expressed_as_geopotential_height_difference";
+    <https://w3id.org/iadopt/ont/hasContextObject> sub:Vertical_coordinate;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> <http://vocabs.lter-europe.net/EnvThes/21543>;
+    <https://w3id.org/iadopt/ont/hasProperty> <http://vocab.nerc.ac.uk/collection/W05/current/CHAR0003/> .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0006-1978-4302 .
+}
+
+sub:pubinfo {
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCzomMxjWIy/fdlslejdi6wHjN7jRj5GA9K6UMKA2kDZRFoaWj/CjeOk7J8UjGyb24FR28LOowjDGrLKi89KHiNKOrmqKrlgCjFoza0Gyj/tLZ3/Ar80o/sGDyP/q6MQFGolt+p6mOd88qYkmB5AT0R7iYuVExkIxS9YpAHCd8rCwIDAQAB";
+    npx:hasSignature "BkZN8SN8tJIbMfj3ND43BFYGTuF2QAuT64UDs0tpZFdRP5uy8PtYQEI/L50OVyGNf8T87VWULVcXlbTmVLSk19/qvrn8ime6dKlCLwtdBIhb1G9XRZwBfD0OYougqcaeV/m5i2AKHTeNvWUUrAWzsCRhGLCjfLv2YhdF5972D7M=";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0006-1978-4302 .
+  
+  this: dct:created "2024-10-16T09:29:41.060Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0006-1978-4302;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <http://vocab.nerc.ac.uk/collection/P07/current/QJR38PP6/>;
+    npx:supersedes <https://w3id.org/np/RAbh2Ij_iX5fy7wJuRlfkNgvd2BaDtv2wyMhERyNcCJQk>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate ns1:RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM,
+      ns1:RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90, ns1:RAjpBMlw3owYhJUBo3DtsuDlXsNAJ8cnGeWAutDVjuAuI;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAGUWnXKhfKYwmMoDK-LVXlEnnGdAuzFZKR9FZsXHJsxQ> .
+}
+

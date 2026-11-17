@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RA-gaT-yRBfKZXe_wKasPWx0gVGyzS6WywO-xzZKskjRU> .
+@prefix sub: <https://w3id.org/np/RA-gaT-yRBfKZXe_wKasPWx0gVGyzS6WywO-xzZKskjRU/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/SoilTextureClass> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "the grouping of soils based on the relative proportions of sand, silt, and clay particles.";
+    rdfs:label "Soil texture class", "soil texture class of growing medium";
+    rdfs:seeAlso <http://purl.obolibrary.org/obo/ENVO_06105271>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:soil;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:SoilTextureClass .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-01-29T08:55:52.091Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/SoilTextureClass>;
+    npx:supersedes <https://w3id.org/np/RAevrfdCsMb55a8_vii7yyy0pf6DtFnE5er49wrRMASMo>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAoTD7udB2KtUuOuAe74tJi1t3VzK0DyWS7rYVAq1GRvw>, <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "stOb5rphrbfUOKWjm6W0l18XzPQLH1qWFXC3WCyd2elAyFPJAHxt3/8w+B3xPjpO+zHnmADulcpZGMIAeQ858XJ9aMSVVXHYZKYr/cK3jT0n71Iyd4rjavsT5qixhWt2I8tT+mNlsc12HmgkynC/iw9NtKvWb56DE8uUvrLFyDh2DouWtgboyNbC3tLaBCO03X5Txh90ITXzA8V13WOdjdJIGNjR4nJFEuM2wSE8vykG6SY/z7emuyQ2QXxte5wFrbXt6/IePD8OIUDhELgz0uWmQ9VHGb41eGGihiI4CjIx/wCk5/N30aNw+tgdQ3r9AKCMpEQGfBo6eDC4NZZCGw==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

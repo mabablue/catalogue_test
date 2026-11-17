@@ -1,0 +1,11 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAGvZN3qOFOHa_R04ejMw7YGjAQLZ6S0bA2JDVDtqPtS8#> .
+
+sub:variable4 a iop:Variable ;
+    rdfs:label "Atmospheric boundary layer heights" ;
+    dcterms:description "Identification of height-range above valley floor influenced by boundary layer air/free troposphere." ;
+    iop:hasObjectOfInterest <http://vocabs.lter-europe.net/EnvThes/21543> ;
+    iop:hasProperty <http://purl.obolibrary.org/obo/HAO_0002455> .
+

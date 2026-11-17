@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAAEwjt5G35LOMVCSmdDFFeE2cnnLyrkdoIgSrq2qhO2c/> .
+
+<https://w3id.org/iadopt/variable/ShapeCategory> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Shape category",
+        "shape category of material" ;
+    dcterms:description "the classification of a particle’s morphology into a defined geometric category." ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:Shape .
+

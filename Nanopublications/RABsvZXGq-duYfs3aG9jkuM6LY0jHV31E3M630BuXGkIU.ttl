@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RABsvZXGq-duYfs3aG9jkuM6LY0jHV31E3M630BuXGkIU/> .
+
+<https://w3id.org/iadopt/variable/NutrientRecipe> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Nutrient recipe",
+        "nutrient recipe of hydroponic solution" ;
+    dcterms:description "a defined composition of dissolved mineral nutrients used to support plant growth in hydroponic systems." ;
+    iop:hasObjectOfInterest sub:solution ;
+    iop:hasProperty sub:NutrientComposition .
+

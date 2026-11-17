@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAcHl28gU-RCceoAwFiaj_aVXTWfI5HZ9Z2FmP8yP97NU/> .
+
+<https://w3id.org/iadopt/variable/FloweringTime> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Flowering time",
+        "flowering time of plant" ;
+    dcterms:description "A plant phenological trait which is a quality of the timing of anthesis." ;
+    rdfs:seeAlso <http://purl.obolibrary.org/obo/TO_0002616> ;
+    iop:hasObjectOfInterest sub:Plant ;
+    iop:hasProperty sub:FloweringTime .
+

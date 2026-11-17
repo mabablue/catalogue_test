@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA9YGP_KSRTS-8jjWPQ2D768NHHogpeVXffWOc8l4EGNc/> .
+
+<https://w3id.org/iadopt/variable/D07> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "The average difference of the potential energy between core and shell atoms in eV" ;
+    dcterms:description "D7: The average difference of the potential energy between the nanoparticle core and shell atoms in eV" ;
+    iop:hasObjectOfInterest sub:NPCoreShellEnergyDifference ;
+    iop:hasProperty sub:D7 .
+

@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAQbDzNGpa8W4e-Tx74bq2aMkOoHe9Y7ZFSBjkSu2QmPQ/> .
+
+<https://w3id.org/iadopt/variable/Fe3O4NP> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Fe3O4-NP",
+        "Iron (II, III) oxide nanoparticle" ;
+    dcterms:description "An inorganic nanoparticle consisting of iron (II, III) oxide." ;
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/npo#NPO_729> ;
+    iop:hasObjectOfInterest sub:Fe3O4 ;
+    iop:hasProperty <http://purl.bioontology.org/ontology/npo#NPO_729> .
+

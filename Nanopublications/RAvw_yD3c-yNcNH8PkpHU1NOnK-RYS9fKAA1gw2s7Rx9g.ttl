@@ -1,0 +1,12 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAvw_yD3c-yNcNH8PkpHU1NOnK-RYS9fKAA1gw2s7Rx9g/> .
+
+<https://w3id.org/iadopt/variable/CrystalPhase> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Crystal phase",
+        "Crystalline phase" ;
+    iop:hasObjectOfInterest sub:Material ;
+    iop:hasProperty <http://purl.enanomapper.org/onto/ENM_0000083> .
+

@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RASoY-7wIs4w1_Sa-Omka-PT1IJ8oH2nDd0VhVPocYZL8/> .
+
+<https://w3id.org/iadopt/variable/GrossPathologyFindings> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Gross pathology findings",
+        "gross pathology findings in exposed animal" ;
+    dcterms:description "The outcome of a gross, or macroscopic, pathologic examination." ;
+    rdfs:seeAlso <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C125008> ;
+    iop:hasObjectOfInterest sub:testanimal ;
+    iop:hasProperty sub:grossPathologicalFindings .
+

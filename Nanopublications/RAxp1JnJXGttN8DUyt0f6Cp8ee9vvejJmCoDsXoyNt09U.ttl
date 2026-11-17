@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAxp1JnJXGttN8DUyt0f6Cp8ee9vvejJmCoDsXoyNt09U/> .
+
+<https://w3id.org/iadopt/variable/TimeSeries> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Time series" ;
+    dcterms:description "A series of data points indexed in time order, most commonly, at successive equally spaced points in time" ;
+    iop:hasObjectOfInterest sub:Experiment ;
+    iop:hasProperty <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C181915> .
+

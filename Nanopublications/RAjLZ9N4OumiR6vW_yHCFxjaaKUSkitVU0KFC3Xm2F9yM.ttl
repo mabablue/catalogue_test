@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAjLZ9N4OumiR6vW_yHCFxjaaKUSkitVU0KFC3Xm2F9yM/> .
+
+<https://w3id.org/iadopt/variable/MeltingPoint> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Melting point" ;
+    dcterms:description "Determining the temperature at which a crystalline solid changes state from solid to liquid." ;
+    iop:hasObjectOfInterest sub:Chemicals ;
+    iop:hasProperty <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C63394> .
+

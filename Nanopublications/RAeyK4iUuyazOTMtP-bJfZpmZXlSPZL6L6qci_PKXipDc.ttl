@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAeyK4iUuyazOTMtP-bJfZpmZXlSPZL6L6qci_PKXipDc/> .
+
+<https://w3id.org/iadopt/variable/ReportedConformanceStandards> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Reported Conformance Standards" ;
+    dcterms:description "The standards or specifications that the software reports/claims it conforms to (typically as a list of named standards and versions), as stated in documentation, metadata, or a conformance statement" ;
+    iop:hasObjectOfInterest sub:software ;
+    iop:hasProperty sub:reportedconformancestandards .
+

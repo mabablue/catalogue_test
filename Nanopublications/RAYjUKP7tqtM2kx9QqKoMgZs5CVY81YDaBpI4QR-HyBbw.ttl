@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAYjUKP7tqtM2kx9QqKoMgZs5CVY81YDaBpI4QR-HyBbw/> .
+
+<https://w3id.org/iadopt/variable/NonMetalElectrons> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Quantity of active non-metal electrons" ;
+    dcterms:description "How many fundamental particles with a negative charge there are, that are attributable materials that are exerting influence or producing an effect and are electronegative chemical elements that are not characterised by ductility, malleability, luster, and conductance of heat and electricity   of atoms of an element that exhibits properties that are between those of metals and nonmetals, or that has a mixture of them. The term generally includes boron, silicon, germanium, arsenic, antimony, and tellurium, while carbon, aluminium, selenium, polonium, and astatine are less commonly included" ;
+    iop:hasObjectOfInterest sub:NonMetal ;
+    iop:hasProperty sub:Electrons .
+

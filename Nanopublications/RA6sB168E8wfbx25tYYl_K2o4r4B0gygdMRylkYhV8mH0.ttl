@@ -1,0 +1,16 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA6sB168E8wfbx25tYYl_K2o4r4B0gygdMRylkYhV8mH0#> .
+
+sub:IAdoptChallenge24 a iop:Variable ;
+    rdfs:label "dose of applied nanomaterial internalised by a specific cell population (or per single cell) - particle number / cell area" ;
+    dcterms:description "Correlation of dose and response for nanomaterials toxicity assessment requires information on the amount of the applied dose of nanomaterial that has been internalised by a cell population (or per specific cell) and is dependent on a number of factors including the exposure time, the particle density (i.e., whether settling occurs and thus the distribution of particles in the medium is non-homogeneous affecting the local concentration at the cell surface) etc." ;
+    iop:hasConstraint sub:particle ;
+    iop:hasMatrix <https://bioportal.bioontology.org/ontologies/STY/classes/T025> ;
+    iop:hasObjectOfInterest <https://w3id.org/chemrof/Nanomaterial> ;
+    iop:hasProperty <https://www.eionet.europa.eu/gemet/en/concept/2308> .
+
+sub:particle a iop:Constraint ;
+    iop:constrains <https://www.eionet.europa.eu/gemet/en/concept/2308> .
+

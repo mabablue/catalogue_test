@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAEvI7lKayegSLfl1L02T4jdU7ZNrf6RFC0Syb_AqquHI/> .
+
+<https://w3id.org/iadopt/variable/TensileStrength> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Tensile strength",
+        "tensile strength of material" ;
+    dcterms:description "The maximum stress a material subjected to a stretching load can withstand without tearing." ;
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/MESH/D013718> ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:TensileStrength .
+

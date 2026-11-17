@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/np/RAPAfzdoDRLiVNrHzK_qkqzSo4vDSYLBGIwEJ4gli2lUc> .
+@prefix sub: <https://w3id.org/np/RAPAfzdoDRLiVNrHzK_qkqzSo4vDSYLBGIwEJ4gli2lUc/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/miRNAexpression> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "the level of microRNA molecules present in a cell or tissue, reflecting post-transcriptional regulation of gene expression.";
+    rdfs:label "miRNA expression profile in cells", "miRNA expression";
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:cell;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:miRNAexpression .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-02-12T15:28:43.636Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/miRNAexpression>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "BbqlxzU/jUkzKYj6aWpZQIZG9JQZRcdAZnEWgbMnsuLefMU90UK9zju6Cit88YZg6Gpw+YqBMNqMmvxyt9KAyx+OugesviDGsfEZ6QnWx1G1cdZKaRyZvdT/ClVL9QpO+5AjmAqCfTODzOV1VcjneE6O57ePyddydRDjBK50KYVfQyURlxtig1p6TVe1CdVqRnV7kyWYb1chokwnxHIxsqmHUCwWYWZFNhbqhjS3ZpoVb2l5DPNs4S0C98ITHFNmvZqEQcjGBAhQVzDwI+enkRa1x1HJjIJDoAAX/5DDFcJu/RbTToq8Zu6qb6jnOxAWVHm/4+bGMZ53cwcV9R8Cng==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

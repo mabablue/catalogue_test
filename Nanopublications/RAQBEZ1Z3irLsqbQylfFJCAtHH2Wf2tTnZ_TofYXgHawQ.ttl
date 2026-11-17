@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAQBEZ1Z3irLsqbQylfFJCAtHH2Wf2tTnZ_TofYXgHawQ/> .
+
+<https://w3id.org/iadopt/variable/ConcentrationOrganicChemicals> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Concentration of organic simple chemicals" ;
+    dcterms:description "A quality inhering in a substance by virtue of the amount of the bearer's there is mixed with another substance,belonging to the class of compounds not having a carbon basis that are simple, non-repetitive chemical entities.pertaining to simple, non-repetitive chemical entity constituted of molecules that contain atoms of the element carbon, usually combined with itself and with atoms of one or more other element such as hydrogen, oxygen, nitrogen, sulfur, phosphorus, chlorine, or fluorine. Excludes carbides, carbonates and carbon oxides" ;
+    iop:hasObjectOfInterest sub:OrganicChemicals ;
+    iop:hasProperty sub:Concentration .
+

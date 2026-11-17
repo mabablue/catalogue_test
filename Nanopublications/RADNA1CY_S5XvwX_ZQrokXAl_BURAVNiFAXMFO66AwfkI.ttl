@@ -1,0 +1,53 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fdof: <https://w3id.org/fdof/ontology#> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sub: <https://w3id.org/np/RADNA1CY_S5XvwX_ZQrokXAl_BURAVNiFAXMFO66AwfkI/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://vocab.nerc.ac.uk/collection/P21/current/MS7472/> a iop:Entity ;
+    rdfs:label "ostrea edulis" .
+
+<http://vocab.nerc.ac.uk/collection/S27/current/CS003625/> a iop:Entity ;
+    rdfs:label "endosulfane sulfate" .
+
+<https://qudt.org/vocab/quantitykind/MassFraction> a iop:Property ;
+    rdfs:label "mass fraction" .
+
+<https://w3id.org/iadopt/variable/20260801T105612-14> a fdof:FAIRDigitalObject,
+        iop:Variable ;
+    rdfs:label "Concentration of endosulfane sulfate in wet flesh of ostrea edulis" ;
+    dcterms:conformsTo <https://w3id.org/np/RA5MTl9GFH-QuuBHYEA2hOtxOMOV4-jrhtdx5lOy9CAQE> ;
+    dcterms:created "2026-08-01T10:56:12+00:00"^^xsd:dateTime ;
+    dcterms:creator orcid:0000-0003-2195-3997 ;
+    dcterms:identifier <https://w3id.org/iadopt/variable/20260801T105612-14> ;
+    pav:createdWith "LLM-assisted I-ADOPT variable generation" ;
+    rdfs:comment "Mass fraction of endosulfane sulfate in wet flesh of ostrea edulis, measured in μg/kg." ;
+    skos:altLabel "Concentration of endosulfane sulfate in wet flesh of ostrea edulis" ;
+    skos:definition "Mass fraction of endosulfane sulfate in wet flesh of ostrea edulis, measured in μg/kg." ;
+    skos:prefLabel "Concentration of endosulfane sulfate in wet flesh of ostrea edulis" ;
+    prov:wasAttributedTo orcid:0000-0003-2195-3997 ;
+    iop:hasConstraint sub:_nd7f14cee2426412ab42a9c48740bee50b2 ;
+    iop:hasMatrix <http://vocab.nerc.ac.uk/collection/P21/current/MS7472/> ;
+    iop:hasObjectOfInterest sub:_nd7f14cee2426412ab42a9c48740bee50b1 ;
+    iop:hasProperty <https://qudt.org/vocab/quantitykind/MassFraction> .
+
+sub:_nd7f14cee2426412ab42a9c48740bee50b1 a iop:AsymmetricSystem,
+        iop:Entity ;
+    iop:hasDenominator <http://vocab.nerc.ac.uk/collection/S12/current/S1214/> ;
+    iop:hasNumerator <http://vocab.nerc.ac.uk/collection/S27/current/CS003625/> .
+
+sub:_nd7f14cee2426412ab42a9c48740bee50b2 a <http://purl.obolibrary.org/obo/PATO_000182>,
+        iop:Constraint ;
+    rdfs:label "state: wet" ;
+    iop:constrains <http://vocab.nerc.ac.uk/collection/S12/current/S1214/> .
+
+<http://vocab.nerc.ac.uk/collection/S12/current/S1214/> a iop:Entity ;
+    rdfs:label "flesh" .
+
+orcid:0000-0003-2195-3997 rdfs:label "Barbara Magagna" .
+

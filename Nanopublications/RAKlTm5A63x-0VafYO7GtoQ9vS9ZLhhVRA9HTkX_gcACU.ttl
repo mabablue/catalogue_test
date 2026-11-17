@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAKlTm5A63x-0VafYO7GtoQ9vS9ZLhhVRA9HTkX_gcACU/> .
+
+<https://w3id.org/iadopt/variable/VapourDensity> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Vapour density",
+        "vapour density of substance" ;
+    dcterms:description "A descriptor of the density of a vapour in relation in that of hydrogen, defined as the mass of a certain volume of the given substance divided by the mass of the same volume of hydrogen." ;
+    rdfs:seeAlso <http://semanticscience.org/resource/CHEMINF_000440> ;
+    iop:hasObjectOfInterest sub:substance ;
+    iop:hasProperty sub:VapourDensity .
+

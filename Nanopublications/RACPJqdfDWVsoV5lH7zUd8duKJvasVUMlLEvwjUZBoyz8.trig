@@ -1,0 +1,56 @@
+@prefix this: <https://w3id.org/np/RACPJqdfDWVsoV5lH7zUd8duKJvasVUMlLEvwjUZBoyz8> .
+@prefix sub: <https://w3id.org/np/RACPJqdfDWVsoV5lH7zUd8duKJvasVUMlLEvwjUZBoyz8#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <http://vocabs.lter-europe.net/EnvThes/30336> a <https://w3id.org/iadopt/ont/Constraint>;
+    <https://w3id.org/iadopt/ont/constrains> <http://vocabs.lter-europe.net/EnvThes/21529> .
+  
+  sub:variable2 a <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "Temperature of the air in a height of 1.7 meter, daily maximum";
+    rdfs:label "Air daily maximum temperature";
+    <https://w3id.org/iadopt/ont/hasConstraint> <http://vocabs.lter-europe.net/EnvThes/30336>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> <http://vocabs.lter-europe.net/EnvThes/23>;
+    <https://w3id.org/iadopt/ont/hasProperty> <http://vocabs.lter-europe.net/EnvThes/21529> .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0002-2749-8588 .
+}
+
+sub:pubinfo {
+  orcid:0000-0002-2749-8588 foaf:name "Andrea Tarallo" .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCRZRMbIr0zLFMkUzF5SH/Ja/PamzEk3VY+ccOA55/d8fWhBwzZRnwPoMgJENZeqHDRAayS8oBCWK3P0Ql9SKOwRLIRrioQp0IOBidpDZIedYAMCg/taE4tAtgxvjQBpk+yN8FdkjIgJdOBpdggC5V4oIH77TzuI09dfEv091p7uQIDAQAB";
+    npx:hasSignature "HbqzSSTpd/qh+C5IkycrqZQUQxyDG7gTts6bv06T5jfzg25C+zf8/BNMBquXCEu5bFhAtVK5UTvRRQaxIxAacoEXEphCNFUyeMYLoXF93iEreyFPJU4FLI1hl34MB46cTHgJshTw2jBC2mPDNcT1tV5igg7OCoKWMjYNcQd/VHc=";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0000-0002-2749-8588 .
+  
+  this: dct:created "2024-09-19T09:33:37.260Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-2749-8588;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces sub:variable2;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate ns1:RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM,
+      ns1:RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAGUWnXKhfKYwmMoDK-LVXlEnnGdAuzFZKR9FZsXHJsxQ> .
+}
+

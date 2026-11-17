@@ -1,0 +1,12 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://w3id.org/iadopt/variable/ReferenceStartTimePoint> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Reference start time point" ;
+    dcterms:description "The description or date and/or time of a time point that acts as a fixed reference for characterizing the start of an observation" ;
+    iop:hasObjectOfInterest <https://w3id.org/np/RAxp1JnJXGttN8DUyt0f6Cp8ee9vvejJmCoDsXoyNt09U> ;
+    iop:hasProperty <http://purl.obolibrary.org/obo/NCIT_C82575> .
+

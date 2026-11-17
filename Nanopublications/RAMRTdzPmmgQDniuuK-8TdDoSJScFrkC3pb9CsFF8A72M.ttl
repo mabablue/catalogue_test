@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAMRTdzPmmgQDniuuK-8TdDoSJScFrkC3pb9CsFF8A72M/> .
+
+<https://w3id.org/iadopt/variable/LeafLitterDecompositionRate> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Leaf litter decomposition rate",
+        "leaf litter decomposition rate in exposed invertebrate organism" ;
+    dcterms:description "the breakdown of organic material." ;
+    rdfs:seeAlso <http://vocabs.lter-europe.net/EnvThes/msa0594> ;
+    iop:hasObjectOfInterest sub:invertebrateOrganism ;
+    iop:hasProperty sub:LeafLitterDecompositionRate .
+

@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAv1aX2nfIsDy1hdk-TqfctfajoVJXAt6ZcYbX5fZP8Ko/> .
+
+<https://w3id.org/iadopt/variable/PlantPart> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Part of plant",
+        "Plant part" ;
+    dcterms:description "Anatomical part of a plant, such as fruit, seed, pod, leaf, stem or flower as well as the whole plant" ;
+    rdfs:seeAlso <http://purl.obolibrary.org/obo/FOODON_03420174> ;
+    iop:hasObjectOfInterest sub:Plant ;
+    iop:hasProperty <http://purl.obolibrary.org/obo/FOODON_03420174> .
+

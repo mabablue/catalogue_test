@@ -1,0 +1,12 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://w3id.org/iadopt/variable/SkinSensitisation> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Skin sensitisation" ;
+    dcterms:description "Skin sensitization is induced sensitivity to an agent that in time leads to an allergic response to that agent" ;
+    iop:hasObjectOfInterest <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12470> ;
+    iop:hasProperty <http://purl.enanomapper.org/onto/ENM_0000034> .
+

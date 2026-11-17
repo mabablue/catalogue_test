@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RASmDmg9c3tnTyTEw-6ZzUva-6A4SPn7rdCbXhejIY8m8/> .
+
+<https://w3id.org/iadopt/variable/ExoskeletonAdsorption> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Exoskeleton adsorption",
+        "exoskeleton adsorption in exposed invertebrate organism exoskeleton" ;
+    dcterms:description "the binding of particles to external surfaces." ;
+    iop:hasObjectOfInterest sub:invertebrateOrganismExoskeleton ;
+    iop:hasProperty sub:ExoskeletonAdsorption .
+

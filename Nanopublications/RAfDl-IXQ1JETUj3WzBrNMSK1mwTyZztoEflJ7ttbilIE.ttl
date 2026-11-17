@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAfDl-IXQ1JETUj3WzBrNMSK1mwTyZztoEflJ7ttbilIE/> .
+
+<https://w3id.org/iadopt/variable/Phosphate> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Phosphate (PO4)" ;
+    dcterms:description "Salts and esters of phosphoric and oligophosphoric acids and their chalcogen analogues. In inorganic chemistry, the term is also used to describe anionic coordination entities with phosphorus as central atom" ;
+    iop:hasObjectOfInterest sub:Phosphorous ;
+    iop:hasProperty <http://purl.obolibrary.org/obo/CHEBI_26020> .
+

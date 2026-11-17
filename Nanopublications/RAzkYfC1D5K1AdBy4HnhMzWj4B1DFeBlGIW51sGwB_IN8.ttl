@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAzkYfC1D5K1AdBy4HnhMzWj4B1DFeBlGIW51sGwB_IN8/> .
+
+<https://w3id.org/iadopt/variable/ALT> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "ALT",
+        "ALT activity in blood" ;
+    dcterms:description "A family of pyridoxal phosphate-dependent enzymes involved in cellular nitrogen metabolism, amino acid metabolism, and liver gluconeogenesis." ;
+    rdfs:seeAlso <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25293> ;
+    iop:hasObjectOfInterest sub:testanimal ;
+    iop:hasProperty sub:alanineAminotransferase .
+

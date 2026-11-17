@@ -1,0 +1,47 @@
+@prefix this: <https://w3id.org/np/RArFtC1WM8ICYKmdI9Yez25E7POrCBQhVb6GbzjtJtcsM> .
+@prefix sub: <https://w3id.org/np/RArFtC1WM8ICYKmdI9Yez25E7POrCBQhVb6GbzjtJtcsM#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  sub:Ex3.Gr5 a <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "The dose range (low-high, mg/mL) over which a chemical affects cell differentiation of neuroblastoma cells";
+    rdfs:label "Dose range where chemical affects differentiation of neuroblastoma cells";
+    <https://w3id.org/iadopt/ont/hasConstraint> <https://w3id.org/np/RArFtC1WM8ICYKmdI9Yez25E7POrCBQhVb6GbzjtJtcsM#unit_mg/mL>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:differentiated_neuroblastoma_cells;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:concentration_range .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0003-4250-4584 .
+}
+
+sub:pubinfo {
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDGCP/y01r6MpeqNCZzw6EyZDrkQpxpQl8iPaXtlH7ZEUuh0a7pGQFFC5wJdNifPAJzqobvV6LvVkFYfmFcE66IdFSBkAAyt1vTGNbenUjk4ylzN7JmwH2hVG/0f9vaGJ/S3Ms8loQ4cvCr+/W8B8b2GZb69GJ1ky4AbzWGBpvwmQIDAQAB";
+    npx:hasSignature "AIXtrdtVrvd9pa1CfJHoeGM6ceFKAbuGkdfgJL2YLx31pU40TbVIAcWGkYWeIW6NjREmyNt2I0frDBEVsQgo0mnorM+NvprrKgA1+/Z3hy9w97WBEOPekoGrTZ8ig5OoJeSUvuUnDUZDUryZTDZ09x6hEG3U9NKVM0SGcnRdbM0=";
+    npx:hasSignatureTarget this: .
+  
+  this: dct:created "2023-10-17T10:07:22.245Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0003-4250-4584;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces sub:Ex3.Gr5;
+    nt:wasCreatedFromProvenanceTemplate <http://purl.org/np/RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM>;
+    nt:wasCreatedFromPubinfoTemplate <http://purl.org/np/RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM>,
+      <http://purl.org/np/RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90>;
+    nt:wasCreatedFromTemplate <http://purl.org/np/RAq8tqgrQdfy52v_mneS8EIMZAKkL2UgyVKVUVwiXMVrU> .
+}
+

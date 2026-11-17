@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA7ys-NrCCtVwfkwBXgdMZHC9JwPthOArQgizAiSfPViM/> .
+
+<https://w3id.org/iadopt/variable/SurfaceMarkers> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Surface markers",
+        "surface marker expression in cells" ;
+    dcterms:description "molecules expressed on the cell membrane that are used to identify cell type, activation state, or functional status." ;
+    rdfs:seeAlso <https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/cell-surface-marker> ;
+    iop:hasObjectOfInterest sub:cell ;
+    iop:hasProperty sub:surfaceMarkerExpression .
+

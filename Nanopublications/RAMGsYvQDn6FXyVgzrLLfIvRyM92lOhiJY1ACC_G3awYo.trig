@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RAMGsYvQDn6FXyVgzrLLfIvRyM92lOhiJY1ACC_G3awYo> .
+@prefix sub: <https://w3id.org/np/RAMGsYvQDn6FXyVgzrLLfIvRyM92lOhiJY1ACC_G3awYo/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/GlutathioneS-transferaseActivity> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "the enzymatic detoxification of harmful compounds, protecting neural tissues.";
+    rdfs:label "Glutathione S-transferase (GST) activity", "glutathione s-transferase activity in exposed invertebrate organism";
+    rdfs:seeAlso <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16641>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:invertebrateOrganism;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:GlutathioneSTransferaseGstActivity .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-02-20T14:50:27.174Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/GlutathioneS-transferaseActivity>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "u5mR0hvcMR0txHV0PGpY5jXLUp/mALa6KftvB9WXUgh+cjkIM9J0+qFbZPOAayIJVj0VvCngFDeQQz//+DciAP+8/vr8D3pElVUbFXdsZ5l/BdjxwWk2aL54oB4NUpjdOw2W2/jWvooZq7FbGuPOhH2SrZUyc1h62dahVlML1rk4VX6IPn2BtjoXuEPoljKJixXholuAMxssuoZYWLSK8MFA3lus03Q0SdDIaGqU5d+pmIRzd3UAv1lIvyZPN3g+Cg0zdK/u7SYzY8db32PrqWdW7KfUr2oNJy4Yj3U/ZIRaiWx9JRYgCj2K953wC/yQqC8dOO8/ggXwQZJKbTwA9w==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

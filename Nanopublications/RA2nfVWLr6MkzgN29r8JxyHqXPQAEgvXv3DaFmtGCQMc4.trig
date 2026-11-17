@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/np/RA2nfVWLr6MkzgN29r8JxyHqXPQAEgvXv3DaFmtGCQMc4> .
+@prefix sub: <https://w3id.org/np/RA2nfVWLr6MkzgN29r8JxyHqXPQAEgvXv3DaFmtGCQMc4/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/Time-to-death> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "Time-to-death is the duration required for 50% of exposed organisms to die after exposure, reflecting the speed and severity of toxic effects";
+    rdfs:label "Time-to-death (LT50)", "time-to-death in exposed invertebrate organism";
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:invertebrateOrganism;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:TimeToDeathLt50 .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-02-20T14:34:36.159Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/Time-to-death>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "I3PoV3oOFPVZifN4eLUziNkXNXBH6TLnWT4Nw70dYrPtHus697IzERpTBymJ0xL4RGo0owHUt4cZHcen6BN4koIB/P3cH5GdrK/XyHbKD+aTSr13Q7Y4BUnsYLOdccikbXQMMc8rRYKbNXoS+ds85Q7MXW8p6eXet+SKrTwUVwds91QU9yEpRBsBYXnpexPSyHvYSQlD2yHTn84IgwPrPp9JHnm74o9SwhpfmU2T4FG4gO0NiMwh4vX/+kTg4BJgfrqNW3sWSrYQUzQ5EkBvEfSwM5q3MlcQ+2/itTyxgIXUp9E+5OW2Z0iHlJ6hw3Ivujsqd80v8aRyct0B7jGGvQ==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

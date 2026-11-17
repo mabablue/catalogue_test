@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAFj1n3xt5m9-H9EqYiqVzBBCV8p_Bm72Op8MoQM1Gsz8/> .
+
+<https://w3id.org/iadopt/variable/AnalyticalVerificationOfExposure> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Analytical verification of exposure",
+        "analytical verification of exposure" ;
+    dcterms:description "the measurement of the actual concentration of a substance in the exposure medium to confirm intended dosing levels." ;
+    iop:hasObjectOfInterest sub:exposure ;
+    iop:hasProperty sub:ExposureVerification .
+

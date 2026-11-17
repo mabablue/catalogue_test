@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAO-r7bw7ZTABiZLOhNCIoDzywTrj5tUFQVqx3hp4PKpk/> .
+
+<https://w3id.org/iadopt/variable/StomatalConductance> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Stomatal conductance (gs)",
+        "stomatal conductance of plant" ;
+    dcterms:description "It is a numerical measure of the maximum rate of passage of either water vapour or carbon dioxide through the stomata." ;
+    rdfs:seeAlso <http://purl.obolibrary.org/obo/TO_0000522> ;
+    iop:hasObjectOfInterest sub:Plant ;
+    iop:hasProperty sub:StomatalConductance .
+

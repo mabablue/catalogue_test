@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAeE7YFEN-9e9wGocKHNl8J4TEdqhI6LQHLPhHDdBBP40/> .
+
+<https://w3id.org/iadopt/variable/pHofLeachate> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "pH of leachate",
+        "pH of leachate from material" ;
+    dcterms:description "the acidity or alkalinity of a solution obtained from leaching a material." ;
+    rdfs:seeAlso <http://purl.org/obo/owl/UO#UO_0000196> ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:pH .
+

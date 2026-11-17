@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA7JajBmFwZAPNKEUr2fkrSCWF2PWEM6cIQeiwV8OP99w/> .
+
+<https://w3id.org/iadopt/variable/DifferentialGeneExpression> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Differential gene expression",
+        "differential gene expression in cells" ;
+    dcterms:description "the change in gene expression levels between exposed and control conditions." ;
+    rdfs:seeAlso <http://purl.jp/bio/4/id/201106025966394878> ;
+    iop:hasObjectOfInterest sub:cell ;
+    iop:hasProperty sub:differentialGeneExpression .
+

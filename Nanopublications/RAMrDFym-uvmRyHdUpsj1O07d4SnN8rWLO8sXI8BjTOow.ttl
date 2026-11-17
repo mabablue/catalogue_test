@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAMrDFym-uvmRyHdUpsj1O07d4SnN8rWLO8sXI8BjTOow/> .
+
+<https://w3id.org/iadopt/variable/ConcentrationMacromolecules> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Concentration of macromolecules" ;
+    dcterms:description "A quality inhering in a substance by virtue of the amount of the bearer's there is mixed with another substance pertaining to molecules of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass" ;
+    iop:hasObjectOfInterest sub:Macromolecules ;
+    iop:hasProperty sub:Concentration .
+

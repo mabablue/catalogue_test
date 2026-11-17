@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RASn_6tQzS1po79rUtLNEtFt4gMwns7iN7n562mU_skkI> .
+@prefix sub: <https://w3id.org/np/RASn_6tQzS1po79rUtLNEtFt4gMwns7iN7n562mU_skkI/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/Colour> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "the appearance of something as a result of the way in which it reflects light.";
+    rdfs:label "Colour", "colour of substance";
+    rdfs:seeAlso <http://www.co-ode.org/ontologies/galen#Colour>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:substance;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:colour .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-01-26T09:13:57.923Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/Colour>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    prov:wasDerivedFrom <https://w3id.org/np/RAeGxRjVKxTxMiA9aha-SwX7ZAE7Mv6VVf7xc5t-MKjt0>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RARW4MsFkHuwjycNElvEVtuMjpf4yWDL10-0C5l2MqqRQ>, <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "QT9no+iuq2IyB5ngLOfQE/uj3H1YLSywh3xIv9FTd1mMTJrAv9MyxiiFIqt5xMOrzryfNBpdZpXR9XUOP55JswHNO/b0GqqRpPP7UlRCLvWiBCs8Yx+kZYxec8XJbVxvJPYUgqc8/cWlw9rBnqDIfGsVmDfrsxIKHIqrpmd0Go/oPZw8zyZsYvuGUC7dbfnm+Cnv5TwxopxkR9PeLSc94BoWyseNeXgmnU65mp+MyDcFT1jKIF34Zks4KvdgV/RTG9SXbIzY4uIXEREy5Q+g1wiXxTm2QuknxvpAdyxrTs+MDy7NAAVRT1SjWlLM4K3poH06jD5uOaq3fAxwmE7H1g==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

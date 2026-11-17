@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA9LKYpkzuRb06keJj_7HlcWGt6o29wZitrNG7wGcO16I/> .
+
+<https://w3id.org/iadopt/variable/NMConcentrationMatrix> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Nanomaterial concentration in matrix" ;
+    dcterms:description "The quantity of a chemical substance which has atleast one external dimension or internal structure or surface structure in the nanoscale size range, per unit volume or weight, contained within the components of a sample that are not measured by an experiment." ;
+    iop:hasObjectOfInterest sub:Nanomaterial ;
+    iop:hasProperty sub:Concentration .
+

@@ -1,0 +1,10 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAtztVo53BpeGcPJjXxjW1zmGGORlproEZnMpnYAeQA08#> .
+
+sub:A_1 a iop:Variable ;
+    rdfs:label "electron density of solar wind electron" ;
+    iop:hasMatrix sub:solar_wind ;
+    iop:hasObjectOfInterest sub:electron ;
+    iop:hasProperty sub:number_density .
+

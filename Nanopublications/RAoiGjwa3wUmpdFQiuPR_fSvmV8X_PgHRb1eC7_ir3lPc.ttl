@@ -1,0 +1,16 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAoiGjwa3wUmpdFQiuPR_fSvmV8X_PgHRb1eC7_ir3lPc#> .
+
+sub:IAdoptChallenge2 a iop:Variable ;
+    rdfs:label "Air daily maximum temperature" ;
+    dcterms:description "Temperature of the air in a height of 1.7 meter, daily maximum" ;
+    iop:hasConstraint <https://w3id.org/ozcar-theia/c_bfb7c832> ;
+    iop:hasMatrix <https://vocab.nerc.ac.uk/collection/S26/current/MAT00843/> ;
+    iop:hasObjectOfInterest <https://w3id.org/ozcar-theia/c_d57d0742> ;
+    iop:hasProperty <http://vocab.nerc.ac.uk/collection/S06/current/S0600082/> .
+
+<https://w3id.org/ozcar-theia/c_bfb7c832> a iop:Constraint ;
+    iop:constrains <http://vocab.nerc.ac.uk/collection/S06/current/S0600082/> .
+

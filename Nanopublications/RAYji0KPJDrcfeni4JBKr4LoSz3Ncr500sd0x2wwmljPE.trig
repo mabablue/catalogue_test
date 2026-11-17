@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RAYji0KPJDrcfeni4JBKr4LoSz3Ncr500sd0x2wwmljPE> .
+@prefix sub: <https://w3id.org/np/RAYji0KPJDrcfeni4JBKr4LoSz3Ncr500sd0x2wwmljPE/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/Structuralisomerism> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "The phenomenon whereby certain chemical compounds have structures that are different although the compounds possess the same elemental composition.";
+    rdfs:label "Structural isomerism";
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:Chemicals;
+    <https://w3id.org/iadopt/ont/hasProperty> <http://purl.bioontology.org/ontology/MESH/D007536> .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-01-08T13:15:21.639Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/Structuralisomerism>;
+    npx:supersedes <https://w3id.org/np/RABP2TAObiVGYlz98VJP1k9eeZgG8VUY6952NpMfNJs0U>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAoTD7udB2KtUuOuAe74tJi1t3VzK0DyWS7rYVAq1GRvw>, <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "SWUeE1lbg3Tfmu1v0G/Bvq+iS8tVA52FepLBevUZWC5Istt92QuMOF6IsL35KmyNRmORLbYA8Ds5YnYJq1s589cNjxRuNx3Ng4ie0DecKAK9Jhf67HlKPppzrxUwPcCQdjK+dXBFbCM3Yz5fOYC6ABWteAPS6n7QUgY6FXlIj4hFW8XMHHgNpuAOmIEOfKth7R5+A46LBsbCLdb+Uwd2zfasG+I7QUZq90POVvYVY+Rd8M0pIt7nvyGvb6wlp4xbIpIEZsvsotL9Pr/+5FkiU9orFo8FOTZ6TdmuW9rHuUyf+qUqKWARCAU2Ik9WhNcnmOUuPx7OXcUzM4IAxSiubg==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

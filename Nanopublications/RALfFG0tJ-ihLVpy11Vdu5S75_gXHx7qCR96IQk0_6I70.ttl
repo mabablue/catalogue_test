@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RALfFG0tJ-ihLVpy11Vdu5S75_gXHx7qCR96IQk0_6I70/> .
+
+<https://w3id.org/iadopt/variable/SymmetryOperations> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Symmetry operations" ;
+    dcterms:description "Symmetry operations are transformations that leave the unit cell (and therefore the entire crystal) unchanged. These operations help understanding the crystal's symmetry and structure" ;
+    iop:hasObjectOfInterest sub:UnitCell ;
+    iop:hasProperty sub:SymmetryOperations .
+

@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RAyGsZZob9f0vnXmxli3eZcRicUdfzWdhkOrkGPvucTqU> .
+@prefix sub: <https://w3id.org/np/RAyGsZZob9f0vnXmxli3eZcRicUdfzWdhkOrkGPvucTqU/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/Apoptosis> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "a regulated form of programmed cell death characterized by specific morphological and biochemical changes.";
+    rdfs:label "Apoptosis", "apoptosis level in cells";
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/MESH/D017209>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:cell;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:ApoptosisLevel .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-02-11T15:45:47.107Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/Apoptosis>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "vQovF1yh1/+p7PvM2XbMlfu6DM3pCFPnbWMUStxg5npk797lfjXx7ggQMMFTATF4ObgAv3wF1RLxleSu7E4TyEPrJfGqGJ8gIwHa9RthvF1TMr9DY/Nn72qhtuonlanOC2drv+B+ATfyfyNrFn49r+nLznXWLTm6zlcebND46ADF4+uwhR19lVdYfCfRU2M7/lylYtd761ohkk1Q3yEqB840JBmmIEwpla7vohQGGUiNuY8pjdUrPtyhdw/MQdwRW4sj1WpkoYgKkP0cKh6k0vZ2Ix90jyV/18Ra6a384/B8l6C9duBlyh0WQi8EPqu5T5Uu6G1P06uLYfPWvIhCGg==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RAYTYyKqNDt4CtW3GQvvrlLJf2i92q_NuL1wBvb9ysO5M> .
+@prefix sub: <https://w3id.org/np/RAYTYyKqNDt4CtW3GQvvrlLJf2i92q_NuL1wBvb9ysO5M#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  sub:rateCarbonIngestion a <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "The amount of carbon consumed by an organism at non-limiting concentration of food relative to the individual dry weight measured at 15°C. It is expressed as μg C mg DW−1 h−1";
+    rdfs:label "The amount of carbon consumed by an organism relative to the individual dry weight measured at 15°C",
+      "Weight specific-ingestion Carbon rate at 15 °C";
+    rdfs:seeAlso <https://pmc.ncbi.nlm.nih.gov/articles/PMC4483658/>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> <http://vocab.nerc.ac.uk/collection/P21/current/MS1763/>;
+    <https://w3id.org/iadopt/ont/hasProperty> <http://vocab.nerc.ac.uk/collection/P21/current/MS5224/> .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0002-3462-0967 .
+}
+
+sub:pubinfo {
+  orcid:0000-0002-3462-0967 foaf:name "Fred van de Brug" .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC0SjQ1p76p5tFSMAJGpGEHLe9aSzOR1k9uUSo6YwSvnHiJJf4fdmWxoyrKL4MNQ9J1Lh7cfRWcubKQ1aSjnAK2z23+vPzg17VNpe14kaeffCJlZBqa0w917JwfIsOEhtBwPerfXxPCCcUOXKa7UEkoA4SCTswLWZXx4EOuifdjLQIDAQAB";
+    npx:hasSignature "jxTQlKsA1+9M0D/5EHAcFH9ZbPgFtdI5zdkG2dtWSohcwGLhpu+cqRFh3+//FpWsSor0+lFsOM37x9NotCDtqQeGHhwu+ACxsTm+aqEoq7gWaIGpfqF9125BzomBPwwKgYjZPAVCcaFQy6gjSPDq5Nb47NwBL6tCGaY8InrllpI=";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0000-0002-3462-0967 .
+  
+  this: dct:created "2024-10-18T11:44:34.115Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-3462-0967;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces sub:rateCarbonIngestion;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate ns1:RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM,
+      ns1:RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAGUWnXKhfKYwmMoDK-LVXlEnnGdAuzFZKR9FZsXHJsxQ> .
+}
+

@@ -1,0 +1,11 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAoaQrJrtcoTLJzgZ6ubUeq54Tw6CyXj66BVF08kYv_Y8/> .
+
+<https://w3id.org/iadopt/variable/CrystalliteSizeBibliographic> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Crystallite size (bibliographic, i.e., from libraries)" ;
+    iop:hasObjectOfInterest sub:Crystallite ;
+    iop:hasProperty sub:Size .
+

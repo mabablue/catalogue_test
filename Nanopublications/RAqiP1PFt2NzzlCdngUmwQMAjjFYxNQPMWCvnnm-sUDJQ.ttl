@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAqiP1PFt2NzzlCdngUmwQMAjjFYxNQPMWCvnnm-sUDJQ/> .
+
+<https://w3id.org/iadopt/variable/TrueDensity> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "True density" ;
+    dcterms:description "the ratio of the mass of the dry material of a porous body to its true volume, expressed in grams per cubic centimetre or in kilograms per cubic metre." ;
+    rdfs:seeAlso <https://www.iso.org/obp/ui/es/#iso:std:iso:5017:dis:ed-4:v1:en:sec:3.12> ;
+    iop:hasObjectOfInterest sub:Chemicals ;
+    iop:hasProperty sub:TrueDensity .
+

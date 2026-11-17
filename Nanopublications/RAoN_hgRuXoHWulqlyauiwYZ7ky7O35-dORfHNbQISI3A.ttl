@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAoN_hgRuXoHWulqlyauiwYZ7ky7O35-dORfHNbQISI3A/> .
+
+<https://w3id.org/iadopt/variable/NeuriteOutgrowth> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Neurite outgrowth",
+        "neurite outgrowth in neuronal cells" ;
+    dcterms:description "the process by which neurites, the cytoplasmic extensions of neurons, elongate and project toward their appropriate targets to form connections in the nervous system." ;
+    rdfs:seeAlso <http://www.bioassayontology.org/bao#BAO_0080007> ;
+    iop:hasObjectOfInterest sub:neuronalCell ;
+    iop:hasProperty sub:neuriteOutgrowth .
+

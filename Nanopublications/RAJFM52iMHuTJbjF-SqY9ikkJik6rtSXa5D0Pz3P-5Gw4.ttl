@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAJFM52iMHuTJbjF-SqY9ikkJik6rtSXa5D0Pz3P-5Gw4/> .
+
+<https://w3id.org/iadopt/variable/ShootTissue> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Leaf tissue",
+        "shoot/leaf tissue of plant" ;
+    dcterms:description "The above-ground portion of a plant including stems, leaves, and reproductive organs that conducts photosynthesis and reproduction. This structural component controls light capture, gas exchange, resource acquisition, and represents the primary interface between plants and the atmospheric environment." ;
+    rdfs:seeAlso <https://w3id.org/bervo/BERVO_8000161> ;
+    iop:hasObjectOfInterest sub:Plant ;
+    iop:hasProperty sub:TissueType .
+

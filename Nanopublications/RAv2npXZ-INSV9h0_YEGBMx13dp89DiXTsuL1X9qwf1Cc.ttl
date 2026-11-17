@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAv2npXZ-INSV9h0_YEGBMx13dp89DiXTsuL1X9qwf1Cc/> .
+
+<https://w3id.org/iadopt/variable/HemocyteCount> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Hemocyte count",
+        "hemocyte count in exposed invertebrate organism" ;
+    dcterms:description "the number of immune cells present in circulatory fluid." ;
+    rdfs:seeAlso <http://purl.obolibrary.org/obo/BTO_0000571> ;
+    iop:hasObjectOfInterest sub:invertebrateOrganism ;
+    iop:hasProperty sub:HemocyteCount .
+

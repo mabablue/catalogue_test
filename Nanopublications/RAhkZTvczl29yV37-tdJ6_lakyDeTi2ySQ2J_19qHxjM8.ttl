@@ -1,0 +1,18 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAhkZTvczl29yV37-tdJ6_lakyDeTi2ySQ2J_19qHxjM8#> .
+
+sub:Variable30 a iop:Variable ;
+    rdfs:label "Date of PCR-test",
+        "Date of last PCR-test" ;
+    dcterms:description "date of last COVID-19 PCR test performed by a certified laboratory" ;
+    rdfs:seeAlso <http://purl.org/zonmw/covid19/10267> ;
+    iop:hasConstraint <https://w3id.org/italia/onto/ACCO/AccommodationStarRating> ;
+    iop:hasContextObject <https://w3id.org/italia/onto/ACCO/AccommodationStarRating> ;
+    iop:hasObjectOfInterest <http://purl.obolibrary.org/obo/CIDO_0020276> ;
+    iop:hasProperty <http://vocabs.lter-europe.net/elter_cl/10155> .
+
+<https://w3id.org/italia/onto/ACCO/AccommodationStarRating> a iop:Constraint ;
+    iop:constrains <http://purl.obolibrary.org/obo/CIDO_0020276> .
+

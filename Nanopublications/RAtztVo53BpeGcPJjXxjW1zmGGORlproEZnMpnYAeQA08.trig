@@ -1,0 +1,52 @@
+@prefix this: <https://w3id.org/np/RAtztVo53BpeGcPJjXxjW1zmGGORlproEZnMpnYAeQA08> .
+@prefix sub: <https://w3id.org/np/RAtztVo53BpeGcPJjXxjW1zmGGORlproEZnMpnYAeQA08#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  sub:A_1 a <https://w3id.org/iadopt/ont/Variable>;
+    rdfs:label "electron density of solar wind electron";
+    <https://w3id.org/iadopt/ont/hasMatrix> sub:solar_wind;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:electron;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:number_density .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0003-2195-3997 .
+}
+
+sub:pubinfo {
+  orcid:0000-0003-2195-3997 foaf:name "Barbara Magagna" .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCFntPrMZqvg2kVhCNArNnEn37ddXGwZ/0r4C8CS4lDry7C7YkYgng9yb0UMZQUHiTVkR/5A4m/xjE+Vy+AnwcWUeB75SfGZjE5ylI6VeHjTHi9+2hh2PHYIWnkhU4WHl3COEnxSSa/VouvPzZ2BIWLH6fTrq7NNL3RF5hGegGG0QIDAQAB";
+    npx:hasSignature "BH+3i9jupM57dqL0QJ27jD0ZU5Q7smSHlSdgF2AwJeZta2ngaoE+vfSRpVVV1nKCJvOl0lm0YYHKB8su+kwK03m1VtOev9Y829v/dREwCoxa8judnBc4rW2+FHO14FapE0TGCdfgo9MFIFBg1sUivxoDusnNJVKQ1Hk27+eZ7AM=";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0000-0003-2195-3997 .
+  
+  this: dct:created "2024-10-31T13:23:36.808Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0003-2195-3997;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces sub:A_1;
+    npx:wasCreatedAt <https://nanodash.petapico.org/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate ns1:RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM,
+      ns1:RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAXXHE2l2ftL7gxLKqurZpk-2o3pqm-Z1r8GMNXQB6Ea0> .
+}
+

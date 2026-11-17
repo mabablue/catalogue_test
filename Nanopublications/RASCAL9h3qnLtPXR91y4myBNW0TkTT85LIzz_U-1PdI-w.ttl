@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RASCAL9h3qnLtPXR91y4myBNW0TkTT85LIzz_U-1PdI-w/> .
+
+<https://w3id.org/iadopt/variable/Carbonate> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Carbonate (CO3)" ;
+    dcterms:description "Carbon oxoanions that have formula CO3" ;
+    iop:hasObjectOfInterest sub:CarbonOxoanion ;
+    iop:hasProperty <http://purl.dataone.org/odo/ECSO_00000325> .
+

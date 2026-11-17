@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAva5LV41SiYdf8tOiyRwW64zUXiSTZrJNGFI2q9gprHk/> .
+
+<https://w3id.org/iadopt/variable/DNAmethylationChanges> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "DNA methylation changes",
+        "DNA methylation changes in cells" ;
+    dcterms:description "alterations in the addition of methyl groups to DNA, typically at cytosine residues, affecting gene regulation without changing the DNA sequence." ;
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/MESH/D019175> ;
+    iop:hasObjectOfInterest sub:cell ;
+    iop:hasProperty sub:DNAmethylationChanges .
+

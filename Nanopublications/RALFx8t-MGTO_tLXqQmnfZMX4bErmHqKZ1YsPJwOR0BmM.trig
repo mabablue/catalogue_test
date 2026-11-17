@@ -1,0 +1,73 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fdof: <https://w3id.org/fdof/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RALFx8t-MGTO_tLXqQmnfZMX4bErmHqKZ1YsPJwOR0BmM/> .
+@prefix this: <https://w3id.org/np/RALFx8t-MGTO_tLXqQmnfZMX4bErmHqKZ1YsPJwOR0BmM> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <http://qudt.org/vocab/quantitykind/Height> a iop:Property;
+    rdfs:label "height" .
+  
+  <http://vocab.nerc.ac.uk/collection/S18/current/S1800021/> a iop:Entity;
+    rdfs:label "water" .
+  
+  <https://w3id.org/iadopt/variable/20260618T141448-20> a fdof:FAIRDigitalObject, iop:Variable;
+    dcterms:conformsTo <https://w3id.org/np/RA5MTl9GFH-QuuBHYEA2hOtxOMOV4-jrhtdx5lOy9CAQE>;
+    dcterms:created "2026-06-18T14:14:48Z"^^xsd:dateTime;
+    dcterms:creator orcid:0009-0006-1978-4302;
+    dcterms:identifier <https://w3id.org/iadopt/variable/20260618T141448-20>;
+    pav:createdWith "LLM-assisted I-ADOPT variable generation";
+    rdfs:comment "Free surface position is the vertical displacement of the water's suface relative to a referance level (mean sea level), expressed in meters.";
+    rdfs:label "Zeta";
+    prov:wasAttributedTo orcid:0009-0006-1978-4302;
+    iop:hasConstraint sub:_n2a35cd7cc019453cadfabd90316bc695b1;
+    iop:hasObjectOfInterest <http://vocab.nerc.ac.uk/collection/S18/current/S1800021/>;
+    iop:hasProperty <http://qudt.org/vocab/quantitykind/Height> .
+  
+  sub:_n2a35cd7cc019453cadfabd90316bc695b1 a iop:Constraint;
+    rdfs:label "datum: relative to main sea level";
+    iop:constrains <http://qudt.org/vocab/quantitykind/Height> .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0006-1978-4302;
+    prov:wasGeneratedBy <https://w3id.org/np/RAwy2xTZzt5Y3ix-7f1HDTewgZqa6eRm5YnmrSKCy0PTA/I-ADOPT-LLM-Service> .
+}
+
+sub:pubinfo {
+  orcid:0009-0006-1978-4302 foaf:name "Arvin Rastegar" .
+  
+  this: dcterms:created "2026-06-18T14:14:49.769Z"^^xsd:dateTime;
+    dcterms:creator <https://w3id.org/np/RAwy2xTZzt5Y3ix-7f1HDTewgZqa6eRm5YnmrSKCy0PTA/I-ADOPT-LLM-Service>;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/20260618T141448-20>;
+    npx:wasCreatedAt <https://nanodash.petapico.org/>;
+    rdfs:label "Zeta";
+    ntemplate:wasCreatedFromProvenanceTemplate <https://w3id.org/np/RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM>;
+    ntemplate:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM>, <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAkcfj9W_lJjlq26paIFmTY4mZoaY27BnZCjcsL34EPIA> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzymtTYCOhZMR6OcAN9w2t82zy6tPY5UkyFAEyxdvUUFaHciaH4dxdSgrCXdg8GoZIOW7wQEJGtom7D1fkFOfVFVgLb4wApmPen87msSXoAN1yPeDEkD4BFQ+GanBFQxqebpmgjF9tLIkZFziShWQrAyBOqy4K44YCYq/l94FIdRZGabV9IAngZwydWh2TBBBahuwsysHulhkdgiedWKl75mdsYgDzHlAJz4BnQ8Az9w+k7LnwQDPvThTZJtt+dFAW/y1M3WKzf+9biSlLgbHtRWYI6Z9ovetZi8vWiW2lpiCvyfGKNIgP+Q38D1i3gJEPQnj+iK8Nw9LLHhg8bV+yQIDAQAB";
+    npx:hasSignature "N11LwduhYfhwqMQEj+VGgbv62fi/oW1/9SbAyu3WtpKqud/TFaDGvtIshgyUNRNVYtne7BaNMD2QnWVjOURlOAb8RreEwykGzs5KlLrFiUd+7rRmH8fE3iRW9lOneG1e7FmjKs7I4XzykEybtFW0iiCHxULlJhRMmheAa08lPWPHUlmww8o26R5QGi8J9UUCHJnabthh4trtenpzha+IPtoScx2mJ9fDWUqkIQXovX7I1A6cbncwNnoHneaOHZD5Dv/uO5Ot61cDxBTy8bDnoYTrDwKh3+EE1ifqnUw4E8d/ijG+DQI5PMEFb84E/IVypixndz95oqxgV+UOjhbY0A==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy <https://w3id.org/np/RAwy2xTZzt5Y3ix-7f1HDTewgZqa6eRm5YnmrSKCy0PTA/I-ADOPT-LLM-Service> .
+}
+

@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAXIdeJpGa18jN7TJ1RJQK88Pch6eh9wdhXThIoug1uAU/> .
+
+<https://w3id.org/iadopt/variable/Vitellogenin-likeProteinInduction> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Vitellogenin-like protein induction",
+        "vitellogenin-like protein induction in exposed invertebrate organism" ;
+    dcterms:description "the production of egg-yolk precursor proteins in response to endocrine disruption." ;
+    iop:hasObjectOfInterest sub:invertebrateOrganism ;
+    iop:hasProperty sub:VitellogeninLikeProteinInduction .
+

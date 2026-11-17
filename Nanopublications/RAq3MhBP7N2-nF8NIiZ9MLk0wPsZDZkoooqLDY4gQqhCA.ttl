@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAq3MhBP7N2-nF8NIiZ9MLk0wPsZDZkoooqLDY4gQqhCA/> .
+
+<https://w3id.org/iadopt/variable/MicronucleusFrequency> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Micronucleus frequency",
+        "micronucleus frequency in plant cells" ;
+    dcterms:description "the occurrence rate of micronuclei in cells." ;
+    iop:hasObjectOfInterest sub:Plant ;
+    iop:hasProperty sub:MicronucleusFrequency .
+

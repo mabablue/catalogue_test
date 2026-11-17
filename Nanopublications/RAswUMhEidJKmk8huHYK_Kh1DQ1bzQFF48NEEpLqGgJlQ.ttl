@@ -1,0 +1,17 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAswUMhEidJKmk8huHYK_Kh1DQ1bzQFF48NEEpLqGgJlQ#> .
+
+sub:IAdoptChallenge6 a iop:Variable ;
+    rdfs:label "Mass_flux_of_carbon_into_soil_from_vegetation_due_to_senescence" ;
+    dcterms:description "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics. \"Vegetation\" means any living plants e.g. trees, shrubs, grass. The specification of a physical process by the phrase \"due_to_\" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. The term \"senescence\" means loss of living biomass excluding plant death, e.g. leaf drop and other seasonal effects. The term refers to changes in the whole plant and is not confined only to leaf drop." ;
+    iop:hasConstraint sub:Senescence ;
+    iop:hasContextObject <https://www.eionet.europa.eu/gemet/en/concept/8922> ;
+    iop:hasMatrix <https://w3id.org/ozcar-theia/c_dc6163a1> ;
+    iop:hasObjectOfInterest <http://vocab.nerc.ac.uk/collection/S27/current/CS002836/> ;
+    iop:hasProperty <https://w3id.org/ozcar-theia/c_bd34d682> .
+
+sub:Senescence a iop:Constraint ;
+    iop:constrains <https://w3id.org/ozcar-theia/c_bd34d682> .
+

@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA2v1C5z6oymMYKLs04ya7jUTNHcGBYA3j0IGZji0-j2E/> .
+
+<https://w3id.org/iadopt/variable/hasProgrammingLanguage> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Has programming language",
+        "Programming Language" ;
+    dcterms:description "A formal language in which computer programs are written. The definition of a particular language consists of both syntax (how the various symbols of the language may be combined) and semantics (the meaning of the language constructs)." ;
+    rdfs:seeAlso <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C47903> ;
+    iop:hasObjectOfInterest sub:software ;
+    iop:hasProperty sub:programminglanguage .
+

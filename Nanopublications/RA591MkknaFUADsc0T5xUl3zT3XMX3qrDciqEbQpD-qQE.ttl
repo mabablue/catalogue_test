@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA591MkknaFUADsc0T5xUl3zT3XMX3qrDciqEbQpD-qQE/> .
+
+<https://w3id.org/iadopt/variable/SumMetalloidIonisationPotentialEnergy> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Sum of Metalloid ionisation potential energy" ;
+    dcterms:description "The final aggregate amount of the potential energy that binds an electron to an atom or moleule, in this instance attributable to those with properties between a metal and a non-metal" ;
+    iop:hasObjectOfInterest sub:Metalloid ;
+    iop:hasProperty sub:PotentialEnergy .
+

@@ -1,0 +1,11 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RARTOlM_MlMDcrk9rxZvL2SLHQekKIEFJdkidqWA6PJws/> .
+
+<https://w3id.org/iadopt/variable/Rice> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Rice" ;
+    iop:hasObjectOfInterest sub:Rice ;
+    iop:hasProperty <http://purl.bioontology.org/ontology/SNOMEDCT/67324005> .
+
