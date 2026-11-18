@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RAfwJsMkJD9NMpMgWzyn858T-0WnSycASnHZu24HhhU1I> .
+@prefix sub: <https://w3id.org/np/RAfwJsMkJD9NMpMgWzyn858T-0WnSycASnHZu24HhhU1I/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/ElectronTransportRate> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "the rate at which electrons are transported through photosystem II during photosynthesis, reflecting photosynthetic activity.";
+    rdfs:label "Electron transport rate (ETR)", "electron transport rate of plant";
+    rdfs:seeAlso <https://www.sciencedirect.com/science/article/pii/S0034425720306465#:~:text=Abstract,%2C%20temperature%20and%20soil%20moisture).>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:Plant;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:ElectronTransportRate .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-01-29T13:54:16.459Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/ElectronTransportRate>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "RvrjDZT1SyzPVNyYU8vw+xS1iEyHRcNRDIxmrUL5sc5r38C60GR2nXmes8hhgZoakuUwtnMd8048sWLEbK5qx7vvdfDhOXh287m/A4gIqa8gpBumbPOA9/f3H8y4E+k+kooMDCFMouD9/CVDuE/uXGayflHUnBBxJ/vtC9Yju+Jcq9HrqKqH1HLkmr9RriJNnjQRgNvG+sVigEZV+0plVoBaM0XereRfseLRgf9g8JPypAxiHvBcaTJo5HOCkBVzLXBmCLVwry7pxUk+ynRAIU77UUBmja/CN48jf9xKfWJu97/rLRpo1RBe5Qwu+0VqXAJv9b0Q5sd7gcwKthjwOg==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

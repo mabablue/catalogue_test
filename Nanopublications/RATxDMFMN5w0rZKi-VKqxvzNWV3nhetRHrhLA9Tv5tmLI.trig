@@ -1,0 +1,50 @@
+@prefix this: <https://w3id.org/np/RATxDMFMN5w0rZKi-VKqxvzNWV3nhetRHrhLA9Tv5tmLI> .
+@prefix sub: <https://w3id.org/np/RATxDMFMN5w0rZKi-VKqxvzNWV3nhetRHrhLA9Tv5tmLI#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  sub:IADOPT.MacromoleculeConcentration a <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "The concentration of macromolecules in the immune system in response to bacteria in the gut of a me/cfs patient";
+    rdfs:label "The concentration of macromolecules in the immune system in response to bacteria in the gut of a me/cfs patient";
+    <https://w3id.org/iadopt/ont/hasConstraint> "a me/cfs patient", "in response to bacteria",
+      "in the immune system";
+    <https://w3id.org/iadopt/ont/hasContextObject> "person";
+    <https://w3id.org/iadopt/ont/hasMatrix> "gut";
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> "macromolecule";
+    <https://w3id.org/iadopt/ont/hasProperty> "Concentration" .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0002-6514-0173 .
+}
+
+sub:pubinfo {
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDf2pIMH+lWdxLr57z5pnARHiHLKo2J0kCw/tfj//WpFcdEs9c95kowA8R2uR/fSbL9wYS/OZAz0CV1tAeynxbGoyvYQAEUIAXkqC88NBR4uQeyF0rEwCujGHs8HGQLFuRpdWjf2OsyH3hc+6PNHmWksgD2g8AJU7ujPoksI7T9MwIDAQAB";
+    npx:hasSignature "vNwxytc+uoEiizZPXnjqliE8URkkZtsucBQIPn5Sp7a0xR3nq7TgVpsVkGFcDjyyL/ziy1tUdk52KvelssFAPF8rsPe7LKQX2dirxi0Och62SP1ewPZXPXg0nxsiYL/W2NBoPlk5Ko3pcf/ScY/+KKdZR/gA1ZFxTY01gUubXy0=";
+    npx:hasSignatureTarget this: .
+  
+  this: dct:created "2023-10-17T10:30:04.554Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-6514-0173;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces sub:IADOPT.MacromoleculeConcentration;
+    nt:wasCreatedFromProvenanceTemplate <http://purl.org/np/RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM>;
+    nt:wasCreatedFromPubinfoTemplate <http://purl.org/np/RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM>,
+      <http://purl.org/np/RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90>;
+    nt:wasCreatedFromTemplate <http://purl.org/np/RAq8tqgrQdfy52v_mneS8EIMZAKkL2UgyVKVUVwiXMVrU> .
+}
+

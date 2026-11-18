@@ -1,0 +1,12 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RANPx-tjC4VpZQ1bkC5kmlPJJULD3tXgkt0lr8Qk7rA0Y/> .
+
+<https://w3id.org/iadopt/variable/Com> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Nanoparticle component" ;
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/npo#NPO_1496> ;
+    iop:hasObjectOfInterest sub:Nanoparticle ;
+    iop:hasProperty <http://purl.bioontology.org/ontology/npo#NPO_1496> .
+

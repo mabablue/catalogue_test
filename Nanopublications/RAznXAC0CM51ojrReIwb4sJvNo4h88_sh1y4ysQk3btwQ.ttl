@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAznXAC0CM51ojrReIwb4sJvNo4h88_sh1y4ysQk3btwQ/> .
+
+<https://w3id.org/iadopt/variable/PredatorAvoidanceResponse> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Predator avoidance response",
+        "predator avoidance response in exposed invertebrate organism" ;
+    dcterms:description "the behavioural reaction used to escape or avoid predators." ;
+    rdfs:seeAlso <http://purl.obolibrary.org/obo/SIBO_0000528> ;
+    iop:hasObjectOfInterest sub:invertebrateOrganism ;
+    iop:hasProperty sub:PredatorAvoidanceResponse .
+

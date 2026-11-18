@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RA9PWgYdGZOvABKiXq3QBG2ueGH94FQXlV-4MceMQOT7Y> .
+@prefix sub: <https://w3id.org/np/RA9PWgYdGZOvABKiXq3QBG2ueGH94FQXlV-4MceMQOT7Y/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/PlantMassNormalizedDose> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "the amount of a substance applied or absorbed per unit mass of plant tissue.";
+    rdfs:label "Plant mass-normalized dose", "plant mass-normalized dose of test substance";
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:Plant;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:mass-normalizedDose .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-01-29T09:40:04.473Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/PlantMassNormalizedDose>;
+    npx:supersedes <https://w3id.org/np/RAbrx48RjfwMR38Jjg5tymuGeYkGDt4teMSCe4J8YmsBs>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAoTD7udB2KtUuOuAe74tJi1t3VzK0DyWS7rYVAq1GRvw>, <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "W11JQDm9YOpImeK13b2xn0Lvtk3jG+dgeXfkFiQO9fD9Hm1YN37oVNThVNzgylE7iLXR9u7G6+6m3YWwSehj/9DL4KM8HCgcCrRPELIz2Nq42W8Cvzpezvx0hMVFbbzRm1zOzAEE0gYGA1OSuI1bo1l0o0jvrFE9FLcX+qtunSvJ0PmXzIxoXPr1EXRlbhYBo247ATQ2JPUDMEd7HAWfPdNjOny1GamAzHZttFWtf8KBZJEIODWy2DTVaRD0nTC3HlTFXKD7VriOWmpTeAEeJo46ZyKsfGH7aqMa2rwnAWDA1bLmkAAjXcYS/C6+KmAzmsFe0aJSjavaNxNf2vrgQQ==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

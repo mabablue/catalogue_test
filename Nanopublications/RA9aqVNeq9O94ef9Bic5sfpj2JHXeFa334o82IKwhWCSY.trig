@@ -1,0 +1,47 @@
+@prefix this: <https://w3id.org/np/RA9aqVNeq9O94ef9Bic5sfpj2JHXeFa334o82IKwhWCSY> .
+@prefix sub: <https://w3id.org/np/RA9aqVNeq9O94ef9Bic5sfpj2JHXeFa334o82IKwhWCSY#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  sub:TOC a <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "Percentage of total organic carbon in sediment";
+    rdfs:label "Percentage of total organic carbon in sediment";
+    <https://w3id.org/iadopt/ont/hasMatrix> sub:sediment;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:total_organic_carbon;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:Percentage .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0002-6063-0958 .
+}
+
+sub:pubinfo {
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCLZXv/F+HQe2L1BeIFg+Uj1BNh9LQ+dWJmujpKvwo7TIcpPKMSOPC/AFrTVgM3LOU9980zFrS4BMLySP6WaR2JuzwUB646TcpWD9wyVvM4+EzW4JOgihQRp8AaNDoWXPbPwP5vqJP9Px3quPx96bm3tmjMKTLfOVwsBdH5jjaWeQIDAQAB";
+    npx:hasSignature "IYgeJMQfRn/H+1jVpTodIkZca0Hom+PDOmASlyN6LTh/987vIVR44wi72DrTPhKJiVJxegjzMRkNVs9oTAtf1fXZwo3oRxH/ByM5BewUlOn96dv9ZnZg/jHOI1rpsLqHIIVXo5EmHjeAd3z+D1Myn5EIfkf2PFJGPSVyqk1VuJQ=";
+    npx:hasSignatureTarget this: .
+  
+  this: dct:created "2023-10-17T10:28:47.576Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-6063-0958;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces sub:TOC;
+    nt:wasCreatedFromProvenanceTemplate <http://purl.org/np/RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM>;
+    nt:wasCreatedFromPubinfoTemplate <http://purl.org/np/RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM>,
+      <http://purl.org/np/RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90>;
+    nt:wasCreatedFromTemplate <http://purl.org/np/RAq8tqgrQdfy52v_mneS8EIMZAKkL2UgyVKVUVwiXMVrU> .
+}
+

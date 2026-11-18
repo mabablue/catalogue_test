@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RAP9nF3SErOXXgDfCOQj_piUUx33piIW5Qktyl2R4nPlA> .
+@prefix sub: <https://w3id.org/np/RAP9nF3SErOXXgDfCOQj_piUUx33piIW5Qktyl2R4nPlA/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/PhysicalForm> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "The overall appearance, configuration, or shape, derived from material characteristics and independent of intellectual content.";
+    rdfs:label "Physical form", "physical form of substance";
+    rdfs:seeAlso <https://dictionary.archivists.org/entry/physical-form.html#:~:text=n.,and%20independent%20of%20intellectual%20content.>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:substance;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:PhysicalForm .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-01-26T09:31:25.448Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/PhysicalForm>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    prov:wasDerivedFrom <https://w3id.org/np/RAxAAFJ7gQMCxO0abpa99hSMqqIpOFKysC9n_gNFQBvzc>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RARW4MsFkHuwjycNElvEVtuMjpf4yWDL10-0C5l2MqqRQ>, <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "E0viS0ZyosGWIIP7h7t+1Fb5u1cpHEc2FIK4wIC/igb5jCV5c1Cy0VjJ/vBRlM7t8w8YIFXYRYACZZMwcjjyvHyWja+s+JDodS4MKPzVHQDbxnlhbRQ5PyR9h5Mv95LNbwnzQUtJJJYarptCY6w4MR8bIURRR3CO1ZMcgieUSPAfHkqoY22sj87GD5VMFTGgriOB8BQpThpvKh+TcrZsd1/Mz4HGqlPy5EC9sKRcrNhwmwZ6YIyOFA9rFoK0yNKJJxmwkHrkXbwPLtYoXYMp3GYEceHx+HRWHbY2Y6phFvVnjZL/8qHhE1KGn2qx8ulBePgf4ZxLn5Nr2m42K/aKyg==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

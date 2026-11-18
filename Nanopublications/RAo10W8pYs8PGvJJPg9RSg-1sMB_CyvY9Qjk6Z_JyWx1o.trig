@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RAo10W8pYs8PGvJJPg9RSg-1sMB_CyvY9Qjk6Z_JyWx1o> .
+@prefix sub: <https://w3id.org/np/RAo10W8pYs8PGvJJPg9RSg-1sMB_CyvY9Qjk6Z_JyWx1o/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/WBCcount> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "The number of white blood cells in a specified volume of blood.";
+    rdfs:label "WBC count in blood", "WBC count";
+    rdfs:seeAlso <http://purl.obolibrary.org/obo/CMO_0000027>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:testanimal;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:whitebloodcellcount .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-02-13T10:14:01.801Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/WBCcount>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "jlhAtW41hlIqa9QQhQ32UoA1+PhJCyD2wNmeUOKk5q46M9/BO/v07vBlLTbuOPNAOwMN7eKVzmglI4/bkAoOjoj6NvWDY+eFWZnnWHLOJ6BVNxpRF76O3J1wJhgQwLk52zEW7lM/zL702Yq/Yv+hc5Qkq8dtsw40Dpn7e4PSItA+q90bxDabqqcMV61U3EKW2GrgSVabZJuJrkX6kqM65BzZB0SvNcY7ccwoCMy8KWer24Z1XhYD9T9iDHUeGjTWH6RF2ehKZF9TgitlDauFfrYl04coBEdKAL+Md80XEdV4DGcm/0H+ufjwxJ7yEIkCYcOF8OTlhIRaKVnMMMjVcQ==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

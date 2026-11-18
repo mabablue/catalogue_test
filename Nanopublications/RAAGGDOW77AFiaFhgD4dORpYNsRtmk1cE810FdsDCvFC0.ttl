@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAAGGDOW77AFiaFhgD4dORpYNsRtmk1cE810FdsDCvFC0/> .
+
+<https://w3id.org/iadopt/variable/MatrixSourceClassification> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Matrix source classification" ;
+    dcterms:description "A classification is a proposition that categorises things into classes or collections of things differentiated by some criteria, in this case describing where the  components of a sample that are not measured by an experiment originate from" ;
+    iop:hasObjectOfInterest sub:Matrix ;
+    iop:hasProperty sub:Classification .
+

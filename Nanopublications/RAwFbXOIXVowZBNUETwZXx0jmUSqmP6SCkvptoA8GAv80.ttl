@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAwFbXOIXVowZBNUETwZXx0jmUSqmP6SCkvptoA8GAv80/> .
+
+<https://w3id.org/iadopt/variable/NormalisedLength> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Normalised length" ;
+    dcterms:description "Scaling or adjusting a length value to a standard or relative scale" ;
+    iop:hasObjectOfInterest sub:Length ;
+    iop:hasProperty sub:NormalisedLength .
+

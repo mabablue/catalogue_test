@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAx82-a8c8t0CwsYKW_o0bgrtHKAPBiWt93KdOiDUQYfw/> .
+
+<https://w3id.org/iadopt/variable/PhaseComposition> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Phase composition",
+        "phase composition of material" ;
+    dcterms:description "the qualitative and/or quantitative description of the distinct physical or crystallographic phases present in a material and their relative proportions." ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:PhaseComposition .
+

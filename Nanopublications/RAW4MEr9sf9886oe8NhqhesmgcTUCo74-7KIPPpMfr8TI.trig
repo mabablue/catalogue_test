@@ -1,0 +1,57 @@
+@prefix this: <https://w3id.org/np/RAW4MEr9sf9886oe8NhqhesmgcTUCo74-7KIPPpMfr8TI> .
+@prefix sub: <https://w3id.org/np/RAW4MEr9sf9886oe8NhqhesmgcTUCo74-7KIPPpMfr8TI#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <http://vocabs.lter-europe.net/EnvThes/20671> a <https://w3id.org/iadopt/ont/Constraint>;
+    <https://w3id.org/iadopt/ont/constrains> <http://purl.bioontology.org/ontology/NCBITAXON/29178> .
+  
+  sub:variable15 a <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "Size of planktic foraminifers in surface sediments, see https://doi.pangaea.de/10.1594/PANGAEA.126730";
+    rdfs:label "Foraminifera, planktic, size", "Size of planktic foraminifers in surface sediments";
+    <https://w3id.org/iadopt/ont/hasConstraint> <http://vocabs.lter-europe.net/EnvThes/20671>;
+    <https://w3id.org/iadopt/ont/hasMatrix> <http://vocabs.lter-europe.net/EnvThes/20905>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> <http://purl.bioontology.org/ontology/NCBITAXON/29178>;
+    <https://w3id.org/iadopt/ont/hasProperty> <https://kos.lifewatch.eu/thesauri/phytotraits/c_15> .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0002-2749-8588 .
+}
+
+sub:pubinfo {
+  orcid:0000-0002-2749-8588 foaf:name "Andrea Tarallo" .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCRZRMbIr0zLFMkUzF5SH/Ja/PamzEk3VY+ccOA55/d8fWhBwzZRnwPoMgJENZeqHDRAayS8oBCWK3P0Ql9SKOwRLIRrioQp0IOBidpDZIedYAMCg/taE4tAtgxvjQBpk+yN8FdkjIgJdOBpdggC5V4oIH77TzuI09dfEv091p7uQIDAQAB";
+    npx:hasSignature "gxk26PonyB3IuujJCY3VJ4SrfxHEkPo6TZ3MpHSOv/3CltI4Scw/voaZJK7L9is9kSxVNoQxI14GM00Raxx+rht9N26g0BTomewgZsqz9BPAq4EgZvP9P4ptjO4ypdk/kydLrvX8X6kKbpd6Po6vZGYo1zQHkPTTsFCdOe0G/WU=";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0000-0002-2749-8588 .
+  
+  this: dct:created "2024-09-20T13:31:27.251Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-2749-8588;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces sub:variable15;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate ns1:RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM,
+      ns1:RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAGUWnXKhfKYwmMoDK-LVXlEnnGdAuzFZKR9FZsXHJsxQ> .
+}
+

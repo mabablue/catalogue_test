@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAv7ybFibo_XQequqME3NJafqRuQ_XoIWysFcBRjyPKgA/> .
+
+<https://w3id.org/iadopt/variable/BALdifferentialCounts> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "BAL differential counts",
+        "BAL differential counts from exposed animal" ;
+    dcterms:description "the counts of specific cell types in bronchoalveolar lavage fluid." ;
+    iop:hasObjectOfInterest sub:testanimal ;
+    iop:hasProperty sub:BALdifferentialCellCount .
+

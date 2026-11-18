@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA4yuPvm5ETsLuh8Ap3XLQS4PVJ6007lRXjgULQoh_L3U/> .
+
+<https://w3id.org/iadopt/variable/Excretionfraction> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Excretion fraction (urine/feces)",
+        "excretion fraction of test substance" ;
+    dcterms:description "refers to the percentage of a substance, such as sodium, excreted in the urine relative to its filtered load in the kidneys." ;
+    iop:hasObjectOfInterest sub:testanimal ;
+    iop:hasProperty sub:excretionFraction .
+

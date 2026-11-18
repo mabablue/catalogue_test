@@ -1,0 +1,58 @@
+@prefix this: <https://w3id.org/np/RA2Tox3GYmHrWZ4UzLkM8lyrfllSLFAL-N8nauu1ORM_o> .
+@prefix sub: <https://w3id.org/np/RA2Tox3GYmHrWZ4UzLkM8lyrfllSLFAL-N8nauu1ORM_o#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C74532> a <https://w3id.org/iadopt/ont/Constraint>;
+    <https://w3id.org/iadopt/ont/constrains> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C77965> .
+  
+  sub:numberNervousityFeelings a <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "Number of nervosity feelings counted in the unit of number per past 30 days. Nervousness is a quality of feeling anxious, worried, or alarmed.";
+    rdfs:label "Number of nervosity feelings in past 30 days", "Number of times or how often one had nervosity feelings in past 30 days";
+    rdfs:seeAlso <https://www.vocabulary.com/dictionary/nervousness>;
+    <https://w3id.org/iadopt/ont/hasConstraint> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C74532>;
+    <https://w3id.org/iadopt/ont/hasContextObject> <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C77965>;
+    <https://w3id.org/iadopt/ont/hasProperty> <http://vocab.nerc.ac.uk/collection/P21/current/MS7073/> .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0002-3462-0967 .
+}
+
+sub:pubinfo {
+  orcid:0000-0002-3462-0967 foaf:name "Fred van de Brug" .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC0SjQ1p76p5tFSMAJGpGEHLe9aSzOR1k9uUSo6YwSvnHiJJf4fdmWxoyrKL4MNQ9J1Lh7cfRWcubKQ1aSjnAK2z23+vPzg17VNpe14kaeffCJlZBqa0w917JwfIsOEhtBwPerfXxPCCcUOXKa7UEkoA4SCTswLWZXx4EOuifdjLQIDAQAB";
+    npx:hasSignature "DvT0geCOXc4l6tJ/n0osBwxCFpR1Ibmomx/oadPGxPe0+bIgZVYrsvNgreynNHADE4qHB9elHDtIqCickGkbe6A+cvUO6sU2CkKdVc/gytj+P7EVz9dcIlKhv9+Tk59z5Qjqzk4x2+upwXIBdokXCuBqitub+/GRpXuf2zJcuWw=";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0000-0002-3462-0967 .
+  
+  this: dct:created "2024-10-18T13:06:35.081Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-3462-0967;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces sub:numberNervousityFeelings;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate ns1:RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM,
+      ns1:RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAGUWnXKhfKYwmMoDK-LVXlEnnGdAuzFZKR9FZsXHJsxQ> .
+}
+

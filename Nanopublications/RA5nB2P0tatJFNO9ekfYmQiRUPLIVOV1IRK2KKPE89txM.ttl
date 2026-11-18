@@ -1,0 +1,12 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA5nB2P0tatJFNO9ekfYmQiRUPLIVOV1IRK2KKPE89txM#> .
+
+sub:variable3 a iop:Variable ;
+    rdfs:label "Cloud cover" ;
+    dcterms:description "The amount of cloudiness or clear sky at a study site." ;
+    iop:hasMatrix <https://purl.bioontology.org/ontology/PLOSTHES?conceptid=http%3A%2F%2Flocalhost%2Fplosthes.2017-1%236575> ;
+    iop:hasObjectOfInterest <https://vocabulary.actris.nilu.no/actris_vocab/cloud> ;
+    iop:hasProperty <https://agroportal.lirmm.fr/ontologies/CGO/Coverage> .
+

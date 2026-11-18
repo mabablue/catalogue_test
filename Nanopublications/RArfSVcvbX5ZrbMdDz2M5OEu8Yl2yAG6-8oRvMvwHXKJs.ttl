@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RArfSVcvbX5ZrbMdDz2M5OEu8Yl2yAG6-8oRvMvwHXKJs/> .
+
+<https://w3id.org/iadopt/variable/D15> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "The average coordination parameter (3Ang) of the core atoms" ;
+    dcterms:description "D15: The average coordination parameter (3Ang) of the core nanoparticle atoms" ;
+    iop:hasObjectOfInterest sub:NPAtomAverageCoreCoordination ;
+    iop:hasProperty sub:Coordination .
+

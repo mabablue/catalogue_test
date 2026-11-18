@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAmDF1IEPN1fbAcgE4LLbvZY9svHC5PZvJDlrTi0dWRJ8/> .
+
+<https://w3id.org/iadopt/variable/BurrowingActivity> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Burrowing activity",
+        "burrowing activity in exposed invertebrate organism" ;
+    dcterms:description "the extent to which organisms dig into sediment or substrate." ;
+    rdfs:seeAlso <http://localhost/plosthes.2017-1#8017> ;
+    iop:hasObjectOfInterest sub:invertebrateOrganism ;
+    iop:hasProperty sub:BurrowingActivity .
+

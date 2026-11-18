@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RACBRzXaaJ45OgJTB4fJVIRikc8Kg44jW3qBxoABoxGHI> .
+@prefix sub: <https://w3id.org/np/RACBRzXaaJ45OgJTB4fJVIRikc8Kg44jW3qBxoABoxGHI/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/ParticleSizeDistribution> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "A size distribution inhering in particles.";
+    rdfs:label "Particle size distribution", "particle size distribution of material";
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/npo#NPO_1699>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:Materials;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:ParticleSizeDistribution .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-01-27T10:56:08.618Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/ParticleSizeDistribution>;
+    npx:supersedes <https://w3id.org/np/RAkYWtuM2Hj9WQ-e8_uQQMMzxz-LQfCdow2N3mYrbmYG0>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAoTD7udB2KtUuOuAe74tJi1t3VzK0DyWS7rYVAq1GRvw>, <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "YdLiVQ0DT8ksXdli1jIYlXMOD7DW96BqZ3RLE4a0J6L0DQ9G0KJD3AlXCLQDWWtNT+/3bNVZ7bLtbq37TjQpxVtUjoSqys+DLTZiEVYymVDKVAuBzum1zL74BmcV9slanSDSDLPqWat2UcnQpeVjDPwcswZ4V0V3fRIK2sg4SgJh+izKKi3aWB7xAfeMWprlDXk0famf3pNLQyf6JGK0LS8ciUrfJDtbSht0cw6Vmg0mbMYwXUfrFPiQIn2K5cBFX85mmMtzEsBxveoLIx9a+myFzKoCkzUnKBuwPdYRB0oxAOuGGUx4RJmLyWcuPtJhyJg5VPKMXJJGrerVLwyglg==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAXI6lB3sayDqrRmtA00pmGgyDsSNcOJ-eezJGiUX9rjk/> .
+
+<https://w3id.org/iadopt/variable/UnitCellAnglesBibliographic> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Unit cell angles (bibliographic, i.e., retrieved from libraries)" ;
+    dcterms:description "Sizes of the three unit cell angles (α, β, γ) retrieved from crystallography libraries" ;
+    iop:hasObjectOfInterest sub:UnitCell ;
+    iop:hasProperty sub:UnitCellAnglesBibliographic .
+

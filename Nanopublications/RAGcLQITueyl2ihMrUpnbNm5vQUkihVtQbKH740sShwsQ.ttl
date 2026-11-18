@@ -1,0 +1,17 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAGcLQITueyl2ihMrUpnbNm5vQUkihVtQbKH740sShwsQ#> .
+
+sub:variable13 a iop:Variable ;
+    rdfs:label "Distance to nearest neighbour habitat patch" ;
+    dcterms:description "This variable is part of the EBV Connectivity of terrestrial ecosytem habitat types and helps to measure the degree of connection of EUNIS habitats within a landsacpe, in terms of their spatial distribution. https://github.com/EuropaBON/EBV-Descriptions/wiki/Terrestrial-Connectivity-of-terrestrial-ecosystem-habitat-types" ;
+    rdfs:seeAlso <https://i-adopt.github.io/challenge.html> ;
+    iop:hasConstraint <https://agroportal.lirmm.fr/ontologies/CSOPRA/OBI_0000727> ;
+    iop:hasMatrix <http://vocabs.lter-europe.net/EnvThes/21894> ;
+    iop:hasObjectOfInterest <https://agroportal.lirmm.fr/ontologies/ANAEETHES/c_50e05ab6> ;
+    iop:hasProperty <http://vocabs.lter-europe.net/EnvThes/21550> .
+
+<https://agroportal.lirmm.fr/ontologies/CSOPRA/OBI_0000727> a iop:Constraint ;
+    iop:constrains <https://agroportal.lirmm.fr/ontologies/ANAEETHES/c_50e05ab6> .
+

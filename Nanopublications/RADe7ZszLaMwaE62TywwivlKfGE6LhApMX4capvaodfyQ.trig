@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/np/RADe7ZszLaMwaE62TywwivlKfGE6LhApMX4capvaodfyQ> .
+@prefix sub: <https://w3id.org/np/RADe7ZszLaMwaE62TywwivlKfGE6LhApMX4capvaodfyQ/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/Urea/BUN> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "the concentration of urea or blood urea nitrogen in blood, used as an indicator of kidney function and protein metabolism.";
+    rdfs:label "Urea/BUN", "urea/BUN concentration in blood";
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:testanimal;
+    <https://w3id.org/iadopt/ont/hasProperty> <https://w3id.org/np/RADe7ZszLaMwaE62TywwivlKfGE6LhApMX4capvaodfyQ/urea/bloodUreaNitrogen> .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-02-13T10:07:39.832Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/Urea/BUN>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "cFY3OR3W+4rjjJzLkJBR5TNyx/CaEPpVNnMpZa8ntaL09p/PfjEglfupYOZ7jnA7Lu+Y6lTOVorooePijCKYaWJ07GdhlneRyysqbv5dk6lF6Ln6PGW92vdoW7h8k2BSKQb1NFsXhLMAyfOgVYJ8CI+S4MB6tYTuKN2d+TvExYk69EeL+uDM8Z/+/ktWBHQkGvQohOPTNkr1gaihpVxPxuQJlzcO5xcG7wt1hjLcuqL+bcPZqal2yIj8L8n4Y8NSmFSdgNBCR9LOaXaL0GhhyrtyI9UvbVF+BEP3gpSd/qqyzc2PyZd1S5yUdR4R7/oTz8RAf6h566nLNhcS3PXfEg==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

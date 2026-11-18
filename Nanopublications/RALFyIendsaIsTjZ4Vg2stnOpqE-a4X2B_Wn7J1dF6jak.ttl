@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RALFyIendsaIsTjZ4Vg2stnOpqE-a4X2B_Wn7J1dF6jak/> .
+
+<https://w3id.org/iadopt/variable/GlassTransitionTemperature> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Glass transition temperature",
+        "glass transition temperature of substance" ;
+    dcterms:description "the temperature region where the polymer transitions from a hard, glassy material to a soft, rubbery material." ;
+    rdfs:seeAlso <http://materialsmine.org/ns/GlassTransitionTemperature> ;
+    iop:hasObjectOfInterest sub:substance ;
+    iop:hasProperty sub:GlassTransitionTemperature .
+

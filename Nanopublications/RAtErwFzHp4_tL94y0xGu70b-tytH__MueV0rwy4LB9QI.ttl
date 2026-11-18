@@ -1,0 +1,11 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAtErwFzHp4_tL94y0xGu70b-tytH__MueV0rwy4LB9QI/> .
+
+<https://w3id.org/iadopt/variable/Medium> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Medium" ;
+    iop:hasObjectOfInterest sub:Experiment ;
+    iop:hasProperty <http://purl.bioontology.org/ontology/npo#NPO_1853> .
+

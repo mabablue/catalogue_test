@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAufoNFyOGo5QMPWC1_j60qknrHVcfbovxG72-Ld18l2k/> .
+
+<https://w3id.org/iadopt/variable/TrustedRepositoryIndicator> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Trusted Repository Indicator" ;
+    dcterms:description "An indicator stating whether a repository is recognised as a “trusted repository” according to a specified policy, standard, or certification scheme (e.g., certified/approved vs not, or the specific certification held)." ;
+    iop:hasObjectOfInterest sub:repository ;
+    iop:hasProperty sub:trustedrepositorystatus .
+

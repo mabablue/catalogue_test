@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/np/RADV-GGzs8Kf0KhD5PsZvi4Azqui0d4Ig_oEHP__c2Yuk> .
+@prefix sub: <https://w3id.org/np/RADV-GGzs8Kf0KhD5PsZvi4Azqui0d4Ig_oEHP__c2Yuk#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  sub:IsobutyleneConcentration a <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "The mass of isobutylene divided by the volume of the mixture of isobutylene and chloroform, expressed as mass per unit volume.";
+    rdfs:label "Mass concentration of isobutylene in chloroform";
+    <https://w3id.org/iadopt/ont/hasMatrix> <http://purl.obolibrary.org/obo/CHEBI_35255>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> <http://purl.obolibrary.org/obo/CHEBI_43907>;
+    <https://w3id.org/iadopt/ont/hasProperty> <http://vocab.nerc.ac.uk/collection/S06/current/S0600286/> .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0002-4182-7560, orcid:0000-0002-4930-2662 .
+}
+
+sub:pubinfo {
+  orcid:0000-0002-4182-7560 foaf:name "Kristina Hettne" .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCNRY+XQupJzQf9CyuI3/nPbXPBvBUnmhTPmcRzkndf2UR6pp5q+T+9xpB+7/hEWDr1IG25QxhCP0ZCQfAuXYhKcXboCzuWqw7Xw5bOXk31HYiogezYFVOpophOpoivkO0zXAu5CNTdB7+va3lWHWkHAL4yxcQdEzN0j/0SJrKgkwIDAQAB";
+    npx:hasSignature "bjR9vndFRZRXrqqXA52s51lu6OGr9PW+KHPvzcxUljX56m1yGPmk/Md3fUOJY8s/KRnCiLFfS7J8YzT4uvXiHXzpvpGDf7X8VoOVGuFhwOxW38GhRz6wJuSKbPDyo3GR1okmj2uKOEGgkrMSKJsl8kuwOmezYw6O2Bz11WPipe4=";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0000-0002-4182-7560 .
+  
+  this: dct:created "2024-09-20T14:40:53.129Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-4182-7560, orcid:0000-0002-4930-2662;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces sub:IsobutyleneConcentration;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RAi6zZAwhaJ23Hzg4lIjlPir6Take3ZQp-lS9skfBEwfQ;
+    nt:wasCreatedFromPubinfoTemplate ns1:RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM,
+      ns1:RAWv_eqe4tghg-OOg6NqRQODjC865Q0ZWkXTxqjSe59Y4, ns1:RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAGUWnXKhfKYwmMoDK-LVXlEnnGdAuzFZKR9FZsXHJsxQ> .
+}
+

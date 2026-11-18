@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAijn0m7NnVycSU7giQH84NFiDnDluB7CgyaEjzutnrN4/> .
+
+<https://w3id.org/iadopt/variable/AST> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "AST",
+        "AST activity in blood" ;
+    dcterms:description "A family of pyridoxal phosphate-dependent enzymes involved in amino acid metabolism and in the urea and tricarboxylic acid cycles." ;
+    rdfs:seeAlso <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25202> ;
+    iop:hasObjectOfInterest sub:testanimal ;
+    iop:hasProperty sub:aspartateAminotransferase .
+

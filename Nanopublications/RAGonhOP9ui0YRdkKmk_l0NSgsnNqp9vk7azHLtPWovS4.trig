@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/np/RAGonhOP9ui0YRdkKmk_l0NSgsnNqp9vk7azHLtPWovS4> .
+@prefix sub: <https://w3id.org/np/RAGonhOP9ui0YRdkKmk_l0NSgsnNqp9vk7azHLtPWovS4#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  sub:variable9 a <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "The proportion of the ground area covered by foliage (or photosynthetic tissue) held in a vertical plane. Foliage Projective Cover is usually expressed as the percentage of ground covered by foliage and can be separated according to vegetation strata.";
+    rdfs:label "Foliage projective cover";
+    <https://w3id.org/iadopt/ont/hasMatrix> <https://agroportal.lirmm.fr/ontologies/CGO/Ground>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> <https://agroportal.lirmm.fr/ontologies/AGROVOC/c_36752>;
+    <https://w3id.org/iadopt/ont/hasProperty> <https://agroportal.lirmm.fr/ontologies/CGO/Coverage> .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0001-9691-1989 .
+}
+
+sub:pubinfo {
+  orcid:0009-0001-9691-1989 foaf:name "Martina Pulieri" .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCyP+c67KYVJp2Mjfh91tqKGOGLNpxH4ufSMLBJ7JeWIAKKTscpLCRxKCzD3P/tFYmO6X1BHs7lgjoig+gu8JigIp8cuxL9t7ZrIEdXpIUy5KqEjC3NeSaq6LG1f+IQVgNSFa9etkWXGYEbvlDSBNauB0WlBO3XnTJyYT+fYaKgwQIDAQAB";
+    npx:hasSignature "PwXsI36lR0VcUSm3ScHKxCN/ToDF8mmKdzHWLkpSn+xurJEipMmYEzjE8e+PrDvfUf5Xg5bZ9I7ytsjRAkHDOEADNtpqzNt09pbapNUHbswLMLEYdW7iULqdo9Zo0hDDIZB3efQLIDKrxMTRNQ1llI7onX4Sm2uHXSm5jPHWfjo=";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0001-9691-1989 .
+  
+  this: dct:created "2024-09-24T08:07:39.781Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0001-9691-1989;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces sub:variable9;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate ns1:RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM,
+      ns1:RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAGUWnXKhfKYwmMoDK-LVXlEnnGdAuzFZKR9FZsXHJsxQ> .
+}
+

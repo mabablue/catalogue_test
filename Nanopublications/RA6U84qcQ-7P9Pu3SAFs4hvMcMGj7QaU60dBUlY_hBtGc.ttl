@@ -1,0 +1,12 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/iadopt/variable/test> a owl:NamedIndividual,
+        iop:Variable ;
+    skos:definition "test" ;
+    skos:prefLabel "test, updated" ;
+    iop:hasProperty <http://example.org/test> .
+
+<http://example.org/test> a iop:Property .
+

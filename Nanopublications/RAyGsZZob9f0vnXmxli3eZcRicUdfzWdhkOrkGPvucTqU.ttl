@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAyGsZZob9f0vnXmxli3eZcRicUdfzWdhkOrkGPvucTqU/> .
+
+<https://w3id.org/iadopt/variable/Apoptosis> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Apoptosis",
+        "apoptosis level in cells" ;
+    dcterms:description "a regulated form of programmed cell death characterized by specific morphological and biochemical changes." ;
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/MESH/D017209> ;
+    iop:hasObjectOfInterest sub:cell ;
+    iop:hasProperty sub:ApoptosisLevel .
+

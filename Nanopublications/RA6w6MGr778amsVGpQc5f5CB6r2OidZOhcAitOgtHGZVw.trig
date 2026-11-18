@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RA6w6MGr778amsVGpQc5f5CB6r2OidZOhcAitOgtHGZVw> .
+@prefix sub: <https://w3id.org/np/RA6w6MGr778amsVGpQc5f5CB6r2OidZOhcAitOgtHGZVw#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  sub:variable5 a <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "(CF standard name) The optical thickness is the integral along the path of radiation of a volume scattering/absorption/attenuation coefficient. The radiative flux is reduced by a factor exp(-optical_thickness) on traversing the path. The atmosphere optical thickness applies to radiation passing through the entire atmosphere. A coordinate variable of radiation_wavelength or radiation_frequency can be specified to indicate that the optical thickness applies at specific wavelengths or frequencies. \"Aerosol\" means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. \"Ambient_aerosol\" means that the aerosol is measured or modelled at the ambient state of pressure, temperature and relative humidity that exists in its immediate environment. \"Ambient aerosol particles\" are aerosol particles that have taken up ambient water through hygroscopic growth. The extent of hygroscopic growth depends on the relative humidity and the composition of the particles. The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase.";
+    rdfs:label "Atmosphere_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol";
+    <https://w3id.org/iadopt/ont/hasContextObject> <http://purl.dataone.org/odo/ECSO_00000572>;
+    <https://w3id.org/iadopt/ont/hasMatrix> <https://vocabulary.actris.nilu.no/actris_vocab/aerosol>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> <https://vocabulary.actris.nilu.no/actris_vocab/atmosphere>;
+    <https://w3id.org/iadopt/ont/hasProperty> <https://vocabulary.actris.nilu.no/actris_vocab/opticaldepth> .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0002-2749-8588 .
+}
+
+sub:pubinfo {
+  orcid:0000-0002-2749-8588 foaf:name "Andrea Tarallo" .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCRZRMbIr0zLFMkUzF5SH/Ja/PamzEk3VY+ccOA55/d8fWhBwzZRnwPoMgJENZeqHDRAayS8oBCWK3P0Ql9SKOwRLIRrioQp0IOBidpDZIedYAMCg/taE4tAtgxvjQBpk+yN8FdkjIgJdOBpdggC5V4oIH77TzuI09dfEv091p7uQIDAQAB";
+    npx:hasSignature "RyM0bB/gcSChzGIj1EkM8hovzchb6g+bKkD6z2FQfW2rZvJrAIGqJr+TmI6JuTeIt/+kGPmus/lNZ3vsknLyp2t8BAWvggZ7HcHjE5aqnN6c6gJIsJhJx3/zG6k4f50VMegWwX3vyP8rCugED+1eGetBYZmRVEbLZdEcPGwdsFE=";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0000-0002-2749-8588 .
+  
+  this: dct:created "2024-09-23T15:48:26.503Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-2749-8588;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces sub:variable5;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate ns1:RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM,
+      ns1:RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAGUWnXKhfKYwmMoDK-LVXlEnnGdAuzFZKR9FZsXHJsxQ> .
+}
+

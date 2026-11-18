@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAvYUKjUGkVY0mNL_4QFLhhfSe4U_Sqgr1r2HYqhb3Dus/> .
+
+<https://w3id.org/iadopt/variable/Hemolysis> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Hemolysis",
+        "hemolysis induced in erythrocytes" ;
+    dcterms:description "The destruction of erythrocytes by many different causal agents such as antibodies, bacteria, chemicals, temperature, and changes in tonicity." ;
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/MESH/D006461> ;
+    iop:hasObjectOfInterest sub:redBloodCellSuspension ;
+    iop:hasProperty sub:hemolysisLevel .
+

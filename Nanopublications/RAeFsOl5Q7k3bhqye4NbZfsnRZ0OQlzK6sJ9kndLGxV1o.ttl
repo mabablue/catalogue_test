@@ -1,0 +1,11 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAeFsOl5Q7k3bhqye4NbZfsnRZ0OQlzK6sJ9kndLGxV1o/> .
+
+<https://w3id.org/iadopt/variable/DataGapFillingEvaluation> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Data gap filling evaluation" ;
+    iop:hasObjectOfInterest sub:Data ;
+    iop:hasProperty sub:GapFilling .
+

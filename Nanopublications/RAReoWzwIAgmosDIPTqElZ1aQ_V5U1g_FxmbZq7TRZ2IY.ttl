@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAReoWzwIAgmosDIPTqElZ1aQ_V5U1g_FxmbZq7TRZ2IY/> .
+
+<https://w3id.org/iadopt/variable/Hollow> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Hollow shape" ;
+    dcterms:description "Hollow shape" ;
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/SNOMEDCT/90861002> ;
+    iop:hasObjectOfInterest sub:Hollow ;
+    iop:hasProperty <http://purl.bioontology.org/ontology/SNOMEDCT/90861002> .
+

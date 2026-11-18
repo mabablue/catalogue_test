@@ -1,0 +1,52 @@
+@prefix this: <https://w3id.org/np/RAGvZN3qOFOHa_R04ejMw7YGjAQLZ6S0bA2JDVDtqPtS8> .
+@prefix sub: <https://w3id.org/np/RAGvZN3qOFOHa_R04ejMw7YGjAQLZ6S0bA2JDVDtqPtS8#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  sub:variable4 a <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "Identification of height-range above valley floor influenced by boundary layer air/free troposphere.";
+    rdfs:label "Atmospheric boundary layer heights";
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> <http://vocabs.lter-europe.net/EnvThes/21543>;
+    <https://w3id.org/iadopt/ont/hasProperty> <http://purl.obolibrary.org/obo/HAO_0002455> .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0002-2749-8588 .
+}
+
+sub:pubinfo {
+  orcid:0000-0002-2749-8588 foaf:name "Andrea Tarallo" .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCRZRMbIr0zLFMkUzF5SH/Ja/PamzEk3VY+ccOA55/d8fWhBwzZRnwPoMgJENZeqHDRAayS8oBCWK3P0Ql9SKOwRLIRrioQp0IOBidpDZIedYAMCg/taE4tAtgxvjQBpk+yN8FdkjIgJdOBpdggC5V4oIH77TzuI09dfEv091p7uQIDAQAB";
+    npx:hasSignature "EcyU2Ug8V0FUBphgE97FsUMokYWqY4R1+Xdv0nlNh1o4qA8XHTru+PZ6qFhEV/8lEG52+I7IDQOemnuajap+h6QSNZ+tmUMqbT9S1Jkekvys7BGofqqHYqXd/GBmchjtigqthfPrgwUItYVn0S+xi3d7PMqrta4FSaOc8lD/nks=";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0000-0002-2749-8588 .
+  
+  this: dct:created "2024-09-19T15:10:24.747Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-2749-8588;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces sub:variable4;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate ns1:RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM,
+      ns1:RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAGUWnXKhfKYwmMoDK-LVXlEnnGdAuzFZKR9FZsXHJsxQ> .
+}
+

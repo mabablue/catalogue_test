@@ -1,0 +1,16 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAZRsddyiYZV5jMsIkJ_ttRjHEbilsu43ICF63t2QQlZs#> .
+
+sub:variable26 a iop:Variable ;
+    rdfs:label "Sheet resistence of layer of gold" ;
+    dcterms:description "The sheet resistance of a 5-nanometer-thick layer of gold." ;
+    iop:hasConstraint sub:5-nanometer-thick ;
+    iop:hasContextObject <http://vocab.nerc.ac.uk/collection/P25/current/LTHICK/> ;
+    iop:hasObjectOfInterest <http://purl.obolibrary.org/obo/NCIT_C2392> ;
+    iop:hasProperty <http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000221> .
+
+sub:5-nanometer-thick a iop:Constraint ;
+    iop:constrains <http://vocab.nerc.ac.uk/collection/P25/current/LTHICK/> .
+

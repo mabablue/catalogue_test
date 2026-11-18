@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAU1DmdfKZ6Yi3g9l8OaKUWXdSFwJ6Cyyk40ZLs1mcBTc/> .
+
+<https://w3id.org/iadopt/variable/SpaceGroup> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Space group" ;
+    dcterms:description "A symmetry quality of a unit cell in three-dimensional space" ;
+    iop:hasObjectOfInterest sub:UnitCell ;
+    iop:hasProperty <http://purl.enanomapper.org/onto/ENM_9000037> .
+

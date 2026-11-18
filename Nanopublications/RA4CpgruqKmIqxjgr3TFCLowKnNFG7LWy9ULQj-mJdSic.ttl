@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA4CpgruqKmIqxjgr3TFCLowKnNFG7LWy9ULQj-mJdSic/> .
+
+<https://w3id.org/iadopt/variable/SexRatioAlteration> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Sex ratio alteration",
+        "sex ratio alteration in exposed invertebrate organism" ;
+    dcterms:description "a change in the proportion of males and females." ;
+    rdfs:seeAlso <http://www.ebi.ac.uk/efo/EFO_0004820> ;
+    iop:hasObjectOfInterest sub:invertebrateOrganism ;
+    iop:hasProperty sub:SexRatioAlteration .
+

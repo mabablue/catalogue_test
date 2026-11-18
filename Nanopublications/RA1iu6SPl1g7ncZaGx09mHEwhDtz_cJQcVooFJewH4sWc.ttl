@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA1iu6SPl1g7ncZaGx09mHEwhDtz_cJQcVooFJewH4sWc/> .
+
+<https://w3id.org/iadopt/variable/InterfacialTension> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Interfacial tension",
+        "interfacial tension of substance" ;
+    dcterms:description "the force that holds the surface of a particular phase together." ;
+    rdfs:seeAlso <http://materialsmine.org/ns/InterfacialTension> ;
+    iop:hasObjectOfInterest sub:substance ;
+    iop:hasProperty sub:interfacialTension .
+

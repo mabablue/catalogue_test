@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RALLw8M685sorhCUi3jm2_66wmw3lSj36QGiG2xHxmwfo/> .
+
+<https://w3id.org/iadopt/variable/MetalloidIonisationPotentialEnergy> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Active Metalloid ionisation potential energy" ;
+    dcterms:description "The potential energy that binds an electron to an atom or molecule, in this instance attributable to elements with properties between a metal and a non-metal  that are exerting influence or producing an effect" ;
+    iop:hasObjectOfInterest sub:Metalloid ;
+    iop:hasProperty sub:IonisationPotentialEnergy .
+

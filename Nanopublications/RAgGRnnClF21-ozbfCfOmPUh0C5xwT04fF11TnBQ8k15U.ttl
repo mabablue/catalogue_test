@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAgGRnnClF21-ozbfCfOmPUh0C5xwT04fF11TnBQ8k15U/> .
+
+<https://w3id.org/iadopt/variable/SurfaceCoatingThickness> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Surface coating thickness",
+        "surface coating thickness of material" ;
+    dcterms:description "the physical thickness of the applied surface coating." ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:SurfaceCoatingThickness .
+

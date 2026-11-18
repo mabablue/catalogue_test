@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA0LMK_1A7OTyzSPNXEuhJXb00OA6MG_uOQckXzlmotWg/> .
+
+<https://w3id.org/iadopt/variable/PrimaryParticleSize> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Primary particle size",
+        "primary particle size of material" ;
+    dcterms:description "the characteristic size of an individual particle before aggregation or agglomeration." ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:PrimaryParticleSize .
+

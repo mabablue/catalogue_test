@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/np/RAc5hyVbtexx9j0mQUs2SiTc4I4iAbCDFYW4-oiqH4hkk> .
+@prefix sub: <https://w3id.org/np/RAc5hyVbtexx9j0mQUs2SiTc4I4iAbCDFYW4-oiqH4hkk/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/Whole-bodyConcentration> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "the total amount of a substance present within an entire organism, expressed per unit of whole-body mass";
+    rdfs:label "Whole-body concentration", "whole-body concentration in exposed invertebrate organism";
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:invertebrateOrganism;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:WholeBodyConcentration .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-02-20T15:10:11.792Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/Whole-bodyConcentration>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "kg/vv5jX+EayCN4nGAumrcMWKDpOIuidAfOXf49NqbXSgf5SaNy8R0tMwkNzpYkzyv9tC3FnVYEmGofScueP+c2K/2m2ohsHiRJ2PuV6IaSF9I4CbfUdVok665tcdOEm3k/e5mE013c0Ce1Mm/+fVrQ2we2LHyKAgl6h1girAUye2ImK5ccCTMvWdqA/Mu/7fOyUIrgGNk3jwEO3GQfaRbgMskK8DEq+M2G9OrDduDYBuibgTDL7NsgZfitvwttDbpYCq7uir4Rsx61Run0MufM+0CGE1QHHfHBsUdG4ryEBR/b3hLa8Kh/R+QFev21enjHAURTz6LQkIuP+DT0fhQ==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

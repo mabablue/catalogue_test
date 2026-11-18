@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAuUh9FQTtcNwh7e6kJv4eX-aW_uPn8M4SYmJsVN_nJhQ/> .
+
+<https://w3id.org/iadopt/variable/KeratinoSensActivation> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "KeratinoSens activation",
+        "KeratinoSens assay activation" ;
+    dcterms:description "refers to the triggering of the Keap1-Nrf2-ARE pathway in human keratinocytes (skin cells) by potential skin sensitizers" ;
+    rdfs:seeAlso <https://www.researchgate.net/publication/321206524_The_KeratinoSens_Assay_for_Skin_Sensitization_Screening> ;
+    iop:hasObjectOfInterest sub:inVitroSkinAssay ;
+    iop:hasProperty sub:KeratinoSensActivation .
+

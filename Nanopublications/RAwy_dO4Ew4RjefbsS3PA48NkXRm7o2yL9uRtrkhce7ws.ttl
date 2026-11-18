@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAwy_dO4Ew4RjefbsS3PA48NkXRm7o2yL9uRtrkhce7ws/> .
+
+<https://w3id.org/iadopt/variable/pH> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Potential of hydrogen",
+        "pH" ;
+    dcterms:description "Quantity of dimension one used to express on a scale from 0 to 14 the amount-of-substance concentration of hydrogen ion of dilute aqueous solution, calculated as the logarithm of the reciprocal of hydrogen-ion concentration in gram atoms per liter" ;
+    iop:hasObjectOfInterest sub:Medium ;
+    iop:hasProperty <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45997> .
+

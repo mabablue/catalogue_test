@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA_76V658cGDhPf-CMGOI6mGkYXhjOLvs9UlLCTsILvNo/> .
+
+<https://w3id.org/iadopt/variable/NMRspectra> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "NMR spectra",
+        "NMR spectra of substance" ;
+    dcterms:description "representations of radiation absorption intensity versus frequency of resonance, which provide valuable structural and stereochemical information about a compound." ;
+    rdfs:seeAlso <http://nmrML.org/nmrCV#NMR:1002007> ;
+    iop:hasObjectOfInterest sub:substance ;
+    iop:hasProperty sub:NMRsignature .
+

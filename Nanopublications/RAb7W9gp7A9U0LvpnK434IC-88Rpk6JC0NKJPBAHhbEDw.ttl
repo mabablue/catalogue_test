@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAb7W9gp7A9U0LvpnK434IC-88Rpk6JC0NKJPBAHhbEDw/> .
+
+<https://w3id.org/iadopt/variable/InjectionSiteReaction> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Injection site reaction",
+        "injection site reaction in exposed animal" ;
+    dcterms:description "Adverse reactions that occur initially at the site of injection or infusion." ;
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/MESH/D000075662> ;
+    iop:hasObjectOfInterest sub:testanimal ;
+    iop:hasProperty sub:injectionSiteReactionSeverity .
+

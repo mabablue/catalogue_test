@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAOgY2QQH81w0oe6tx8U3lyu0RInh1N0h2AM9uSRVNV8s/> .
+
+<https://w3id.org/iadopt/variable/SurfaceFunctionalGroups> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Surface functional groups",
+        "surface functional groups of material" ;
+    dcterms:description "chemical moieties bound to a material surface that define its surface chemistry and reactivity." ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:SurfaceFunctionalGroupComposition .
+

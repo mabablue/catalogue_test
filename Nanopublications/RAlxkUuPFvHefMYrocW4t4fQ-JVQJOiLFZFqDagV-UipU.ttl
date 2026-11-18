@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAlxkUuPFvHefMYrocW4t4fQ-JVQJOiLFZFqDagV-UipU/> .
+
+<https://w3id.org/iadopt/variable/MedicagoSativa> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Medicago sativa" ;
+    dcterms:description "A plant species of the family FABACEAE widely cultivated for ANIMAL FEED." ;
+    iop:hasObjectOfInterest sub:Plants ;
+    iop:hasProperty <http://purl.bioontology.org/ontology/MESH/D000455> .
+

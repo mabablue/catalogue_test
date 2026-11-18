@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RAH9DVAwAuxmykhtcYltGvOmjnWGnkB9EITeas8TqC_tw> .
+@prefix sub: <https://w3id.org/np/RAH9DVAwAuxmykhtcYltGvOmjnWGnkB9EITeas8TqC_tw#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  sub:var1 a <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "blabla";
+    rdfs:label "test variable";
+    <https://w3id.org/iadopt/ont/hasMatrix> "test";
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> "test";
+    <https://w3id.org/iadopt/ont/hasProperty> "foo label" .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+sub:pubinfo {
+  orcid:0000-0002-1267-0234 foaf:name "Tobias Kuhn" .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQD4Wj537OijfOWVtsHMznuXKISqBhtGDQZfdO6pbb4hg9EHMcUFGTLbWaPrP783PHv8HMAAPjvEkHLaOHMIknqhaIa5236lfBO3r+ljVdYBElBcLvROmwG+ZGtmPNZf7lMhI15xf5TfoaSa84AFRd5J2EXekK6PhaFQhRm1IpSYtwIDAQAB";
+    npx:hasSignature "l3lNexghfgdGb3DgOB79bxsSuipg5dCLlt/e9+XWdrtfU7pkexlaPmeUe9wtU+cFiXs7cdtyj2W9XkQ8Wv4HCZq5CzmGhPxhuVyrYFVqRHGzsa0FwlyTrn3LGwWS1SaSYpBkXz2VRyo/ydChNZ49tdM9xzW4cUMmepYm53mSFy4=";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0000-0002-1267-0234 .
+  
+  this: a npx:ExampleNanopub;
+    dct:created "2024-05-10T09:07:53.375Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces sub:var1;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate ns1:RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM,
+      ns1:RATtBNB9Rj1cIwxJyoHBgNn8eeIR06m0H6C6RTRVqSy3E, ns1:RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90;
+    nt:wasCreatedFromTemplate ns1:RAq8tqgrQdfy52v_mneS8EIMZAKkL2UgyVKVUVwiXMVrU .
+}
+

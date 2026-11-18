@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAmiWUv_-VyzXZK6prDvpw6NNSCTnuXPZhpSNpPdhdlxg/> .
+
+<https://w3id.org/iadopt/variable/DissolutionRate> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Dissolution rate" ;
+    dcterms:description "The amount of dissolved substance versus time (determined by the crystal forces) as an experimental value, where solid particles (usually crystalline) are released into solution as individual free molecules" ;
+    iop:hasObjectOfInterest sub:Dissolution ;
+    iop:hasProperty <http://purl.enanomapper.org/onto/ENM_1200001> .
+

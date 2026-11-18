@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAKSMORTNQb7h_T7udYmR64GlJOiZktUEBd5EBfSidHCI/> .
+
+<https://w3id.org/iadopt/variable/ElongationAtBreak> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Elongation at break",
+        "elongation at break of material" ;
+    dcterms:description "the percentage increase in length of a material specimen at fracture under tensile loading." ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:ElongationAtBreak .
+

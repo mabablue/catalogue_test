@@ -1,0 +1,11 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA77l8mFW31zbJ5sYRj0LpfK2dKl3mk5NSGNanzqIr-9Q/> .
+
+<https://w3id.org/iadopt/variable/Cucumber> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Cucumber" ;
+    iop:hasObjectOfInterest sub:Cucumber ;
+    iop:hasProperty <http://purl.bioontology.org/ontology/SNOMEDCT/735213008> .
+

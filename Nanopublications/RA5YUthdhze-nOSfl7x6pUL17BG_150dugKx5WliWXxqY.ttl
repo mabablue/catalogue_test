@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA5YUthdhze-nOSfl7x6pUL17BG_150dugKx5WliWXxqY/> .
+
+<https://w3id.org/iadopt/variable/AntioxidantEnzymes> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Antioxidant enzymes (SOD/CAT/APX)",
+        "antioxidant enzymes activity in plant tissue" ;
+    dcterms:description "enzymes involved in detoxifying reactive oxygen species in plant tissues" ;
+    iop:hasObjectOfInterest sub:Plant ;
+    iop:hasProperty sub:AntioxidantEnzymeActivity .
+

@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RACBRzXaaJ45OgJTB4fJVIRikc8Kg44jW3qBxoABoxGHI/> .
+
+<https://w3id.org/iadopt/variable/ParticleSizeDistribution> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Particle size distribution",
+        "particle size distribution of material" ;
+    dcterms:description "A size distribution inhering in particles." ;
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/npo#NPO_1699> ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:ParticleSizeDistribution .
+

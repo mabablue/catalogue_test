@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RARvvYkhuVU3d109jVgVhADxCMP-scECEo1H-zK72y0Xs/> .
+
+<https://w3id.org/iadopt/variable/ArCom2> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Ar-Component 2 (Com2)" ;
+    dcterms:description "Atomic mass (Ar) of the second nanoparticle component (Com2). E.g., for TiO2, Com2(O) = 16." ;
+    iop:hasObjectOfInterest sub:Com2 ;
+    iop:hasProperty sub:ArCom2 .
+

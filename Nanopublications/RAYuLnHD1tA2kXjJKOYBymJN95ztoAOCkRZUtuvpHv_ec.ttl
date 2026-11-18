@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAYuLnHD1tA2kXjJKOYBymJN95ztoAOCkRZUtuvpHv_ec/> .
+
+<https://w3id.org/iadopt/variable/Young’sModulus> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Young's modulus of material",
+        "Young’s modulus" ;
+    dcterms:description "the measure of a material’s stiffness, defined as stress divided by strain in the elastic deformation region." ;
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/MESH/D055119> ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty <https://w3id.org/np/RAYuLnHD1tA2kXjJKOYBymJN95ztoAOCkRZUtuvpHv_ec/Young'sModulus> .
+

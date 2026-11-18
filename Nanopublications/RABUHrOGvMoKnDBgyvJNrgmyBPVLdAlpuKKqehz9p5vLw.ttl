@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RABUHrOGvMoKnDBgyvJNrgmyBPVLdAlpuKKqehz9p5vLw/> .
+
+<https://w3id.org/iadopt/variable/Macro/micronutrientcontent> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Macro/micronutrient content",
+        "macro/micronutrient content of plant tissue" ;
+    dcterms:description "the concentration of essential mineral nutrients" ;
+    rdfs:seeAlso <https://w3id.org/inbio#_000065> ;
+    iop:hasObjectOfInterest sub:Plant ;
+    iop:hasProperty sub:NutrientConcentration .
+

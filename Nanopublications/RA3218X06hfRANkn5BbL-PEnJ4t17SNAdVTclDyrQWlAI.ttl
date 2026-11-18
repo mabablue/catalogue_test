@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA3218X06hfRANkn5BbL-PEnJ4t17SNAdVTclDyrQWlAI/> .
+
+<https://w3id.org/iadopt/variable/Tradescantiaspp> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Tradescantia spp." ;
+    dcterms:description "A plant genus of the family COMMELINACEAE that is used in genotoxic bioassays." ;
+    iop:hasObjectOfInterest sub:Plants ;
+    iop:hasProperty <http://purl.bioontology.org/ontology/MESH/D034823> .
+

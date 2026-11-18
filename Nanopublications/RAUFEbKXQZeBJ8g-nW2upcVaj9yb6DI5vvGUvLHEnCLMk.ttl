@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAUFEbKXQZeBJ8g-nW2upcVaj9yb6DI5vvGUvLHEnCLMk/> .
+
+<https://w3id.org/iadopt/variable/MetabolomicChanges> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Metabolomic changes",
+        "metabolomic changes in cells" ;
+    dcterms:description "alterations in the levels or composition of metabolites in a biological system following exposure to a substance." ;
+    iop:hasObjectOfInterest sub:cell ;
+    iop:hasProperty sub:metabolomicChanges .
+

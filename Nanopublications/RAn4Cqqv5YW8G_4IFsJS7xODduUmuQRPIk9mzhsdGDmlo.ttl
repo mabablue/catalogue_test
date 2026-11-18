@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAn4Cqqv5YW8G_4IFsJS7xODduUmuQRPIk9mzhsdGDmlo/> .
+
+<https://w3id.org/iadopt/variable/TimeToFirstReproduction> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Time to first reproduction",
+        "time to first reproduction in exposed invertebrate organism" ;
+    dcterms:description "the duration required for an organism to reach reproductive maturity and produce offspring." ;
+    iop:hasObjectOfInterest sub:invertebrateOrganism ;
+    iop:hasProperty sub:TimeToFirstReproduction .
+

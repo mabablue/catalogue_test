@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RALj4u9nrpNSWI-eBaunACOT07tRALPAV6tGJFTfRpbtA/> .
+
+<https://w3id.org/iadopt/variable/UnitCellAnglesExperimental> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Unit cell angles (experimental, e.g., using Rietveld refinement)" ;
+    dcterms:description "Experimentally derived, e.g., from XRD data using Rietveld refinement, angles (α, β, γ) of the unit cell" ;
+    iop:hasObjectOfInterest sub:UnitCell ;
+    iop:hasProperty sub:UnitCellAnglesExperimental .
+

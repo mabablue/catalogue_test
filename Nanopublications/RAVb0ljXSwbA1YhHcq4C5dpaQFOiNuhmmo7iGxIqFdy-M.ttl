@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAVb0ljXSwbA1YhHcq4C5dpaQFOiNuhmmo7iGxIqFdy-M/> .
+
+<https://w3id.org/iadopt/variable/DaytimeTemperature> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Daytime temperature" ;
+    dcterms:description "The temperature during daytime" ;
+    iop:hasObjectOfInterest sub:Temperature ;
+    iop:hasProperty sub:DaytimeTemperature .
+

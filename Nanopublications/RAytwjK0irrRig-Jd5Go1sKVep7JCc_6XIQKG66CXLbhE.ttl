@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAytwjK0irrRig-Jd5Go1sKVep7JCc_6XIQKG66CXLbhE/> .
+
+<https://w3id.org/iadopt/variable/ImposexIndex> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Imposex index",
+        "imposex index in exposed invertebrate organism" ;
+    dcterms:description "the development of male sexual characteristics in females." ;
+    rdfs:seeAlso <http://purl.jp/bio/4/id/200906075488773824> ;
+    iop:hasObjectOfInterest sub:invertebrateOrganism ;
+    iop:hasProperty sub:ImposexIndex .
+

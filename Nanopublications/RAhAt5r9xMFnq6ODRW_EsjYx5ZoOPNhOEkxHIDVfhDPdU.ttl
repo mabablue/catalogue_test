@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAhAt5r9xMFnq6ODRW_EsjYx5ZoOPNhOEkxHIDVfhDPdU/> .
+
+<https://w3id.org/iadopt/variable/InclusionCriteria> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Inclusion criteria" ;
+    dcterms:description "An inclusion criterion (rule) is_a *eligibility criterion* which defines and states a condition which, if met, makes an entity suitable for a given task or participation in a given process. For instance, in a study protocol, inclusion criteria indicate the conditions that prospective subjects MUST meet to be eligible for participation in a study" ;
+    iop:hasObjectOfInterest sub:Resource ;
+    iop:hasProperty <http://purl.obolibrary.org/obo/OBI_0500027> .
+

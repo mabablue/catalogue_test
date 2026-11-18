@@ -1,0 +1,11 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAMifUYiYk0RTMg_mpMqifGnwSHioWctz67DSo9xH3HgI/> .
+
+<https://w3id.org/iadopt/variable/AgNPPEG> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Polyethylene glycol (PEG)-coated Silver nanoparticle" ;
+    iop:hasObjectOfInterest sub:AgNP ;
+    iop:hasProperty sub:AgNPPEG .
+

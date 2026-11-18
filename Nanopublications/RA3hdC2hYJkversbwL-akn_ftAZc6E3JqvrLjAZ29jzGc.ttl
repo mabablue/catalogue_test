@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA3hdC2hYJkversbwL-akn_ftAZc6E3JqvrLjAZ29jzGc/> .
+
+<https://w3id.org/iadopt/variable/Hydrophilicity> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Hydrophilicity",
+        "hydrophilicity of material" ;
+    dcterms:description "the affinity of a material or surface for water, expressed as its tendency to interact with it." ;
+    rdfs:seeAlso <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C66820> ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:hydrophilicity .
+

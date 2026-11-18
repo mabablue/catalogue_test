@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAHwRTFkXbJln-ZGYq8uqlWyYvnudDdrIJiLKDuMs52Lc/> .
+
+<https://w3id.org/iadopt/variable/Swelling> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Swelling",
+        "swelling of material" ;
+    dcterms:description "the percentage increase in mass or volume of a polymer or hydrogel due to solvent absorption." ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:SwellingDegree .
+

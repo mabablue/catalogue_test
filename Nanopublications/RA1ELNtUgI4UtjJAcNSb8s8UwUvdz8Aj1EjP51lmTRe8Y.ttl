@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA1ELNtUgI4UtjJAcNSb8s8UwUvdz8Aj1EjP51lmTRe8Y/> .
+
+<https://w3id.org/iadopt/variable/FertilityIndex> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Fertility index",
+        "fertility index in exposed animals" ;
+    dcterms:description "the proportion of mating pairs that successfully produce pregnancies during a defined breeding period." ;
+    iop:hasObjectOfInterest sub:testanimal ;
+    iop:hasProperty sub:fertility .
+

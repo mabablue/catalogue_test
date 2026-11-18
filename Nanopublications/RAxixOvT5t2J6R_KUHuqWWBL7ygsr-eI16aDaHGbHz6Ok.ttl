@@ -1,0 +1,11 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAxixOvT5t2J6R_KUHuqWWBL7ygsr-eI16aDaHGbHz6Ok/> .
+
+<https://w3id.org/iadopt/variable/SizespICPMS> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Nanomaterial size measured with spICP-MS" ;
+    iop:hasObjectOfInterest sub:Nanomaterial ;
+    iop:hasProperty <http://purl.enanomapper.org/onto/ENM_8000296> .
+

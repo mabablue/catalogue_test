@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RALz-CGjIFEUqSZS8h6eIGnu3ZSaRLuATkZ13LDWnx1hw/> .
+
+<https://w3id.org/iadopt/variable/AtomicWeightActiveNonMetals> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Atomic weight of active non-metals" ;
+    dcterms:description "The relative atomic mass (of elements from natural, stable, terrestrial sources that are exerting influence or producing an effect that are attributable to electronegative chemical elements that are not characterised by ductility, malleability, luster, and conductance of heat and electricity. They can replace the hydrogen of an acid and form bases with hydroxyl radicals" ;
+    iop:hasObjectOfInterest sub:NonMetal ;
+    iop:hasProperty sub:AtomicWeight .
+

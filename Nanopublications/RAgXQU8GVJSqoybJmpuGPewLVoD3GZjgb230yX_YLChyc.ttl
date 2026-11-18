@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAgXQU8GVJSqoybJmpuGPewLVoD3GZjgb230yX_YLChyc/> .
+
+<https://w3id.org/iadopt/variable/SurfaceCharge> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Surface charge",
+        "surface charge of material" ;
+    dcterms:description "An electric charge which is the net charge present on the surface of a material entity" ;
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/npo#NPO_1812> ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:SurfaceCharge .
+

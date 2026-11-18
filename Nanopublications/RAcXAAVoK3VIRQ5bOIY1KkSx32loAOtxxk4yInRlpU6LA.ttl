@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAcXAAVoK3VIRQ5bOIY1KkSx32loAOtxxk4yInRlpU6LA/> .
+
+<https://w3id.org/iadopt/variable/PoreSizeDistribution> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Pore size distribution",
+        "pore size distribution of material" ;
+    dcterms:description "the distribution of pore sizes within a material, describing the relative proportions of pores of different diameters." ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:PoreSizeDistribution .
+

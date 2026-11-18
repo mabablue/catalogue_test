@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://w3id.org/iadopt/variable/Granuloma/foreignBodyReaction> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Granuloma / foreign body reaction",
+        "granuloma/foreign body reaction in tissue" ;
+    dcterms:description "Histiocytic, inflammatory response to a foreign body. It consists of modified macrophages with multinucleated giant cells, in this case foreign-body giant cells" ;
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/MESH/D015745> ;
+    iop:hasObjectOfInterest <https://w3id.org/np/RAxYW92HHNs_6Aba1V7yRiMMwLlpREo0v3EWG8687bxak/organ/tissue> ;
+    iop:hasProperty <https://w3id.org/np/RAxYW92HHNs_6Aba1V7yRiMMwLlpREo0v3EWG8687bxak/granuloma/foreignbodyreaction> .
+

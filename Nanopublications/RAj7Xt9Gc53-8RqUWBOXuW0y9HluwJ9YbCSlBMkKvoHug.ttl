@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAj7Xt9Gc53-8RqUWBOXuW0y9HluwJ9YbCSlBMkKvoHug/> .
+
+<https://w3id.org/iadopt/variable/OxidativeDNADamage> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Oxidative DNA damage",
+        "oxidative DNA damage in cells" ;
+    dcterms:description "DNA modification caused by reactive oxygen species." ;
+    rdfs:seeAlso <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C198713> ;
+    iop:hasObjectOfInterest sub:cell ;
+    iop:hasProperty sub:OxidativeDNADamage .
+

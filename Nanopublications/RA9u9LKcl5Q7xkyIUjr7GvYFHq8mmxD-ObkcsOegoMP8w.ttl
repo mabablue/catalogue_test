@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA9u9LKcl5Q7xkyIUjr7GvYFHq8mmxD-ObkcsOegoMP8w/> .
+
+<https://w3id.org/iadopt/variable/SoftwareFundingSource> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Software Funding Source",
+        "The funding source of a software" ;
+    dcterms:description "The organization, program, or individual that provided financial support for developing or maintaining a software (e.g., a research grant, company budget, foundation funding, donations)." ;
+    iop:hasObjectOfInterest sub:software ;
+    iop:hasProperty sub:fundingsource .
+

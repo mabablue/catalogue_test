@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA4SUgMBcKfKEnu8Jqx3xpNJC8n2ZAqcdmp0iD-FoRz9Q#> .
+
+sub:Ex2.Gr5 a iop:Variable ;
+    rdfs:label "Mass concentration of NPs at well bottom (mg/cm3)" ;
+    dcterms:description "Mass concentration of nanoparticles (NPs) at well bottom (mg/cm3) in  a 96-well plate after a specific exposure time" ;
+    rdfs:seeAlso <https://www.mdpi.com/2079-4991/12/22/3935> ;
+    iop:hasConstraint sub:at_bottom_of_well,
+        <https://w3id.org/np/RA4SUgMBcKfKEnu8Jqx3xpNJC8n2ZAqcdmp0iD-FoRz9Q#unit_mg/cm3> ;
+    iop:hasMatrix sub:96-well_plate_inside-bottom ;
+    iop:hasObjectOfInterest sub:NPs ;
+    iop:hasProperty sub:Mass_concentration .
+

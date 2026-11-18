@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAxLWpeDvtf7g297UhUXiwXzgAH4iH7MZu8FLgS52yZVM/> .
+
+<https://w3id.org/iadopt/variable/FoodConsumption> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Food consumption",
+        "food consumption in exposed animal" ;
+    dcterms:description "A measurement of a subject's nutritional intake." ;
+    rdfs:seeAlso <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C90384> ;
+    iop:hasObjectOfInterest sub:testanimal ;
+    iop:hasProperty sub:FoodConsumption .
+

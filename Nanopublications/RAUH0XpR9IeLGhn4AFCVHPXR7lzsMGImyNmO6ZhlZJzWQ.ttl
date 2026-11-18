@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAUH0XpR9IeLGhn4AFCVHPXR7lzsMGImyNmO6ZhlZJzWQ/> .
+
+<https://w3id.org/iadopt/variable/D21> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "The average coordination parameter (4Ang) of the shell atoms" ;
+    dcterms:description "D21: The average coordination parameter (4Ang) of the shell nanoparticle atoms" ;
+    iop:hasObjectOfInterest sub:NPAtomAverageShellCoordination ;
+    iop:hasProperty sub:Coordination4Ang .
+

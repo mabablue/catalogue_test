@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA5BZ0gj8BPVs_gSD6yw2kNIve9SZBVnfAjBF-9cJW7mo/> .
+
+<https://w3id.org/iadopt/variable/BodyLength> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Body length",
+        "body length in exposed invertebrate organism" ;
+    dcterms:description "the measured longitudinal size of an organism, used as an indicator of growth and developmental progression." ;
+    rdfs:seeAlso <http://purl.obolibrary.org/obo/OBA_VT0001256> ;
+    iop:hasObjectOfInterest sub:invertebrateOrganism ;
+    iop:hasProperty sub:BodyLength .
+

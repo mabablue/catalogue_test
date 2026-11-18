@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAIPvPH_nKKN6peo5Hr3-ybT1xs4hCGajv04Uh4PmSqM8/> .
+
+<https://w3id.org/iadopt/variable/QuantityInorganicChemicals> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Quantity of inorganic simple chemicals" ;
+    dcterms:description "How much there is of the class of compounds not having a carbon basis and are simple, non-repetitive chemical entities" ;
+    iop:hasObjectOfInterest sub:InorganicChemicals ;
+    iop:hasProperty sub:Quantity .
+

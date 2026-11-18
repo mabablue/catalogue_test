@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RATISPZ7jlvhVbGb4kCsn7ZqFuOIW4czRAfc9fOKGFn7k/> .
+
+<https://w3id.org/iadopt/variable/Reproduction> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Reproduction",
+        "reproduction in exposed organisms" ;
+    dcterms:description "The generation of offspring by living organisms." ;
+    rdfs:seeAlso <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17087> ;
+    iop:hasObjectOfInterest sub:testorganism ;
+    iop:hasProperty sub:reproductiveOutput .
+

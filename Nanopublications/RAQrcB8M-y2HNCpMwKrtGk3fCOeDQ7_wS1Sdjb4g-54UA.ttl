@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAQrcB8M-y2HNCpMwKrtGk3fCOeDQ7_wS1Sdjb4g-54UA/> .
+
+<https://w3id.org/iadopt/variable/SurfaceEnergy> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Surface energy",
+        "surface energy of material" ;
+    dcterms:description "the excess free energy per unit area of a material surface compared to the bulk." ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:SurfaceEnergy .
+

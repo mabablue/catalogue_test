@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAO8JhNgRfRIFRNb9YWVbn10NPQ9nNTDiji3e0HLAOicM/> .
+
+<https://w3id.org/iadopt/variable/BroodSize> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Brood size",
+        "brood size in exposed invertebrate organism" ;
+    dcterms:description "the number of offspring produced per reproductive event." ;
+    rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000276> ;
+    iop:hasObjectOfInterest sub:invertebrateOrganism ;
+    iop:hasProperty sub:BroodSize .
+

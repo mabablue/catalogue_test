@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RASn_6tQzS1po79rUtLNEtFt4gMwns7iN7n562mU_skkI/> .
+
+<https://w3id.org/iadopt/variable/Colour> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Colour",
+        "colour of substance" ;
+    dcterms:description "the appearance of something as a result of the way in which it reflects light." ;
+    rdfs:seeAlso <http://www.co-ode.org/ontologies/galen#Colour> ;
+    iop:hasObjectOfInterest sub:substance ;
+    iop:hasProperty sub:colour .
+

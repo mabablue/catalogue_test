@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAK_aESt8FrE2X9FFNXG5juZCim4CwRIXhFE45UVGmwvc/> .
+
+<https://w3id.org/iadopt/variable/ClonogenicSurvival> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Clonogenic survival",
+        "clonogenic survival of cells" ;
+    dcterms:description "the ability of a single cell to retain its capacity to proliferate indefinitely and form a colony after exposure to a substance." ;
+    iop:hasObjectOfInterest sub:cell ;
+    iop:hasProperty sub:ClonogenicSurvival .
+

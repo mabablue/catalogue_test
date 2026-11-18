@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA5BeEYTyffGKwKUdovjAFbMkMwSh8Puw0DWbQFeWpBHc/> .
+
+<https://w3id.org/iadopt/variable/AntioxidantEnzymeActivity> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Antioxidant enzyme activity",
+        "antioxidant enzyme activity in cells" ;
+    dcterms:description "the catalytic activity of enzymes that neutralize reactive oxygen or nitrogen species in cells." ;
+    rdfs:seeAlso <http://purl.jp/bio/4/id/201306004763717296> ;
+    iop:hasObjectOfInterest sub:cell ;
+    iop:hasProperty sub:antioxidantenzymeactivity .
+

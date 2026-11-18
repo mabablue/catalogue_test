@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAG6-g7M-mrK4eXZNwRdaiktpIkBcQOPTMNA-sdgscsOo/> .
+
+<https://w3id.org/iadopt/variable/Oxide> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Oxide" ;
+    dcterms:description "A chemical compound of oxygen with other chemical elements." ;
+    rdfs:seeAlso <http://purl.org/obo/owl/CHEBI#CHEBI_25741> ;
+    iop:hasObjectOfInterest sub:Oxide ;
+    iop:hasProperty <http://purl.org/obo/owl/CHEBI#CHEBI_25741> .
+

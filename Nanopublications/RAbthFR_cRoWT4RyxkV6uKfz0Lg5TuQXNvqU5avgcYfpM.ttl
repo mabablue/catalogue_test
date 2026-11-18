@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAbthFR_cRoWT4RyxkV6uKfz0Lg5TuQXNvqU5avgcYfpM/> .
+
+<https://w3id.org/iadopt/variable/DevelopmentalDelay> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Developmental delay",
+        "developmental delay in exposed invertebrate organism" ;
+    dcterms:description "the slowing or disruption of normal progression through developmental stages caused by exposure to a substance." ;
+    rdfs:seeAlso <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C116942> ;
+    iop:hasObjectOfInterest sub:invertebrateOrganism ;
+    iop:hasProperty sub:DevelopmentalDelay .
+

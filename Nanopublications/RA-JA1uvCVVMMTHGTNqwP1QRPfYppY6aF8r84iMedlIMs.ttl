@@ -1,0 +1,37 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fdof: <https://w3id.org/fdof/ontology#> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sub: <https://w3id.org/np/RA-JA1uvCVVMMTHGTNqwP1QRPfYppY6aF8r84iMedlIMs/> .
+
+orcid:0000-0003-2195-3997 rdfs:label "Barbara Magagna" .
+
+<https://w3id.org/iadopt/variable/20260323T163937-70> a fdof:FAIRDigitalObject,
+        iop:Variable ;
+    dcterms:conformsTo <https://w3id.org/np/RA5MTl9GFH-QuuBHYEA2hOtxOMOV4-jrhtdx5lOy9CAQE> ;
+    dcterms:identifier "iadopt-variable-20260323T163937-70" ;
+    rdfs:comment "LLM-proposed preferred label is stored in skos:prefLabel. The alternative label is generated from the simple-entity formula." ;
+    skos:altLabel "temperature of soil location: surface depth: 10 cm" ;
+    skos:definition "surface soil temperature at 10 cm dept" ;
+    skos:prefLabel "surface soil temperature at 10 cm dept" ;
+    iop:hasConstraint sub:_na1fd239ca13845abae98eda342d0e784b1,
+        sub:_na1fd239ca13845abae98eda342d0e784b2 ;
+    iop:hasObjectOfInterest <https://www.wikidata.org/entity/Q36133> ;
+    iop:hasProperty <https://www.wikidata.org/entity/Q11466> .
+
+sub:_na1fd239ca13845abae98eda342d0e784b1 a iop:Constraint ;
+    rdfs:label "location: surface" ;
+    iop:constrains <https://www.wikidata.org/entity/Q36133> .
+
+sub:_na1fd239ca13845abae98eda342d0e784b2 a iop:Constraint ;
+    rdfs:label "depth: 10 cm" ;
+    iop:constrains <https://www.wikidata.org/entity/Q36133> .
+
+<https://www.wikidata.org/entity/Q11466> a iop:Property ;
+    rdfs:label "temperature" .
+
+<https://www.wikidata.org/entity/Q36133> a iop:Entity ;
+    rdfs:label "soil" .
+

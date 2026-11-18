@@ -1,0 +1,48 @@
+@prefix this: <https://w3id.org/np/RAxYNyMFHzfGsBw6O47sGQ_k4BZDPiSEiCB-k6MsvGUXM> .
+@prefix sub: <https://w3id.org/np/RAxYNyMFHzfGsBw6O47sGQ_k4BZDPiSEiCB-k6MsvGUXM#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  sub:SEIALWASO4T8PIC a <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "Soil erosion in arable land with a slope of 4 to 8 percent in catchment";
+    rdfs:label "Soil erosion in arable land with a slope of 4 to 8 percent in catchment";
+    <https://w3id.org/iadopt/ont/hasConstraint> sub:arable, sub:slope_of_4_to_8_percent;
+    <https://w3id.org/iadopt/ont/hasMatrix> sub:land;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:soil;
+    <https://w3id.org/iadopt/ont/hasProperty> <https://w3id.org/np/RAxYNyMFHzfGsBw6O47sGQ_k4BZDPiSEiCB-k6MsvGUXM#erosion_mass_per_area_per_time)> .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0002-0905-7033 .
+}
+
+sub:pubinfo {
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDVdYrQt6zJow+K70Ct7cVEQnnoKDjkI8H0lI6dkgBNbekHY7zv5RNeqFHIhWgbNS+PICvZpqZhnPSBpKrGggiReyPjSRX0vyj/1fwzB3DXKN7QLn/34yIZ1kiW2w9VlMsTm301FsJRjDcEV7SNfejBOt1ZW0Ge3VWzQaSNZNUlDQIDAQAB";
+    npx:hasSignature "oP3wc0/Mca+ADST7KUcyUH1gSLbblA5KaUPNFzksIBQW6gn8x8ugkPCtSGGmUBfi0m00YxR+BlgxQUWEys2nPVvHKOkzbwSYpKqWcUtil5w2SeVaKnGtWUIywqQYDwHADktDFMqxlB4c7SkFazTpKBEXMO/DLLDBhDMk4mPppvs=";
+    npx:hasSignatureTarget this: .
+  
+  this: dct:created "2023-10-17T10:10:54.812Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-0905-7033;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces sub:SEIALWASO4T8PIC;
+    nt:wasCreatedFromProvenanceTemplate <http://purl.org/np/RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM>;
+    nt:wasCreatedFromPubinfoTemplate <http://purl.org/np/RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM>,
+      <http://purl.org/np/RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90>;
+    nt:wasCreatedFromTemplate <http://purl.org/np/RAq8tqgrQdfy52v_mneS8EIMZAKkL2UgyVKVUVwiXMVrU> .
+}
+

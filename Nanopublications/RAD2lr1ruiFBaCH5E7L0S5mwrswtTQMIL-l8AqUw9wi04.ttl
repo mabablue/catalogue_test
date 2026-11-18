@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAD2lr1ruiFBaCH5E7L0S5mwrswtTQMIL-l8AqUw9wi04/> .
+
+<https://w3id.org/iadopt/variable/PhotoperiodRegime&LightSpectrum> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Photoperiod regime & light spectrum",
+        "photoperiod regime & light spectrum of growth environment" ;
+    dcterms:description "the duration and timing of light–dark cycles and the wavelength composition of light provided during an experiment." ;
+    iop:hasObjectOfInterest sub:growthEnvironment ;
+    iop:hasProperty sub:lightRegimeComposition .
+

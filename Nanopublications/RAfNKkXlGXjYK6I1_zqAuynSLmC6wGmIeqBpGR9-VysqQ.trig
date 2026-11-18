@@ -1,0 +1,79 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fdof: <https://w3id.org/fdof/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sub: <https://w3id.org/np/RAfNKkXlGXjYK6I1_zqAuynSLmC6wGmIeqBpGR9-VysqQ/> .
+@prefix this: <https://w3id.org/np/RAfNKkXlGXjYK6I1_zqAuynSLmC6wGmIeqBpGR9-VysqQ> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  orcid:0000-0003-2195-3997 rdfs:label "Barbara Magagna" .
+  
+  <https://w3id.org/iadopt/variable/20260702T111253-09> a fdof:FAIRDigitalObject, iop:Variable;
+    dcterms:conformsTo <https://w3id.org/np/RA5MTl9GFH-QuuBHYEA2hOtxOMOV4-jrhtdx5lOy9CAQE>;
+    dcterms:created "2026-07-02T11:12:53Z"^^xsd:dateTime;
+    dcterms:creator orcid:0000-0003-2195-3997;
+    dcterms:identifier <https://w3id.org/iadopt/variable/20260702T111253-09>;
+    pav:createdWith "LLM-assisted I-ADOPT variable generation";
+    rdfs:comment "Soil temperature at depth of 40 cm";
+    rdfs:label "Soil temperature at depth of 40 cm";
+    skos:altLabel "temperature of soil depth: 40 cm";
+    skos:definition "My system is measuring soil temp at depth of 40 cm";
+    skos:prefLabel "Soil temperature at depth of 40 cm";
+    prov:wasAttributedTo orcid:0000-0003-2195-3997;
+    iop:hasConstraint sub:_na3d5abb3b27b4d6fafa8321ea2ab3a9fb1;
+    iop:hasObjectOfInterest <https://www.wikidata.org/entity/Q36133>;
+    iop:hasProperty <https://www.wikidata.org/entity/Q11466> .
+  
+  sub:_na3d5abb3b27b4d6fafa8321ea2ab3a9fb1 a iop:Constraint;
+    rdfs:label "depth: 40 cm";
+    iop:constrains <https://www.wikidata.org/entity/Q36133> .
+  
+  <https://www.wikidata.org/entity/Q11466> a iop:Property;
+    rdfs:label "temperature" .
+  
+  <https://www.wikidata.org/entity/Q36133> a iop:Entity;
+    rdfs:label "soil" .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0003-2195-3997;
+    prov:wasGeneratedBy <https://w3id.org/np/RAwy2xTZzt5Y3ix-7f1HDTewgZqa6eRm5YnmrSKCy0PTA/I-ADOPT-LLM-Service> .
+}
+
+sub:pubinfo {
+  orcid:0000-0003-2195-3997 foaf:name "Barbara Magagna" .
+  
+  this: dcterms:created "2026-07-02T11:13:25.446Z"^^xsd:dateTime;
+    dcterms:creator <https://w3id.org/np/RAwy2xTZzt5Y3ix-7f1HDTewgZqa6eRm5YnmrSKCy0PTA/I-ADOPT-LLM-Service>;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/20260702T111253-09>;
+    npx:wasCreatedAt <https://nanodash.petapico.org/>;
+    rdfs:label "Soil temperature at depth of 40 cm";
+    ntemplate:wasCreatedFromProvenanceTemplate <https://w3id.org/np/RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM>;
+    ntemplate:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM>, <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAkcfj9W_lJjlq26paIFmTY4mZoaY27BnZCjcsL34EPIA> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzymtTYCOhZMR6OcAN9w2t82zy6tPY5UkyFAEyxdvUUFaHciaH4dxdSgrCXdg8GoZIOW7wQEJGtom7D1fkFOfVFVgLb4wApmPen87msSXoAN1yPeDEkD4BFQ+GanBFQxqebpmgjF9tLIkZFziShWQrAyBOqy4K44YCYq/l94FIdRZGabV9IAngZwydWh2TBBBahuwsysHulhkdgiedWKl75mdsYgDzHlAJz4BnQ8Az9w+k7LnwQDPvThTZJtt+dFAW/y1M3WKzf+9biSlLgbHtRWYI6Z9ovetZi8vWiW2lpiCvyfGKNIgP+Q38D1i3gJEPQnj+iK8Nw9LLHhg8bV+yQIDAQAB";
+    npx:hasSignature "VmHmIO7wvdlabL+pkrJUsJVt0m3oN015Za361RYZU+FUfnt+DAKaejmzFkP46XrjbCMFOx6zSc+JrxpOE/wvRA4IRwf+mZuR75ca+DZhjISNxfTeJUHdT9pioQr0yFTBASlpnqu12fb/N3P+CtxiGOUlP6rK1iUkyireofq9wVbflTHK+KjrPHw9Nj+ii96w7A74WBBZbdPkt5aR8a/QTcJs16hvx8RhJI33RjkBU62FvPsPiZr8wheYnJJk2y/2ScrzZsy5xiNGhu4vMWluGjDwkSA5mXYRvo2FmTUiv2NwCeZ7+uLAlbknKlXVOSwnulwrJ1J9+wJPA5v4Yb8Sxg==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy <https://w3id.org/np/RAwy2xTZzt5Y3ix-7f1HDTewgZqa6eRm5YnmrSKCy0PTA/I-ADOPT-LLM-Service> .
+}
+

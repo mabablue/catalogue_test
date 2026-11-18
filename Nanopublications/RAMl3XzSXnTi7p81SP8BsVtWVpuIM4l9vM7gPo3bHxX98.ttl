@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAMl3XzSXnTi7p81SP8BsVtWVpuIM4l9vM7gPo3bHxX98/> .
+
+<https://w3id.org/iadopt/variable/D41> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Lattice energy of NP divided by the NP volume in eV/A^3" ;
+    dcterms:description "D41: Lattice energy of the nanoparticle divided by the nanoparticle volume in eV/A^3" ;
+    iop:hasObjectOfInterest sub:Nanoparticle ;
+    iop:hasProperty sub:VolumeNormalisedLatticeEnergy .
+

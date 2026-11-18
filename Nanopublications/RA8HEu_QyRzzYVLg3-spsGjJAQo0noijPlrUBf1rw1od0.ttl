@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA8HEu_QyRzzYVLg3-spsGjJAQo0noijPlrUBf1rw1od0/> .
+
+<https://w3id.org/iadopt/variable/ExposurePathway> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Exposure pathway" ;
+    dcterms:description "The physical course a chemical or pollutant takes from its source to the exposed organism" ;
+    rdfs:seeAlso <https://www.eea.europa.eu/help/glossary/eea-glossary/exposure-pathway> ;
+    iop:hasObjectOfInterest sub:Exposure ;
+    iop:hasProperty <https://www.eea.europa.eu/help/glossary/eea-glossary/exposure-pathway> .
+

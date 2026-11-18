@@ -1,0 +1,55 @@
+@prefix this: <https://w3id.org/np/RAbGhvpB131C-QTwOHy9SzZ5Ghi1Pw327wLhqn83o27qs> .
+@prefix sub: <https://w3id.org/np/RAbGhvpB131C-QTwOHy9SzZ5Ghi1Pw327wLhqn83o27qs/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/CriticalMicelleConcentration> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "the minimum concentration of a surfactant at which micelle formation occurs.";
+    rdfs:label "Critical micelle concentration", "critical micelle concentration of substance";
+    rdfs:seeAlso <https://www.sciencedirect.com/topics/chemical-engineering/critical-micelle-concentration#:~:text=Critical%20micelle%20concentration%20(CMC)%20is%20defined%20as%20the%20surfactant%20concentration,other%20molecules%20and%20form%20micelles.>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:substance;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:CriticalMicelleConcentration .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-01-26T13:21:55.036Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/CriticalMicelleConcentration>;
+    npx:supersedes <https://w3id.org/np/RAan_fvrLGfwtSTtT6U-LgqZcaUsQM6MN5uQJInIorv2s>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAoTD7udB2KtUuOuAe74tJi1t3VzK0DyWS7rYVAq1GRvw>, <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "v5Pq2jd9AEpsjEAzrwQi3gmE4RnQM0zwJEtV5/AdKEnrPu1Ybqa80qhJeFe6WD1woQObDCAiP7ANie9gSoZngVeSjSAY2N3OgSGm8hWOHdts+JlHUoL5/rCNmEuzg/Odxu0kGdtqCVCBvoKmTf7Ps6htywYxFIMCnKUJk4r1RRKrKxKCjcILSUUvZqlXGP0ZZl3Wuk+PU9U9kihi/uyHBwOX5RAeNe+YYb7YnWUGbjNZhv/G+tADO6yqxMCDUWcjDpYDF8bYRjuwNnzQlA97nVtzqSbXM3qwuf3YlNJlhpMZbjKri1NT829lYiO1uGtzJicY+sCsV4j5gwg049Q9KQ==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

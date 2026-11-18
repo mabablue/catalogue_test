@@ -1,0 +1,85 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fdof: <https://w3id.org/fdof/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix ntemplate: <https://w3id.org/np/o/ntemplate/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAV_-_t50gbCnKkbkaAj_BlMDVwR-e2ilVN_0ztbd4FNo/> .
+@prefix this: <https://w3id.org/np/RAV_-_t50gbCnKkbkaAj_BlMDVwR-e2ilVN_0ztbd4FNo> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <http://qudt.org/vocab/quantitykind/MassFluxDensity> a iop:Property;
+    rdfs:label "mass flux density" .
+  
+  <https://w3id.org/iadopt/variable/20260802T145821-40> a fdof:FAIRDigitalObject, iop:Variable;
+    dcterms:conformsTo <https://w3id.org/np/RA5MTl9GFH-QuuBHYEA2hOtxOMOV4-jrhtdx5lOy9CAQE>;
+    dcterms:created "2026-08-02T14:58:21Z"^^xsd:dateTime;
+    dcterms:creator orcid:0000-0003-2195-3997;
+    dcterms:identifier <https://w3id.org/iadopt/variable/20260802T145821-40>;
+    pav:createdWith "LLM-assisted I-ADOPT variable generation";
+    rdfs:comment "Mass flux of carbon into soil from vegetation due to senescence, measured in kg m-2 s-1. ";
+    rdfs:label "Mass flux of carbon into soil from vegetation due to senescence";
+    prov:wasAttributedTo orcid:0000-0003-2195-3997;
+    iop:hasConstraint sub:_n182f416264a9437989cb44d06d792fc3b2;
+    iop:hasMatrix sub:_n182f416264a9437989cb44d06d792fc3b1;
+    iop:hasObjectOfInterest <https://www.wikidata.org/entity/Q623>;
+    iop:hasProperty <http://qudt.org/vocab/quantitykind/MassFluxDensity> .
+  
+  sub:_n182f416264a9437989cb44d06d792fc3b1 a iop:AsymmetricSystem, iop:Entity;
+    rdfs:label "vegetation soil";
+    iop:hasSource <https://www.wikidata.org/entity/Q187997>;
+    iop:hasTarget <https://www.wikidata.org/entity/Q36133> .
+  
+  sub:_n182f416264a9437989cb44d06d792fc3b2 a iop:Constraint;
+    rdfs:label "due to: senescence";
+    iop:constrains <https://www.wikidata.org/entity/Q187997> .
+  
+  <https://www.wikidata.org/entity/Q187997> a iop:Entity;
+    rdfs:label "vegetation" .
+  
+  <https://www.wikidata.org/entity/Q36133> a iop:Entity;
+    rdfs:label "soil" .
+  
+  <https://www.wikidata.org/entity/Q623> a iop:Entity;
+    rdfs:label "carbon" .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0003-2195-3997;
+    prov:wasGeneratedBy <https://w3id.org/np/RAwy2xTZzt5Y3ix-7f1HDTewgZqa6eRm5YnmrSKCy0PTA/I-ADOPT-LLM-Service> .
+}
+
+sub:pubinfo {
+  orcid:0000-0003-2195-3997 foaf:name "Barbara Magagna" .
+  
+  this: dcterms:created "2026-08-02T14:58:25.046Z"^^xsd:dateTime;
+    dcterms:creator <https://w3id.org/np/RAwy2xTZzt5Y3ix-7f1HDTewgZqa6eRm5YnmrSKCy0PTA/I-ADOPT-LLM-Service>;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/20260802T145821-40>;
+    npx:wasCreatedAt <https://nanodash.petapico.org/>;
+    rdfs:label "Mass flux of carbon into soil from vegetation due to senescence";
+    ntemplate:wasCreatedFromProvenanceTemplate <https://w3id.org/np/RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM>;
+    ntemplate:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM>, <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    ntemplate:wasCreatedFromTemplate <https://w3id.org/np/RAkcfj9W_lJjlq26paIFmTY4mZoaY27BnZCjcsL34EPIA> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzymtTYCOhZMR6OcAN9w2t82zy6tPY5UkyFAEyxdvUUFaHciaH4dxdSgrCXdg8GoZIOW7wQEJGtom7D1fkFOfVFVgLb4wApmPen87msSXoAN1yPeDEkD4BFQ+GanBFQxqebpmgjF9tLIkZFziShWQrAyBOqy4K44YCYq/l94FIdRZGabV9IAngZwydWh2TBBBahuwsysHulhkdgiedWKl75mdsYgDzHlAJz4BnQ8Az9w+k7LnwQDPvThTZJtt+dFAW/y1M3WKzf+9biSlLgbHtRWYI6Z9ovetZi8vWiW2lpiCvyfGKNIgP+Q38D1i3gJEPQnj+iK8Nw9LLHhg8bV+yQIDAQAB";
+    npx:hasSignature "AviUCMHDcaKhX2E8jaBcP5wSu/Ucix7ldObXBXeksZ4WbF2yfGxSZDbwKJeSmuAIi2I0aunYYyKK5t4eIlLJG4Rxrara3U9X+vrKcHr4zgPal3NvExpyagYnxmXDL81UBpWv7Hsk9OqPShWXfG03hxXDz7BXaeAuT+GSFHTdSck1QuIBJSLkBrZKIo/YJ4RExtbs6sOmQQU3R8dLOw8Z8rBIz7xqVaYJDHWNQn2dLBWwdpIul1o+Pg0U0NUMt6ICP9VYsM8TAk2HHbpeqv/Hy1IgZgWNq1S35fygXcMljj8PIYPujmUcT0jxoG6sx6ELei1CeVoUhB7pJYiWpWv1zw==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy <https://w3id.org/np/RAwy2xTZzt5Y3ix-7f1HDTewgZqa6eRm5YnmrSKCy0PTA/I-ADOPT-LLM-Service> .
+}
+

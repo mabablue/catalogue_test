@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAYLI6Llx8ZJBMBGJbcaPwigO827278XlvPnxyFoSY42A/> .
+
+<https://w3id.org/iadopt/variable/CucumisSativus> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Cucumis sativus" ;
+    dcterms:description "A creeping annual plant species of the CUCURBITACEAE family. It has a rough succulent, trailing stem and hairy leaves with three to five pointed lobes." ;
+    iop:hasObjectOfInterest sub:Plants ;
+    iop:hasProperty <http://purl.bioontology.org/ontology/MESH/D018553> .
+

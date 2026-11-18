@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAJr2kbjRmowvEblAu8OL43qpms-RbipT_jIhhMw70boU/> .
+
+<https://w3id.org/iadopt/variable/MitochondrialMembranePotential> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Mitochondrial membrane potential",
+        "mitochondrial membrane potential in cells" ;
+    dcterms:description "The voltage difference, normally maintained at approximately -180mV, across the INNER MITOCHONDRIAL MEMBRANE, by a net movement of positive charge across the membrane" ;
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/MESH/D053078> ;
+    iop:hasObjectOfInterest sub:cell ;
+    iop:hasProperty sub:MitochondrialMembranePotential .
+

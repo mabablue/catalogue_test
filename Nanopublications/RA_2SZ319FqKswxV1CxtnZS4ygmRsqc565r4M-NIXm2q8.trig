@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/np/RA_2SZ319FqKswxV1CxtnZS4ygmRsqc565r4M-NIXm2q8> .
+@prefix sub: <https://w3id.org/np/RA_2SZ319FqKswxV1CxtnZS4ygmRsqc565r4M-NIXm2q8/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/p62/SQSTM1level> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "the amount of the autophagy adaptor protein p62, which accumulates when autophagy is impaired and decreases when autophagy is active.";
+    rdfs:label "p62/SQSTM1 level in cells", "p62/SQSTM1 level";
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:cell;
+    <https://w3id.org/iadopt/ont/hasProperty> <https://w3id.org/np/RA_2SZ319FqKswxV1CxtnZS4ygmRsqc565r4M-NIXm2q8/p62/SQSTM1level> .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-02-12T09:41:39.556Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/p62/SQSTM1level>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "tDRPswdheSi62uPi3eklgBw2GqCinenqfI7Hf8KEB1TGU2rtORXy423ly6dfVG1Mu39k0+i9j6CtDiNtSgHFzxED5Hor5X+Jlmy17oapFMDizAI7TdKyesfn+bvMoHqAAXxmFXeM7Mp0GkqgcI9JR7CNWwrxjDfJN59SC4Jjs59SzS0YKmk44UgxK0NOEw22StQCejy09IfCQn7cdPObOhwse3fNxspnJZTIlTgncRAHS9ctdEhROct0rV+jQdHYbf1tFksAIChs8HSL+Z4v7vRai3iAD8768eg4BQOpzHy8QcgsK8+EzjYiJjTDbF+bY/syoI9s1B1fsg7f0XjB4A==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

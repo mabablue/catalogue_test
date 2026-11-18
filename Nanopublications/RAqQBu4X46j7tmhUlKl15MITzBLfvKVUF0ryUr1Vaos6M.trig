@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RAqQBu4X46j7tmhUlKl15MITzBLfvKVUF0ryUr1Vaos6M> .
+@prefix sub: <https://w3id.org/np/RAqQBu4X46j7tmhUlKl15MITzBLfvKVUF0ryUr1Vaos6M/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/ElementalComposition> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "the qualitative and/or quantitative description of the chemical elements present in a substance or material.";
+    rdfs:label "Elemental composition", "elemental composition of material";
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:Materials;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:ElementalComposition .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-01-27T10:21:31.342Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/ElementalComposition>;
+    npx:supersedes <https://w3id.org/np/RAinGPZs21p2MkZEbbw3eHVphalB6Hb8yTbW_nFap0xN8>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAoTD7udB2KtUuOuAe74tJi1t3VzK0DyWS7rYVAq1GRvw>, <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "IlYXq3TaS7Z3fUA766JV5bygixdTwOKDuU02Pg4fnw3crH+1QU3SIFL+zxVxmcoIgUEFrB7ETDbMgIU7osJgBTbWRtHUCalXj+P47CEc3euFswP47d18sAteXbylhpWYmkrPYkeRXnVu3XP9iHiVbV/wVTCjHYhNDhXXK0U7Tb41AVMGRLPfqYO3foQs1IYsdwP4jtjgC5tzWTL9bNYNTWXkxwdb7bmJ9Scnb6H8JseFNlzGazVCq7FZ71iON9UEm79HLqAPBWqFeudJFj5nAmQ84uRJ8tOJwlXyU2B1TijoNNZsSgJUZceaTHhhf/Vavq4pk9L7rP4BsNZWGgm57Q==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

@@ -1,0 +1,17 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://vocabs.lter-europe.net/EnvThes/30391> a iop:Variable ;
+    rdfs:label "The dose (or particle number) of applied nanomaterial internalised by a specific cell population or per single cell (area) in a time period. Expressed as the particle number per cell area per time",
+        "dose of applied nanomaterial internalised by a specific cell population" ;
+    dcterms:description "Relative mass flux density (mass per area per time) of nanomaterial internalised by cells per unit time and specific cell surface area." ;
+    rdfs:seeAlso <https://pmc.ncbi.nlm.nih.gov/articles/PMC10510712/> ;
+    iop:hasConstraint <http://vocabs.lter-europe.net/EnvThes/21952> ;
+    iop:hasMatrix <http://www.ebi.ac.uk/cmpo/CMPO_0000002> ;
+    iop:hasObjectOfInterest <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C62371> ;
+    iop:hasProperty <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25488> .
+
+<http://vocabs.lter-europe.net/EnvThes/21952> a iop:Constraint ;
+    iop:constrains <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25488> .
+

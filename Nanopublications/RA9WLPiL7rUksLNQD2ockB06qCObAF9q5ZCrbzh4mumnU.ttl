@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA9WLPiL7rUksLNQD2ockB06qCObAF9q5ZCrbzh4mumnU/> .
+
+<https://w3id.org/iadopt/variable/GrowthRate> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Growth rate",
+        "growth rate in exposed invertebrate organism" ;
+    dcterms:description "the change in organism size or mass over time, reflecting overall developmental progression and physiological condition" ;
+    rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001492> ;
+    iop:hasObjectOfInterest sub:invertebrateOrganism ;
+    iop:hasProperty sub:GrowthRate .
+

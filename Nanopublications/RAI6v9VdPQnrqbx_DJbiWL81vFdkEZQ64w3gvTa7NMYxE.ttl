@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAI6v9VdPQnrqbx_DJbiWL81vFdkEZQ64w3gvTa7NMYxE/> .
+
+<https://w3id.org/iadopt/variable/MetallicMaterial> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Metallic material" ;
+    dcterms:description "A material which is composed primarily of one or more pure metals and which shows their properties." ;
+    rdfs:seeAlso <http://purl.obolibrary.org/obo/ENVO_01001069> ;
+    iop:hasObjectOfInterest sub:Metal ;
+    iop:hasProperty <http://purl.obolibrary.org/obo/ENVO_01001069> .
+

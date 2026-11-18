@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAWJBK_PMHIoUWW0kVP9L4XUgbwHQjUr3HG89glrIh608/> .
+
+<https://w3id.org/iadopt/variable/Coercivity> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Coercivity",
+        "coercivity of material" ;
+    dcterms:description "the magnitude of the reverse magnetic field required to reduce the magnetisation of a previously saturated magnetic material to zero." ;
+    rdfs:seeAlso <https://www.sciencedirect.com/topics/engineering/coercivity#:~:text=Coercivity%20is%20defined%20as%20the,)%2C%20when%20magnetization%20is%20zero.&text=How%20useful%20is%20this%20definition?> ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:Coercivity .
+

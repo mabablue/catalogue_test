@@ -1,0 +1,11 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAuqbHMCUVVEz3lkHoPoWbYfUe5MLU00u7_eCozGJhHzQ/> .
+
+<https://w3id.org/iadopt/variable/SizeDistributionspICPMS> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Nanomaterial size distribution measured with spICP-MS" ;
+    iop:hasObjectOfInterest sub:Nanomaterial ;
+    iop:hasProperty sub:SizeDistribution .
+

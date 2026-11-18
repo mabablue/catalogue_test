@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RApwpDUQ4VwxJNGTf4Cwx1QzJ5CEeCWgF-40Y-ytBfVB4> .
+@prefix sub: <https://w3id.org/np/RApwpDUQ4VwxJNGTf4Cwx1QzJ5CEeCWgF-40Y-ytBfVB4/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/SeedlingEmergence> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "the process by which a germinated seedling grows and becomes visible above the soil surface.";
+    rdfs:label "Seedling emergence", "seedling emergence of plant";
+    rdfs:seeAlso <http://purl.jp/bio/4/id/201106066617941061>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:Plant;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:EmergenceRate .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-01-29T13:36:14.848Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/SeedlingEmergence>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "d0v1d6oiaYqfY+kTbJb3fRTRDO0b/JWjfl1vQrlQGn3fkhlNvSamKHo88FZ3iokvYsJ4Y0ybC0j9pzw30+75AxHsGhMrNc90qUkZXQLzQAEE5NCboUdzG3Q6SN+WO29+QyZmOz5Wj3CQzUtWFhuHVhUMEVq9JXj57nIXXEHba9rFdY/yVGohX8SOyn98XXcQY+pusAdwKMS2kMWoSejfpoob7iri26OStPgagl4xWi6EgEmFTMO+GtqPjVrAPBGz/v7MQKsgKBSJEsoMYjX/DnKn8rbDooL27OKrgBcp5TjBGc/F61htJ4W6/fjLKp/XLHZht9NDC5UPKmHmPQPdMA==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

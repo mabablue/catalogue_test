@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAWbbWfq6fa_X8A5aKNEtdfvNLwwzwuS02crabjL86Ze0/> .
+
+<https://w3id.org/iadopt/variable/Resistivity> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Resistivity",
+        "resistivity of material" ;
+    dcterms:description "A measurement that quantifies how strongly a material resists or conducts electric current." ;
+    rdfs:seeAlso <http://purl.dataone.org/odo/ECSO_00003082> ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty sub:resistivity .
+

@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/np/RAMH3LBqFV5X_2WISh7gsqmDevYQUGqK6TSlOEipH5k4A> .
+@prefix sub: <https://w3id.org/np/RAMH3LBqFV5X_2WISh7gsqmDevYQUGqK6TSlOEipH5k4A/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/ProteinCarbonyls> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "are oxidatively modified proteins containing carbonyl groups formed as a result of oxidative damage.";
+    rdfs:label "Protein carbonyls", "protein carbonyl content in cells";
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:cell;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:proteincarbonyllevel .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-02-12T08:50:18.104Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/ProteinCarbonyls>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "HCcLnWtkFrMAh5jYkYW8WB5pOzC8ivedEQU2KTR4Fnwbc6o4iyQ8iBo97n9FE70qmqyYSxwxnGirWP9YP0SWH75jkRk9EpjqcaRc67+z50XRyVGrOPzgrFzqHLS8LCS4iIOpyc7AeHPLzMK9E6SzhsKcj2rtcIxeuL1qtgOEuIWqrOerUpAcJVD+AJvLQBxbHsO2ouqSLbzfxGVnZsEqf2/6nX3Yy1sLvH8+CV/Kmh/IE0gJ+zLWygSmb7cT91GabcRHinYApP8HpUaFMoq8qlImU/JSgJtqbfvlYuuaKW7cOVjLGgJVEzl6pWHBh3h+bKnXP4XICeWp2EAE2q97BQ==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAOcWIhSgxbGD3s5TQ7w3aRyctq0PkCwoBV7LQDMw10ow/> .
+
+<https://w3id.org/iadopt/variable/FoliarSpray> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Foliar spray",
+        "foliar spray method" ;
+    dcterms:description "the exposure of plants to a substance applied directly to leaf surfaces." ;
+    rdfs:seeAlso <http://purl.jp/bio/4/id/200906037954000017> ;
+    iop:hasObjectOfInterest sub:Plant ;
+    iop:hasProperty sub:ExposureMethod .
+

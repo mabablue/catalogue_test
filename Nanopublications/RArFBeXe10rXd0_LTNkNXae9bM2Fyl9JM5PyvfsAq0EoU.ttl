@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RArFBeXe10rXd0_LTNkNXae9bM2Fyl9JM5PyvfsAq0EoU/> .
+
+<https://w3id.org/iadopt/variable/FetalWeight> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Fetal weight",
+        "fetal weight in exposed animal" ;
+    dcterms:description "The weight of the FETUS in utero" ;
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/MESH/D020567> ;
+    iop:hasObjectOfInterest sub:offspring ;
+    iop:hasProperty sub:fetalBodyWeight .
+

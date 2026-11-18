@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAUaeU_UKywO0DkWAANfqO-cO-wpT51yg3CQnzpNI66Lg/> .
+
+<https://w3id.org/iadopt/variable/Half-life> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Half-life",
+        "half-life of test substance" ;
+    dcterms:description "The time it takes for a substance (drug, radioactive nuclide, or other) to lose half of its pharmacologic, physiologic, or radiologic activity." ;
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/MESH/D006207> ;
+    iop:hasObjectOfInterest sub:testanimal ;
+    iop:hasProperty sub:plasmahalf-life .
+

@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAE5yFKO8MGUUsN1PlSgQ0nF_45OXIJQNDf0LDayoYScc/> .
+
+<https://w3id.org/iadopt/variable/ExternalvsInternalSA> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "External vs internal SA",
+        "external vs internal surface area of material" ;
+    dcterms:description "the distinction between the surface area of a material that is exposed on the outer particle surface (external surface area) and the surface area located within pores or internal structures of the material" ;
+    iop:hasObjectOfInterest sub:material ;
+    iop:hasProperty sub:externalvsinternalsurfacearea .
+

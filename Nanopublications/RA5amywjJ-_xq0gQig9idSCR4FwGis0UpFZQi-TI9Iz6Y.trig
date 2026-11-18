@@ -1,0 +1,47 @@
+@prefix this: <https://w3id.org/np/RA5amywjJ-_xq0gQig9idSCR4FwGis0UpFZQi-TI9Iz6Y> .
+@prefix sub: <https://w3id.org/np/RA5amywjJ-_xq0gQig9idSCR4FwGis0UpFZQi-TI9Iz6Y#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  sub:Chlorophyll-a a <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "Chlorophyll-a in the water";
+    rdfs:label "Concentration of Chlorophyll-a in the water column";
+    <https://w3id.org/iadopt/ont/hasMatrix> sub:water;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:Chlorophyll-a;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:concentration .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0002-4517-590X .
+}
+
+sub:pubinfo {
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDSzt9iJsaxTAg9qAZPVPDOPbNEjncx/hEfPUVWlqnBiWQB+a6oFjMGdTyvlanRyIHxcdmZsksJTFoQIE9zSQAMt8YGLl107FM0arcRF3hKf7ecV99b5wYKyd0s2U+bPaopSUiBeoR0+CemSA4WL5Uz2YT/B0IJ5iUKmM+wW9ktAQIDAQAB";
+    npx:hasSignature "NOAvVqcjQtwDcbwTPbe5+KcjV+tncbPViL4TE7fKKE4MhKdTG3ucnKU2IwaiZsEja3DmyIqNQ0o3mQOe2xw7HpBHAH1oP7/83IlaicOVmWytM2AUduIyOBaupflfRXBUJs89EwRmHHx/Tl3XXPTZjjS8mlVjDDCq+deMovuixAg=";
+    npx:hasSignatureTarget this: .
+  
+  this: dct:created "2023-10-17T10:22:16.443Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-4517-590X;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces sub:Chlorophyll-a;
+    nt:wasCreatedFromProvenanceTemplate <http://purl.org/np/RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM>;
+    nt:wasCreatedFromPubinfoTemplate <http://purl.org/np/RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM>,
+      <http://purl.org/np/RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90>;
+    nt:wasCreatedFromTemplate <http://purl.org/np/RAq8tqgrQdfy52v_mneS8EIMZAKkL2UgyVKVUVwiXMVrU> .
+}
+

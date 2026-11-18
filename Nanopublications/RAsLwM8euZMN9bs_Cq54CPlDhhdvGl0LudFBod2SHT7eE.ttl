@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAsLwM8euZMN9bs_Cq54CPlDhhdvGl0LudFBod2SHT7eE/> .
+
+<https://w3id.org/iadopt/variable/ReferenceSubstanceResponse> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Reference substance response",
+        "reference substance response in study" ;
+    dcterms:description "the observed biological effect of a known standard substance used to verify test sensitivity and organism responsiveness." ;
+    iop:hasObjectOfInterest sub:referenceSubstance ;
+    iop:hasProperty sub:referenceSubstanceResponse .
+

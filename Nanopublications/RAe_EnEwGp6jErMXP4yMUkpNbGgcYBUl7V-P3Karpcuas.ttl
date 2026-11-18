@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAe_EnEwGp6jErMXP4yMUkpNbGgcYBUl7V-P3Karpcuas/> .
+
+<https://w3id.org/iadopt/variable/RelativeWaterContent> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Relative water content (RWC)",
+        "relative water content of plant" ;
+    dcterms:description "the ratio of water present in plant tissue to its fully turgid water content, expressed as a percentage." ;
+    rdfs:seeAlso <http://purl.obolibrary.org/obo/TO_0000136> ;
+    iop:hasObjectOfInterest sub:Plant ;
+    iop:hasProperty sub:RelativeWaterContent .
+

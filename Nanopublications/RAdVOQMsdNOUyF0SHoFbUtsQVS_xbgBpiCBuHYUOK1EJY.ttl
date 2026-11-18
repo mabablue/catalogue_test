@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAdVOQMsdNOUyF0SHoFbUtsQVS_xbgBpiCBuHYUOK1EJY/> .
+
+<https://w3id.org/iadopt/variable/ResidualCatalyst/Surfactant> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Residual catalyst",
+        "residual catalyst/surfactant content of material" ;
+    dcterms:description "the concentration of catalyst or surfactant remaining in a material after synthesis and purification." ;
+    iop:hasObjectOfInterest sub:Materials ;
+    iop:hasProperty <https://w3id.org/np/RAdVOQMsdNOUyF0SHoFbUtsQVS_xbgBpiCBuHYUOK1EJY/ResidualCatalyst/SurfactantContent> .
+

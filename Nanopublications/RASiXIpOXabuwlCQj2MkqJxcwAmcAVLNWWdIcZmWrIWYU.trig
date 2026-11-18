@@ -1,0 +1,54 @@
+@prefix this: <https://w3id.org/np/RASiXIpOXabuwlCQj2MkqJxcwAmcAVLNWWdIcZmWrIWYU> .
+@prefix sub: <https://w3id.org/np/RASiXIpOXabuwlCQj2MkqJxcwAmcAVLNWWdIcZmWrIWYU/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <https://w3id.org/iadopt/variable/WaterUptake> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+      <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "the percentage of water absorbed by a material relative to its dry mass.";
+    rdfs:label "Water uptake", "water uptake of material";
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> sub:Materials;
+    <https://w3id.org/iadopt/ont/hasProperty> sub:WaterUptake .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0002-2913-1293 .
+}
+
+sub:pubinfo {
+  orcid:0009-0002-2913-1293 foaf:name "Christos Vasileiou" .
+  
+  this: dct:created "2026-01-28T14:34:29.612Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0002-2913-1293;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <https://w3id.org/iadopt/variable/WaterUptake>;
+    npx:supersedes <https://w3id.org/np/RApiUV41jVubrB4kK915AcDTkwoZ1b1ao_M5dlMleKA0k>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAoTD7udB2KtUuOuAe74tJi1t3VzK0DyWS7rYVAq1GRvw>, <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAW9V0CJwl21Nrt_HwTGhfQcdT5fsUyRxkoMujzGcatGc> .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz1OobdRASd9SftHrLhG905OXjv8DHndvyWzXRJ5EDFPankMSnHZPHK+g2qEeRWdonstt55CLrpTpWsVv9xRtTqPidXHbnWLBXX42iCB+EnZNoKqAVKF5GxkSR38S0uTTq3aeQJbw2kTpx6LMkspmuH95fgAI/lfqPWrxdlI98jIeHQ14UXZpiWmkkvPgC9GVgmwHiG1hB/NCA2fKCOxVodN44OfhAPtkWmPJ40IcGPSalI4HRqgLLI5PabdRk3PiG81cUngmQU1Xk6EapzkRJGenkOlGsC5L4ktEPO6LS9uBMLTMLQDtGtkrcwqg5HmeKv7Ili3vgr3LL8/GaBBOLQIDAQAB";
+    npx:hasSignature "BFFWS12sDWig1QjlD6S59ICQAIClDWLWJrad31+K4S4CE+ej/0jeyml0n6kR5I2xsxsegw6kePlKZ69QrxpryDpkmdP+0YJZ4X0zpcEz/V8AMWdrFHIhbXVrwzorn/xafLSbbao614+ut3w5QxC4Z4lqwgqGxrYUiJVKisUgBqWaY5C0gDJqenSCmqRQIgDuxJov2nspOCEjeHbc1tQf0YE7/WUGKy/ZtTr+s8T1PML2DC56UfDV4ey0tv/ncMtbmBR7plGyS4zd5So1S6wa/aMC8cIGd5SwQKyi9ci2qVJPvWbde/hG8ClxoYiwEmjifT7fDN8UIYmRrSltZhysDQ==";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0002-2913-1293 .
+}
+

@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA4qrP-ukc5bmUrcR7i43JYBX3r4PrFrhUXQ9TwSmyiQ0/> .
+
+<https://w3id.org/iadopt/variable/IL-6secretion> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "IL-6 secretion",
+        "IL-6 secretion from cells" ;
+    dcterms:description "The regulated release of interleukin-6 from a cell or group of cells." ;
+    rdfs:seeAlso <http://purl.obolibrary.org/obo/GO_0072604> ;
+    iop:hasObjectOfInterest sub:cell ;
+    iop:hasProperty sub:IL-6secretionRate .
+

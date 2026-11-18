@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAbnOLJ2s2up6MBu7uZNvSenU3nhKFsWP8jGtYBLxjErE/> .
+
+<https://w3id.org/iadopt/variable/HeatShockProteins> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Heat shock proteins",
+        "heat shock protein level in cells" ;
+    dcterms:description "Proteins which are synthesized in eukaryotic organisms and bacteria in response to hyperthermia and other environmental stresses." ;
+    rdfs:seeAlso <http://purl.bioontology.org/ontology/MESH/D006360> ;
+    iop:hasObjectOfInterest sub:cell ;
+    iop:hasProperty sub:HeatShockProteinslevel .
+

@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RARl3H9p9iyTSh47xv2bQtkR869McaBw0DxQzRb2IYri0/> .
+
+<https://w3id.org/iadopt/variable/MatrixSettingClassification> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Matrix setting classification" ;
+    dcterms:description "A classification is a proposition that categorises things into classes or collections of things differentiated by some criteria, in this case describing the parameters or the situation in which the experiment was performed, pertaining to the components of a sample that are not measured by an experiment" ;
+    iop:hasObjectOfInterest sub:Matrix ;
+    iop:hasProperty sub:Classification .
+

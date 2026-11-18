@@ -1,0 +1,16 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAGfDx1fcy2eATdt1sF_p-aOr0U_HChHWAp488ZyHVu8w#> .
+
+sub:Variable4 a iop:Variable ;
+    rdfs:label "Atmospheric boundary layer heights" ;
+    dcterms:description "Heights of the atmospheric boundary layer describe the variation in the thickness of the lowest part of the atmosphere that mediates the exchange of momentum, energy, and mass between the surface and the overlying free troposphere." ;
+    rdfs:seeAlso <https://doi.org/10.5194/amt-16-563-2023> ;
+    iop:hasConstraint <http://vocabs.lter-europe.net/EnvThes/21957> ;
+    iop:hasObjectOfInterest <http://purl.obolibrary.org/obo/RO_0002007> ;
+    iop:hasProperty <http://purl.obolibrary.org/obo/NCIT_C25347> .
+
+<http://vocabs.lter-europe.net/EnvThes/21957> a iop:Constraint ;
+    iop:constrains <http://purl.obolibrary.org/obo/RO_0002007> .
+

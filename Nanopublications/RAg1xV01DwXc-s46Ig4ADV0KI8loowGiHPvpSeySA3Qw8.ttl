@@ -1,0 +1,12 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAg1xV01DwXc-s46Ig4ADV0KI8loowGiHPvpSeySA3Qw8/> .
+
+<https://w3id.org/iadopt/variable/TiO2NPAl2O3PDMS2NP> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Al2O3 and PDMS 2% coated TiO2 nanoparticle",
+        "Aluminum oxide and PDMS 2% coated titania nanoparticle" ;
+    iop:hasObjectOfInterest sub:TiO2NPAl2O3PDMS2NP ;
+    iop:hasProperty sub:TiO2NPAl2O3PDMS2NP .
+

@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAYjZD3ZSJYOYjpgAGUVygjvUlxoW4k3Mox9HY60ObuCk#> .
+
+sub:Variable27 a iop:Variable ;
+    rdfs:label "Concentration of isobuylene",
+        "Concentration of isobuylene in chloroform" ;
+    dcterms:description "Mass concentration of isobutylene in chloroform." ;
+    iop:hasMatrix <https://vocabulary.actris.nilu.no/actris_vocab/chloroform> ;
+    iop:hasObjectOfInterest <https://vocabulary.actris.nilu.no/actris_vocab/2-methyl-propene> ;
+    iop:hasProperty <https://vocabulary.actris.nilu.no/actris_vocab/massconcentration> .
+

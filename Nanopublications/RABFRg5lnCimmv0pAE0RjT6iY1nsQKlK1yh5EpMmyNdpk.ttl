@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RABFRg5lnCimmv0pAE0RjT6iY1nsQKlK1yh5EpMmyNdpk/> .
+
+<https://w3id.org/iadopt/variable/Tmax> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Tmax",
+        "time to maximum concentration (Tmax) of test substance" ;
+    dcterms:description "The time it takes to reach the maximum concentration (Cmax) of an exogenous compound or drug in the plasma or a tissue after a dose is administered." ;
+    rdfs:seeAlso <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70919> ;
+    iop:hasObjectOfInterest sub:testanimal ;
+    iop:hasProperty sub:timetomaximumconcentration .
+

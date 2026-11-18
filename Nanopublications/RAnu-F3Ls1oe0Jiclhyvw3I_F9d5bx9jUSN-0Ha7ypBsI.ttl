@@ -1,0 +1,11 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAnu-F3Ls1oe0Jiclhyvw3I_F9d5bx9jUSN-0Ha7ypBsI/> .
+
+<https://w3id.org/iadopt/variable/SurfaceCharge> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Surface charge" ;
+    iop:hasObjectOfInterest sub:Material ;
+    iop:hasProperty <http://purl.bioontology.org/ontology/npo#NPO_1812> .
+

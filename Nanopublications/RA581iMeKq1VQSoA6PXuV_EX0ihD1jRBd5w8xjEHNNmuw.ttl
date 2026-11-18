@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA581iMeKq1VQSoA6PXuV_EX0ihD1jRBd5w8xjEHNNmuw/> .
+
+<https://w3id.org/iadopt/variable/SoftwareDependencies> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Software Dependencies" ;
+    dcterms:description "The external software components (libraries, packages, frameworks, runtimes, or system tools) that the software requires to install, build, or run, often including version constraints." ;
+    iop:hasObjectOfInterest sub:software ;
+    iop:hasProperty sub:depencencies .
+

@@ -1,0 +1,52 @@
+@prefix this: <https://w3id.org/np/RAvqS2-zaf6GB3-uuUe3O5cl5gC32f8Zyfp-WXSCOZaAU> .
+@prefix sub: <https://w3id.org/np/RAvqS2-zaf6GB3-uuUe3O5cl5gC32f8Zyfp-WXSCOZaAU#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  sub:IAdoptChallenge21 a <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "Resting blood pressure systolic/diastolic in millimeters of mercury (mmHg)";
+    rdfs:label "Blood pressure";
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> <https://www.eionet.europa.eu/gemet/en/concept/935>;
+    <https://w3id.org/iadopt/ont/hasProperty> <https://vocab.nerc.ac.uk/collection/S06/current/S0600274/> .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0003-0148-7124 .
+}
+
+sub:pubinfo {
+  orcid:0000-0003-0148-7124 foaf:name "Samantha Blakeman" .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDS8uHzuUTTWTYU0zdCzZ+IkCD+tGLVLTR5uYYN9uNOZzq9v2q1ybQV0xECAmbjvN61Kv0RRZRm7syc2bo7BeAWEFqT1VPKUyLRbf5iV8lbPouvfQ4jXxTn53x3iqsNNgkfafvMrtb/QiW01ybpPvQjA3C2N+EBG7lNVmQlvEezfwIDAQAB";
+    npx:hasSignature "uQRxHgPoGAbB+HZWwncp8TmbePLxJ33Mxsnz42sLukA/jC9Eqd+6Sro9M4ETquxCykQU8wgDqaGY+7Utu1T3Ti259KR80htasY/87pbRLTFy6QIvYkLCgcXr3/KjcFa6Xz9uR2nz5utYhtf68l4J2VJg3YlaQv/kGGvYtRsB19U=";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0000-0003-0148-7124 .
+  
+  this: dct:created "2024-09-29T19:21:05.847Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0003-0148-7124;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces sub:IAdoptChallenge21;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate ns1:RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM,
+      ns1:RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAGUWnXKhfKYwmMoDK-LVXlEnnGdAuzFZKR9FZsXHJsxQ> .
+}
+

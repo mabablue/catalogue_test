@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAoyberFIytvtBxzLo9i0oPyF0SZ8BpdfWxCQGnMm4WyY/> .
+
+<https://w3id.org/iadopt/variable/PreTreatment> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Pre-treatment" ;
+    dcterms:description "Any relevant actions that were performed or occurred prior to a specific treatment" ;
+    iop:hasObjectOfInterest sub:NP ;
+    iop:hasProperty <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C103339> .
+

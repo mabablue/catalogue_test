@@ -1,0 +1,47 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fdof: <https://w3id.org/fdof/ontology#> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAV_-_t50gbCnKkbkaAj_BlMDVwR-e2ilVN_0ztbd4FNo/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://qudt.org/vocab/quantitykind/MassFluxDensity> a iop:Property ;
+    rdfs:label "mass flux density" .
+
+<https://w3id.org/iadopt/variable/20260802T145821-40> a fdof:FAIRDigitalObject,
+        iop:Variable ;
+    rdfs:label "Mass flux of carbon into soil from vegetation due to senescence" ;
+    dcterms:conformsTo <https://w3id.org/np/RA5MTl9GFH-QuuBHYEA2hOtxOMOV4-jrhtdx5lOy9CAQE> ;
+    dcterms:created "2026-08-02T14:58:21+00:00"^^xsd:dateTime ;
+    dcterms:creator orcid:0000-0003-2195-3997 ;
+    dcterms:identifier <https://w3id.org/iadopt/variable/20260802T145821-40> ;
+    pav:createdWith "LLM-assisted I-ADOPT variable generation" ;
+    rdfs:comment "Mass flux of carbon into soil from vegetation due to senescence, measured in kg m-2 s-1. " ;
+    prov:wasAttributedTo orcid:0000-0003-2195-3997 ;
+    iop:hasConstraint sub:_n182f416264a9437989cb44d06d792fc3b2 ;
+    iop:hasMatrix sub:_n182f416264a9437989cb44d06d792fc3b1 ;
+    iop:hasObjectOfInterest <https://www.wikidata.org/entity/Q623> ;
+    iop:hasProperty <http://qudt.org/vocab/quantitykind/MassFluxDensity> .
+
+sub:_n182f416264a9437989cb44d06d792fc3b1 a iop:AsymmetricSystem,
+        iop:Entity ;
+    rdfs:label "vegetation soil" ;
+    iop:hasSource <https://www.wikidata.org/entity/Q187997> ;
+    iop:hasTarget <https://www.wikidata.org/entity/Q36133> .
+
+sub:_n182f416264a9437989cb44d06d792fc3b2 a iop:Constraint ;
+    rdfs:label "due to: senescence" ;
+    iop:constrains <https://www.wikidata.org/entity/Q187997> .
+
+<https://www.wikidata.org/entity/Q36133> a iop:Entity ;
+    rdfs:label "soil" .
+
+<https://www.wikidata.org/entity/Q623> a iop:Entity ;
+    rdfs:label "carbon" .
+
+<https://www.wikidata.org/entity/Q187997> a iop:Entity ;
+    rdfs:label "vegetation" .
+

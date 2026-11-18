@@ -1,0 +1,60 @@
+@prefix this: <https://w3id.org/np/RAiS53n-vuTmHtEXd-IQTk1a3ohqIaSLv8RvlfA3tr584> .
+@prefix sub: <https://w3id.org/np/RAiS53n-vuTmHtEXd-IQTk1a3ohqIaSLv8RvlfA3tr584#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix ns1: <http://purl.org/np/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  <http://vocabs.lter-europe.net/EnvThes/21952> a <https://w3id.org/iadopt/ont/Constraint>;
+    <https://w3id.org/iadopt/ont/constrains> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25488> .
+  
+  <http://vocabs.lter-europe.net/EnvThes/30391> a <https://w3id.org/iadopt/ont/Variable>;
+    dct:description "Relative mass flux density (mass per area per time) of nanomaterial internalised by cells per unit time and specific cell surface area.";
+    rdfs:label "The dose (or particle number) of applied nanomaterial internalised by a specific cell population or per single cell (area) in a time period. Expressed as the particle number per cell area per time",
+      "dose of applied nanomaterial internalised by a specific cell population";
+    rdfs:seeAlso <https://pmc.ncbi.nlm.nih.gov/articles/PMC10510712/>;
+    <https://w3id.org/iadopt/ont/hasConstraint> <http://vocabs.lter-europe.net/EnvThes/21952>;
+    <https://w3id.org/iadopt/ont/hasMatrix> <http://www.ebi.ac.uk/cmpo/CMPO_0000002>;
+    <https://w3id.org/iadopt/ont/hasObjectOfInterest> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C62371>;
+    <https://w3id.org/iadopt/ont/hasProperty> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25488> .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0002-3462-0967 .
+}
+
+sub:pubinfo {
+  orcid:0000-0002-3462-0967 foaf:name "Fred van de Brug" .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC0SjQ1p76p5tFSMAJGpGEHLe9aSzOR1k9uUSo6YwSvnHiJJf4fdmWxoyrKL4MNQ9J1Lh7cfRWcubKQ1aSjnAK2z23+vPzg17VNpe14kaeffCJlZBqa0w917JwfIsOEhtBwPerfXxPCCcUOXKa7UEkoA4SCTswLWZXx4EOuifdjLQIDAQAB";
+    npx:hasSignature "ZyDHeoXgcXzVt8Ev5c8w5AIrw9U5crGJBB07VAV/zkkvoCBarrb7dD+6W343AkUxCkn3WKkZ+ZNUB8+4VJrnfTiWH669RkORVoP3E1eI0coMX84WawoIGj+RKenUzazPjK638tXcmHUvPxEc7WQ1fVjFY+x7nFN9DFfZAAJqGqc=";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0000-0002-3462-0967 .
+  
+  this: dct:created "2024-10-18T13:43:50.198Z"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-3462-0967;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:introduces <http://vocabs.lter-europe.net/EnvThes/30391>;
+    npx:supersedes <https://w3id.org/np/RAoLchhIJsCsAtY1TRFf1a3MiTGz6ZLIh3cFiZwmEygSQ>;
+    npx:wasCreatedAt <https://nanodash.knowledgepixels.com/>;
+    nt:wasCreatedFromProvenanceTemplate ns1:RANwQa4ICWS5SOjw7gp99nBpXBasapwtZF1fIM3H2gYTM;
+    nt:wasCreatedFromPubinfoTemplate ns1:RAA2MfqdBCzmz9yVWjKLXNbyfBNcwsMmOqcNUxkk1maIM,
+      ns1:RAh1gm83JiG5M6kDxXhaYT1l49nCzyrckMvTzcPn-iv90, ns1:RAjpBMlw3owYhJUBo3DtsuDlXsNAJ8cnGeWAutDVjuAuI;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAGUWnXKhfKYwmMoDK-LVXlEnnGdAuzFZKR9FZsXHJsxQ> .
+}
+

@@ -1,0 +1,15 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RAIGzyvrqN31y-mk6qo0IbUaOqf_Rhzz9lrk9wxzKoM1U/> .
+
+<https://w3id.org/iadopt/variable/MitoticIndex> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Mitotic index (root tips)",
+        "mitotic index of root tip cells" ;
+    dcterms:description "the proportion of cells undergoing mitosis in plant root tip meristems." ;
+    rdfs:seeAlso <http://purl.obolibrary.org/obo/MESH_D008940> ;
+    iop:hasObjectOfInterest sub:Plant ;
+    iop:hasProperty sub:MitoticIndex .
+

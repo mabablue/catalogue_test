@@ -1,0 +1,14 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RA706hEVjmOyFFUyVgKsBGagSLDZhO4m_Id9NwxfI7t2I/> .
+
+<https://w3id.org/iadopt/variable/Crystallinity> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Crystallinity",
+        "Crystallisation" ;
+    dcterms:description "The detection and quantification of the amount of amorphous material within a highly crystalline substance" ;
+    iop:hasObjectOfInterest sub:UnitCell ;
+    iop:hasProperty <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C133974> .
+

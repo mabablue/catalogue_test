@@ -1,0 +1,13 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sub: <https://w3id.org/np/RApSUKrwc5tsHJh1xmHHi1emR5_Qbe67wVwUpzk4t-R4g/> .
+
+<https://w3id.org/iadopt/variable/BeanWhole> a owl:NamedIndividual,
+        iop:Variable ;
+    rdfs:label "Bean (whole)" ;
+    dcterms:description "A seed of a bean plant from one of several genera of the flowering plant family (Fabaceae)" ;
+    iop:hasObjectOfInterest sub:Bean ;
+    iop:hasProperty <http://purl.obolibrary.org/obo/FOODON_00002753> .
+
